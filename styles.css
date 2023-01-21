@@ -26,11 +26,13 @@ body{
     background: #fff;
 }
 .menu-img svg{
-    width: 31px;
+    width: 32px;
     padding-top: 5px;
+    transform: translate(4px, -1.6px);
 }
 .burger-nav span img{
     padding-top: 5px;
+    transform: translate(-1px, 1px);
 }
 
 .azure a{
@@ -47,18 +49,27 @@ body{
     align-items: center;
     padding: 2px;
     gap: 15px;
+    transform: translate(3px, -3px);
+}
+
+.search i{
+    transform: translate(3px, 2px);
 }
 
 .mob-search-sign{
     display: flex;
+    transform: translate(-13px, -4px);
     padding-top: 15px;
-    gap: 19px;
+    gap: 36px;
+}
+.sign-mobile{
+    transform: translate(1px, -2px);
 }
 .sign-mobile a{
     text-decoration: none;
     color: #1a1a1f;
     font-family: 'cereal';    
-    font-size: 13px;
+    font-size: 14px;
 }
 .mob-search-sign .search{
     color: rgb(127, 132, 136);
@@ -72,6 +83,9 @@ body{
 .header-three{
     display: none;
 }
+.header-four{
+    display: none;
+}
 
 @media screen and (min-width:768px){
     .header-one{
@@ -83,6 +97,7 @@ body{
     }
     .menu-img svg{
         width: 24px;
+        transform: translate(-3px, 1px);
     }
    .list{
     display: flex;
@@ -97,11 +112,14 @@ body{
     background: #fff;
 }
 .mobile-two ul li i{
-    padding: 2px;
+    padding: 4px;
     font-size: 9px;
+    opacity: 0.7;
+    margin-right: -1px;
+
 }
 .mobile-two ul li{
-    padding-right: 15px;
+    padding-right: 13px;
     font-size: 13px;
     font-weight: 100;
     font-family: 'cereal';
@@ -111,8 +129,9 @@ body{
 
 .mobile-two ul{
     display: flex;
+    transform: translate(1px, 0px);
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 8px;
     padding-top: 3px;
     }
     div ul span{
@@ -138,6 +157,18 @@ body{
         padding-top: 2px;
         padding-left: 5px;
     }
+    .azure{
+        transform: translate(-1px, 0px);
+    }
+    .search{
+        transform:translate(4px, -2px);
+    }
+    .burger-nav img{
+        transform:translate(5px, 1px);
+    }
+    .sign-mobile a{
+        font-size: 13px;
+    }
     /* Hover effect */
     .mobile-two ul li:hover{
         text-decoration: underline;
@@ -149,24 +180,195 @@ body{
 }
 
 @media screen and (min-width:1081px){
-    .right-icons{
+  
+    .header-two{
         display: none;
     }
     .header-three{
         display: block;
-        position: relative;
+        padding-top: 7px;
     }
     .search-bar input{ 
-        max-width: 100%;
+        display: flex;
         width: 100px;
-        padding: 7px;
+        transform: translate(68px, 10px);
+        padding: 6px;
+        padding-left: 12px;
+        padding-bottom: 7px;
         background: #f8f9fa;
         border: 1px solid #676777;
-        border-radius: 4px;
+        border-radius: 3px;
+        font-family: 'cereal';
+    }
+    .search-bar i{
+        transform: translate(42px, 20px);
+        font-size: 12.50px;
+        color: #676777;
+    }
+    .search-bar{
+        display: flex;
+        align-items: flex-start;
+        width: 100px;
+        padding-left: 100px;
+        transform: translateX(-87px);
+    } 
+    .header-three ul {
+    display: flex;
+    }
+    .list{
+        gap: 25px;
+    }
+    .mob-header-three{
+        display: flex;
+    }
+    .mob-header-three ul{
+        list-style-type: none;
+        padding-left: 10px;
+        font-family: 'cereal';
+        transform: translate(-7px, 2px);
+        margin-left: 10px;
+    }
+    .mob-header-three ul li{
+        padding-right: 16px;
+        font-size: 13px;
+        font-weight: 100;
+        font-family: 'cereal';
+        opacity: 0.9;
+     
+    }
+    .mob-header-three ul li i{
+        margin-left: 4px;
+        font-size: 9px;
+        opacity: 0.7;
+        
+    }
+    .mob-header-three{
+        position: relative;
+    }
+    .right-list {
+        display: flex;
         position: absolute;
-        right: 365px;
-        bottom: 130px;
+        right: 10px;
+    }
+    .right-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-nav h3{
+        opacity: 0.9;
+        font-size: 13px;
+        font-family: 'cereal';
+        font-weight: 500;
+        
+    }
+    .right-nav .green-join{
+        background-color: #89c402;
+        border: 1px solid #6f9e02;
+        border-radius: 4px;
+        color: #111111;
+        width: 67.73px;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 9px;
+        padding-left: 8px;
+        line-height: 1;
+        padding-right: 7px;
+        text-align: center;
+        transform: translate(88px, -8px);
+    }
+
+    .right-nav .sign{
+        width: 10%;
+        margin-left: 100px;
+        transform: translate(3px, -8px);
+        text-align: center;
+        line-height: 13px;
+    }
+    .right-nav .contact{
+        width: 50px;
+        text-align: center;
+        transform: translate(63px,-8px);
+        line-height: 13px;
+    }
+
+        .right-nav .support {
+            transform: translate(35px, -8px);
+        }
+        .right-nav .learn{
+            transform: translate(19px, -8px);
+        }
+        .left-list{
+            transform: translateX(10px);
+        }
+
+        .burger-nav .azure-text{
+            transform: translate(1px, -1px);
+        }
+        .burger-nav .menu-img{
+            transform: translate(2px, 0.6px);
+        }
+   
+
+}
+
+@media screen and (min-width:1094px){
+    .header-three{
+        display: none;
+    }
+    .header-four{
+        display: block;
+    }
+    .left-list ul{
+        display: flex;
+    }
+    .azure{
+        transform: translate(1px, -1px);
+    }
+    .right-nav .green-join{
+        width: 169%;
+        font-size: 12px;
+        padding: 9px;
+        margin-right: -1px;
+        line-height: 1;
+        transform: translate(91px, -8px);
+
+    }
+    .right-nav .sign{
+        width: 50px;
+        transform: translate(3px, -8px);
+      
+    }
+   .right-nav .contact{
+        width: 78px;
+        transform: translate(67px,-9px);
+       
+    }
+    .right-nav{
+        padding-top: 5px;
+    }
+    .right-nav h3{
+        margin-left: -10px;
+    }
+    .right-nav .sign{
+        transform: translate(1px, -9px);
+    }
+    .right-nav .support{
+        transform: translate(41px, -9px);
+    }
+    .right-nav .learn{
+        transform: translate(15px, -9px);
+    }
+    .search-bar input{
+        transform: translate(58px, 11px);
+    }
+    .search-bar i{
+        transform: translate(32px, 21px);
+    }
+    .menu-img svg{
+        transform: translate(0px, -0.4px);
     }
 }
+
 
 
