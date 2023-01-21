@@ -1,0 +1,172 @@
+/* Font style */
+@font-face{
+    font-family:'cereal';
+    src: url('/Azure/Asset/font/latest.woff2') format("truetype");
+}
+@font-face{
+    font-family:'cereal-bold';
+    src: url('/Azure/Asset/font/MWFFluentIcons.woff2') format("truetype");
+}
+@font-face{
+    font-family:'cereal-medium';
+    src: url('/Azure/Asset/font/latest\ \(1\).woff2') format("truetype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+}
+.menu-img svg{
+    width: 31px;
+    padding-top: 5px;
+}
+.burger-nav span img{
+    padding-top: 5px;
+}
+
+.azure a{
+    font-family: 'cereal-medium';
+    text-decoration: none;
+    color: #1a1a1f;
+    font-size: 18px;
+    font-weight: 600;
+  
+
+}
+.burger-nav-azure {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    gap: 15px;
+}
+
+.mob-search-sign{
+    display: flex;
+    padding-top: 15px;
+    gap: 19px;
+}
+.sign-mobile a{
+    text-decoration: none;
+    color: #1a1a1f;
+    font-family: 'cereal';    
+    font-size: 13px;
+}
+.mob-search-sign .search{
+    color: rgb(127, 132, 136);
+}
+.header-one{
+    display: block;
+}
+.header-two{
+    display: none;
+}
+.header-three{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .header-one{
+        display: none;
+    }
+    .header-two{
+        display: block;
+    
+    }
+    .menu-img svg{
+        width: 24px;
+    }
+   .list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+   }
+.mobile-two{
+    display: flex;
+    padding-left: 5px;
+    background: #fff;
+}
+.mobile-two ul li i{
+    padding: 2px;
+    font-size: 9px;
+}
+.mobile-two ul li{
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: 'cereal';
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.mobile-two ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 3px;
+    }
+    div ul span{
+    padding-left: 2px;
+    cursor: pointer;
+    }
+    .right-icons{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        padding-top: 2px;
+        gap: 20px;
+    }
+    .right-icons .search i{
+        color: #676777;
+        font-size: 12px;
+    }
+    .right-icons .burger-nav img{
+        padding-top: 2px;
+        padding-left: 5px;
+    }
+    /* Hover effect */
+    .mobile-two ul li:hover{
+        text-decoration: underline;
+        }
+        .list .azure a:hover{
+        text-decoration: underline;
+        }
+  
+}
+
+@media screen and (min-width:1081px){
+    .right-icons{
+        display: none;
+    }
+    .header-three{
+        display: block;
+        position: relative;
+    }
+    .search-bar input{ 
+        max-width: 100%;
+        width: 100px;
+        padding: 7px;
+        background: #f8f9fa;
+        border: 1px solid #676777;
+        border-radius: 4px;
+        position: absolute;
+        right: 365px;
+        bottom: 130px;
+    }
+}
+
+
