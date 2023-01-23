@@ -12,12 +12,21 @@
     src: url('/Azure/Asset/font/latest\ \(1\).woff2') format("truetype");
 }
 
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* .all-section{
+    transform: translate(0px, -1px);
+} */
+@media screen and (min-width:320px){
+    
 
+.img-top{
+    display: none;
+}
 .mobile{
     padding: 20px;
     display: flex;
@@ -85,6 +94,131 @@ body{
 }
 .header-four{
     display: none;
+}
+.top-main{
+    background: #f3f3f3;
+    padding: 10px;
+}
+
+.heading-section{
+    position: relative;
+    top: -28px;
+}
+
+.top-head{
+    padding: 50px 0;
+    background: #f3f3f3;
+    margin-top: -6px;
+    font-family: 'cereal';
+    box-sizing: border-box;
+}
+.first-head h1{
+    font-family: 'cereal-medium';
+    font-size: 16px;
+    font-weight: 600;
+    color: #0078d4;
+    transform:translate(2px, 4px);
+
+
+}
+.second-head h1{
+    font-family: 'cereal-medium';
+    font-weight: bold;
+    font-size: 29px;
+    transform: translate(2px, -2px);
+}
+.second-head p{
+    line-height: 1.5;
+    width: 99%;
+    transform: translate(2px, -7px);
+}
+/* top button */
+.btn-head-section{
+    position: relative;
+    top: -38px;
+    right: 12px;
+
+}
+.btn-head-section a{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'cereal-medium';
+}
+.btn-head-section .btn-blue{
+    border: 1px solid #0078d4;
+    border-radius: 3px;
+    background: #0078d4;
+    color: #fff;
+    font-weight: 600;
+    padding: 9px 13px;
+    font-family: ''cereal-medium'';
+    margin: 8px 24px 0px;
+    position: relative;
+    top: 10px;
+    padding-left: 13px;
+    padding-top: 8px;
+}
+.btn-head-section .btn-black{
+    border: 2px solid #000000;
+    margin: 7px 1px;
+    margin-left: 1px;
+    color: #000000;
+    position: absolute;
+    font-weight: 600;
+    top: -7px;
+    font-size: 16px;
+    transform: translate(3px, 1px);
+    padding: 7px 13px 8px 12px;
+}
+
+/* button hover */
+.btn-blue:hover{
+    background: #046ebe;
+}
+.btn-black:hover{
+    background: rgb(209, 204, 204);
+}
+
+.alert-msg{
+    background: #243a5e;
+    padding: 3px 29px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+
+}
+.alert-msg p a{
+    text-decoration: none;
+    text-align: center;
+    color: #50e6ff;
+    font-family: 'cereal-medium';
+    position: relative;
+    font-size: 16px;
+    justify-content: center;
+    
+}
+
+
+/* .alert-msg p a::after{
+  content: ">";
+
+} */
+.alert-msg i{
+    color: #50e6ff;
+    position: absolute; 
+    top: 10px;
+    left: 240px;
+
+    /* font-size: 4px; */
+}
+
+.container{
+    margin: 24px 0px 16px;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: center;
+}
+
 }
 
 @media screen and (min-width:768px){
@@ -176,11 +310,15 @@ body{
         .list .azure a:hover{
         text-decoration: underline;
         }
+/* .................. */
+        .top-head{
+            margin-top: 1px;
+        }
   
 }
 
 @media screen and (min-width:1081px){
-  
+
     .header-two{
         display: none;
     }
@@ -308,9 +446,38 @@ body{
         .burger-nav .menu-img{
             transform: translate(2px, 0.6px);
         }
-   
+        .img-top{
+            display: block;
+        }
+        /* .main-four{
+            position: relative;
+        }
+        .top-head{
+            position: absolute;
+            top: 0;
+            background: transparent;
+        } */
+        .top-main{
+            background: transparent;
+        }
+        .img-top img{
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+        }
+        .main-four{
+            background-image: url(Asset/image/Desktop\ hero\ \(1\).avif);
+            background-position: 50% 50%;
+            background-size: cover;
+
+        }
+
 
 }
+    
+   
+
+
 
 @media screen and (min-width:1094px){
     .header-three{
@@ -367,6 +534,13 @@ body{
     }
     .menu-img svg{
         transform: translate(0px, -0.4px);
+    }
+}
+
+@media screen and (min-width:1558px){
+    .header-four{
+        max-width: 1558px;
+        margin-inline: auto;
     }
 }
 
