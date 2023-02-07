@@ -696,9 +696,6 @@ br{
 .service-free:nth-child(3){
     background: #0062ad;
 }
-.service-free:hover{
-
-}
 .cards-details{
     padding: 1px 8px 0px;
 }
@@ -774,6 +771,7 @@ br{
     display: flex;
     justify-content: space-between;
     padding: 12px 24px;
+    margin: 35px 0px;
     font-size: 14px;
 }
 .footer-column h3::after{
@@ -832,6 +830,33 @@ br{
 }
 .footer-column ul{
     display: none;
+}
+.fix-msg{
+  
+   position: fixed;
+   right: 14px;
+   bottom: -10px;
+
+}
+.pop-up{
+    display: flex; 
+    align-items: baseline;
+    color: #fff;
+    padding: 10px 12px 16px 15px;
+    border: 1px solid #0067b8;
+    background: #0067b8;
+    border-radius: 6px;
+    width: 135px;
+    gap: 5px;
+}
+.pop-up h4{
+    font-family: 'cereal-medium';
+    margin: 0;
+}
+.fix-msg:after{
+    content:"";
+    display: block;
+    clear: both;
 }
 @media screen and (min-width:392px){
     .footer-nav{
