@@ -149,7 +149,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(26, 1fr);
     gap: 23px;
-    height: 98px;
     overflow: scroll;
 }
 
@@ -164,7 +163,7 @@ nav {
 .object-colmn {
     opacity: 0.5;
     padding: 0px 7px;
-    height: 79px;
+    height: 85px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,13 +182,25 @@ nav {
     font-size: 12px;
 }
 
-
 /* media query */
 @media screen and (min-width: 744px) {
     .category-colmn {
         display: flex;
+        align-items: center;
         padding: 0px 40px;
-        margin-top: 6px;
+
+    }
+    .grid-category {
+        gap: 36px;
+        padding: 0px 0px;
+        margin-top: 9px;
+    }
+    .object-colmn{
+        height: 69px;
+    }
+    .object-colmn:nth-child(1) {
+        width: 39px;
+        border-bottom: 2px solid #000000;
     }
 
     /* right list filter */
@@ -200,12 +211,19 @@ nav {
 
     .img-text-filter {
         display: flex;
-        padding: 2px 16px 0px;
-        gap: 5px;
+        align-items: center;
+        padding: 0px 16px 0px;
+        gap: 8px;
+    }
+    .img-text-filter img{
+        width: 14px;
+        height: 14px;
     }
 
     .img-text-filter span {
-        font-family: 'cereal-book';
+        font-family: 'cereal-medium';
+        color: #222222;
+        font-weight: 400;
         font-size: 12px;
     }
 
@@ -218,21 +236,18 @@ nav {
         height: 48px;
     }
 
-    .grid-category {
-        padding: 0px 0px;
-        gap: 36px;
-    }
-
     nav {
         border-bottom: 1px solid #dbd6d6;
         padding: 14px 40px 0px 24px;
-        height: 80px;
+        height: 81px;
+        margin-bottom: 19px;
     }
 
     .logo-nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+
     }
 
     .logo-img {
@@ -294,18 +309,20 @@ nav {
     }
 
     .text-one {
-        padding: 0px 10px 0px 13px;
+        height: 24px;
+        padding: 3px 6px 0px 13px;
         border-right: 1px solid #dddddd;
 
     }
 
     .text-two {
-        padding: 0px 8px 0px 11px;
+        height: 24px;
+        padding: 3px 7px 0px 15px;
         border-right: 1px solid #dddddd;
     }
 
     .text-last {
-        padding: 0px 0px 0px 14px;
+        padding: 0px 0px 0px 15.1px;
         opacity: 0.5;
     }
 
@@ -397,6 +414,8 @@ nav {
 }
 
 @media screen and (min-width: 950px) {
+
+    /* header section */
     .multi-nav {
         width: 68.4%;
         justify-content: space-between;
@@ -404,11 +423,11 @@ nav {
     }
 
     .text-one {
-        padding: 0px 17px 0px 15px;
+        padding: 3px 16px 0px 19px;
     }
 
     .text-two {
-        padding: 0px 18px 0px 15px;
+        padding: 3px 17px 0px 15px;  
     }
 
     .text-last {
@@ -428,14 +447,16 @@ nav {
         width: 30px;
         padding: 0;
         object-fit: scale-down;
+        transform: translate(-1px, 0px);
     }
-
+    
     nav {
         padding: 15px 40px 0px 40px;
     }
 
     .multi-search-bar {
         padding-left: 6px;
+        margin-top: -1px;
         height: 48px;
         width: 96%;
     }
@@ -480,4 +501,6 @@ nav {
         display: flex;
         justify-content: space-between;
     }
+  
+ 
 }
