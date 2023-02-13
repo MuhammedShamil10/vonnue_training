@@ -298,8 +298,78 @@ Data types:
 // }
 // console.log(sequetionSwitch(2))
 
-function isLess(a, b) {
-    return a > b;
-}
-console.log(isLess(10, "2"));
+// returning boolen values from function.....
+
+// function isLess(a, b) {
+//     return a > b;
+// }
+// console.log(isLess(10, "2"));
+
+// function abTest(a, b) {
+//     if (a < 0 || b < 0) {
+//         return undefined;
+//     }
+// }
+
+// console.log(abTest(2, 2));
+
+// counting cards...
+
+// var count = 0;
+// function cc(card) {
+//     switch(card) {
+//         case 2:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//             count++;
+//             break;
+//             case 2:
+//                 case "10":
+//                 case "J":
+//                 case "K":
+//                 case "A":
+//                     count--;
+//                     break;
+//     }
+//     var holdbet = "Hold"
+//     if (count > 0) {
+//         holdbet = 'Bet'
+//     }
+//     return count + " " + holdbet;
+// }
+
+// cc("A");
+// console.log(cc("K"))
+
+
+// object.......
+
+var animeName = {
+    "name": "Naruto",
+    "epidose": 700,
+    "home": "Leaf Village",
+    "friends": "shikamaru",
+     9:"rengako"
+};
+
+var namePlease = animeName.name;
+var firendsName = animeName.friends;
+var nameSha = 9;
+
+console.log(nameSha);
+
+var namePlease = animeName["name"]
+
+console.log(namePlease);
+console.log(firendsName);
+
+animeName.name = "Monkey D Luffy";
+animeName['charactors'] = "Uciha Sasuke"
+
+delete animeName.friends
+
+console.log(namePlease);
+console.log(animeName);
 
