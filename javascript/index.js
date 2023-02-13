@@ -136,48 +136,170 @@ Data types:
 // }
 // console.log(myDress());
 
-function minusSeven(num) {
-    return num - 7;
-}
-console.log(minusSeven(10));
+// function minusSeven(num) {
+//     return num - 7;
+// }
+// console.log(minusSeven(10));
 
-function timesFive(num) {
-    return num * 5;
-}
+// function timesFive(num) {
+//     return num * 5;
+// }
 
-console.log(timesFive(5))
+// console.log(timesFive(5))
 
-var sum = 0;
-function addThree(sum) {
-    // sum = sum + 4
-    sum += 4;
-    return sum;
-}
-console.log(addThree(10));
-
-
-var changed = 0;
-
-function change(num) {
-    return (num + 5) /  3;
-}
-
-// changed = change(10)
-
-console.log(change(1));
+// var sum = 0;
+// function addThree(sum) {
+//     // sum = sum + 4
+//     sum += 4;
+//     return sum;
+// }
+// console.log(addThree(10));
 
 
-function nextInLine(arr, item) {
-    arr.push(item)
-    // testArr.push(6)
-    return arr.shift();
-}
+// var changed = 0;
 
-var testArr = [1,2,3,4,5];
+// function change(num) {
+//     return (num + 5) /  3;
+// }
 
-console.log("Before: "+ JSON.stringify(testArr));
-console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));
+// // changed = change(10)
+
+// console.log(change(1));
+
+
+// function nextInLine(arr, item) {
+//     arr.push(item)
+//     // testArr.push(6)
+//     return arr.shift();
+// }
+
+// var testArr = [1,2,3,4,5];
+
+// console.log("Before: "+ JSON.stringify(testArr));
+// console.log(nextInLine(testArr, 6));
+// console.log("After: " + JSON.stringify(testArr));
 
 
 // console.log("After: " + JSON.stringify(testArr));
+
+
+
+// equa and strict equal 
+
+// function campareEquality(a, b) {
+//     if (a === b) {
+//         return "Equal";
+//     }
+//     return "notEqual"
+// }
+// console.log(campareEquality(10, 10));
+
+
+
+// function testStricNotEqual(val){
+//     if (val !== 17) {
+//         return "not eaqual"
+//     }
+//     return "equal"
+// }
+// console.log(testStricNotEqual(17))
+
+// condition operator
+
+// function testLessOrEqual(val) {
+//     if (val <= 12) {
+//         return "Smaller than or equal 12";
+//     }
+//     if (val <= 25) {
+//         return "Smaller than or equal 24";
+//     }
+//     return "More than 24";
+// }
+// console.log(testLessOrEqual(13));
+
+// function testingZing(num) {
+//     if (num < 5) {
+//         return "Tiny";
+//     } else if (num < 10) {
+//         return "Small";
+//     }
+//     else if (num < 15) {
+//         return "medium";
+//     } else if (num < 20) {
+//         return "sage mode";
+//     } else {
+//         return "baryon mode"
+//     }
+// }
+// console.log(testingZing(19));
+
+// var names = ["hole-in-one", "Eagle", "Bridie", "Par", "Bogey"]
+
+// function golfScore(par, strokes) {
+//         if (strokes == 1){
+//             return names[0];
+//         }else if (strokes <= par - 2) {
+//         return names[1];
+//         }else if (strokes == par - 1){
+//             return names[2];
+//         }else if (strokes == par) {
+//             return names[3];
+//         }else if (strokes == par + 1) {
+//             return names[4];
+//         }else {
+//             return "Change me"
+//         }
+//     }
+//     console.log(golfScore(1, 1));
+
+// switch statement
+
+// function caseInSwitch(val) {
+//     var answer = val ;
+//     switch(val) {
+//         case 1:
+//             answer = "Naruto";
+//             break;
+//             case 2:
+//                 answer = "monkey D luffy";
+//                 break;
+//                 case 3:
+//                     answer = "Renguka kyojuro";
+//                     break;
+//                     case 4:
+//                         answer = "eren yeager";
+//                         break;
+//                         case 5:
+//                             answer = "light yagami";
+//                             break;
+//                                 default:
+//                                     answer = "out of anime"
+//                                     break;
+//     }
+//     return answer;
+// }
+// console.log(caseInSwitch(8));
+
+// function sequetionSwitch(shinobi) {
+//     answer = "";
+//     switch(shinobi) {
+//         case 1:
+//         case 2:
+//         case 3:    
+//         answer = "Nauro , Suske, Rock Lee, Hinata, temari";
+//         break;    
+//             case 4:
+//             case 5:
+//             case 6:    
+//             answer = "luffy , ZORO, Oosoup";
+//             break;
+//         }
+//         return answer;
+// }
+// console.log(sequetionSwitch(2))
+
+function isLess(a, b) {
+    return a > b;
+}
+console.log(isLess(10, "2"));
+
