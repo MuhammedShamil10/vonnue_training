@@ -992,7 +992,7 @@ br {
 
     .more-stories {
         position: absolute;
-        left: 250px;
+        left: 250px; 
         margin-top: -12px;
     }
 }
