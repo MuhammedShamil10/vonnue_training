@@ -179,10 +179,7 @@ Data types:
 // console.log(nextInLine(testArr, 6));
 // console.log("After: " + JSON.stringify(testArr));
 
-
 // console.log("After: " + JSON.stringify(testArr));
-
-
 
 // equa and strict equal 
 
@@ -346,30 +343,195 @@ Data types:
 
 // object.......
 
-var animeName = {
-    "name": "Naruto",
-    "epidose": 700,
-    "home": "Leaf Village",
-    "friends": "shikamaru",
-     9:"rengako"
-};
+// var animeName = {
+//     "name": "Naruto",
+//     "epidose": 700,
+//     "home": "Leaf Village",
+//     "friends": "shikamaru",
+//      9:"rengako"
+// };
 
-var namePlease = animeName.name;
-var firendsName = animeName.friends;
-var nameSha = 9;
+// var namePlease = animeName.name;
+// var firendsName = animeName.friends;
+// var nameSha = 9;
 
-console.log(nameSha);
+// console.log(nameSha);
 
-var namePlease = animeName["name"]
+// var namePlease = animeName["name"]
 
-console.log(namePlease);
-console.log(firendsName);
+// console.log(namePlease);
+// console.log(firendsName);
 
-animeName.name = "Monkey D Luffy";
-animeName['charactors'] = "Uciha Sasuke"
+// animeName.name = "Monkey D Luffy";
+// animeName['charactors'] = "Uciha Sasuke"
 
-delete animeName.friends
+// delete animeName.friends
 
-console.log(namePlease);
-console.log(animeName);
+// console.log(namePlease);
+// console.log(animeName);
 
+// function phoneticLookup(val) {
+//     var result = "";
+
+//     var lookup = {
+//         "Naruto": "Sasuke",
+//         "jujutsu kaisen": "Gojo",
+//         "AOT": "Levi",
+//         "Demon slayer": "Rengako Kyojuro"
+//     };
+
+//     result = lookup[val];
+//     return result;
+// }
+// console.log(phoneticLookup("Demon slayer"));
+
+// var myObj = {
+//     gift: "Tanjiro",
+//     breathing: "Flame Hashira",
+//     form: "9th form"
+// };
+// function checkObj(checkProp) {
+//     if (myObj.hasOwnProperty(checkProp)) {
+//         return myObj[checkProp];
+//     }else {
+//         return "Not found";
+//     }  
+// }
+// console.log(checkObj("form"));
+
+// var myAnime = {
+//     "gift": "kyojuro",
+//     "breathing": "Flame Hashira",
+//     "form": "9th form",
+//     "releaseDate": [
+//         2018,
+//         "next: march-2023"
+//     ],
+//     "season": true
+// }
+
+// var mySorage = {
+//     "car": {
+//         "inside": {
+//             "glove box": "maps",
+//             "passanger seat": "crumbs"
+//         },
+//         "outside": {
+//             "trunk": "jack"
+//         }
+//     }
+// };
+// var gloveBoxContents = mySorage.car.inside["glove box"];
+// console.log(gloveBoxContents);
+
+// var student = {
+//     name : "tanjiro",
+//     rollNo: 33,
+//     totalMark: "45"
+// };
+//     function stuInfo() {
+//         console.log(student.name);
+//         console.log(student.rollNo);
+//         console.log(student.totalMark);
+//     }
+//     function examCheck(mark) {
+//         if (student.totalMark < 40) {
+//             console.log("You failed");
+//         }else {
+//             console.log("You passed");
+//         }
+//     }
+// stuInfo();
+// examCheck();
+
+// while loop
+// var myArr = [];
+// var i = 0;
+// while (i < 10) {
+//     myArr.push(i);
+//     i++;
+// }
+// console.log(myArr);
+
+// var myArr = [];
+
+// for(i = 1; i <= 10; i++) {
+//     myArr.push(i);
+// }
+
+// console.log(myArr);
+// var myArr = [];
+// for (i = 1; i < 10; i += 2) {
+//     myArr.push(i);
+// }
+// console.log(myArr);
+
+// var myArr = [];
+// for (i = 10; i > 0; i -= 1) {
+//     myArr.push(i);
+// }
+// console.log(myArr);
+
+// var myArr = [2, 4, 5, 6, 8, 5];
+// var total = 0;
+// for (var i = 0; i < myArr.length; i++){
+//     total += myArr[i];
+// }
+// console.log(total);
+
+// function multiplyAll(arr) {
+//     var product = 1;
+
+//     for (var i = 0; i < arr.length; i++) {
+//         for(var j = 0; j < arr[i].length; j++) {
+//             product *= arr[i][j];
+//         }
+//     }return product;
+// }
+// product = multiplyAll([[1,2],[2,3],[3,4],[4,5,6]]);
+
+// console.log(product)
+
+
+// do while loops
+
+// var myArr = [];
+// var i = 10;
+//  do{
+//     myArr.push(i);
+//     i++;
+// }while (i < 5)
+// console.log(myArr);
+
+//  var contacts = {
+//     gift: "Tanjiro",
+//      breathing: "Flame Hashira",
+//      form: "9th form"
+//  };
+
+// function lookupProfile (name, prop) {
+//     for (var i = 0; i < contacts.length; i++) {
+//         if(contacts[i].gift === name){
+//             return contacts[i][prop] || "No auch property";
+//         }
+//     }
+//     return "nothing";
+// }
+
+// var data = lookupProfile("gift", "tanjiro");
+// console.log(data);
+
+// var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+// function randomFraction() {
+//     return Math.floor(Math.random() * 2);
+// }
+// console.log(randomFraction());
+
+function checkEqual(a, b) {
+    b = 2;
+    return a === b ? true : false;
+
+    return a === b;
+}
+console.log(checkEqual(1, 1));
