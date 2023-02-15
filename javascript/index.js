@@ -528,10 +528,133 @@ Data types:
 // }
 // console.log(randomFraction());
 
-function checkEqual(a, b) {
-    b = 2;
-    return a === b ? true : false;
+// function checkEqual(a, b) {
+//     b = 2;
+//     return a === b ? true : false;
 
-    return a === b;
+//     return a === b;
+// }
+// console.log(checkEqual(1, 1));
+
+// function checkScope() {
+//     "use strict";
+//     let i = "function scope";
+//     if (true) {
+//        let i = "block scope";
+//         console.log("block scope i is:", i);
+//     }
+//     console.log("Function scope i is", i);
+//     return i;
+// }
+// checkScope();
+
+// function checking(str) {
+//     let sentance = str + "is amazing";
+//     return sentance
+// }
+// console.log(checking("Anime"));
+
+// const myArr = [5, 6, 7];
+
+// function editingmyArr() {
+//     //  myArr = [7, 6, 5];
+//     myArr[0] = 7;
+//     myArr[1] = 6;
+//     myArr[2] = 5;
+// }
+// editingmyArr();
+// console.log(myArr);
+
+// function without name.....
+// let magic = () => {
+//     return "anime";
+// }
+// console.log(magic());
+
+// let arrowFn = (arr1, arr2) => arr1.concat(arr2);
+
+// console.log(arrowFn([1, 2], [3, 4, 6]));
+
+// const test = {
+//     prop:43,
+//     func: function() {
+//         return test.prop;
+//     },
+// };
+// console.log(test.func());
+
+// const finding = {
+//     x: 33,
+//     getx: function () {
+//         return finding.x;
+//     }
+// };
+// const xElement = finding.getx;
+// console.log(xElement());
+
+// const finalXget = xElement.bind(finding);
+// console.log(finalXget());
+
+// const increment = (function() {
+//     return function increment(number, value = 1) {
+//         return number + value;
+//     }
+// })
+// ();
+// console.log(increment(2,4));
+
+// const sum = (function() {
+//     return function sum(...args) {
+//         return args.reduce((a, b) => a + b, 0);
+//     };
+// })();
+// console.log(sum(1, 2, 3, 4, 5))
+
+// function sum(x,y,z) {
+//     return x+y+z;
+// }
+// const numbers = [1, 2, 3];
+// console.log(sum(...numbers));
+// console.log(sum.apply(null, numbers));
+
+// const arr1 = ["demon slayer","Naruto","one piece","attack on titan","death note"]
+// let arr2;
+// (function names() {
+//     arr2 = [...arr1];
+//     arr1[4] = "jujutsu kaisen";
+    
+// })();
+// console.log(arr2);
+
+// var voxel = { x: a, y: b, z: c } = voxel;
+
+// const AVG_TEMPERATURE = {
+//     today: 77.5,
+//     tomorrow: 79
+// };
+
+// function getTempOfTmrw(avgTemperature) {
+//     const {tomorrow : tempOfTmr} = avgTemperature;
+//     return tempOfTmr;
+// }
+
+// console.log(getTempOfTmrw(AVG_TEMPERATURE));
+
+const localForecast = {
+    today: { min: 23.6, max: 43.3 },
+    tomorrow: { min: 34, max: 56 }
+};
+function getMaxTmrw(forecast) {
+    const { tomorrow: { min: maxOftmrw } } = forecast;
+    return maxOftmrw;
 }
-console.log(checkEqual(1, 1));
+console.log(getMaxTmrw(localForecast));
+
+const [a,b,,,,c] = [1,2,4,5,6,7,8,9,0];
+console.log(a,b,c);
+
+const s = [1,2,4,5,6,7,9,0];
+const [x,y,z] = s;
+console.log(z);
+
+
