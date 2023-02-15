@@ -30,6 +30,7 @@
     font-family: 'cereal-medium';
     font-weight: 400;
     font-size: 16px;
+    /* margin-left: -10px; */
 }
 
 .price-info {
@@ -150,6 +151,7 @@ nav {
     grid-template-columns: repeat(26, 1fr);
     gap: 23px;
     overflow: scroll;
+    box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
 }
 
 .grid-category::-webkit-scrollbar {
@@ -182,22 +184,70 @@ nav {
     font-size: 12px;
 }
 
+/* img */
+.rowColmn-img {
+    padding: 0px 24px;
+    margin: 14px 0px;
+}
+
+.section-imgAndtext {
+    position: relative;
+}
+
+.radio-btn {
+    z-index: 1;
+}
+
+.icon-fav {
+    position: absolute;
+    top: 14px;
+    left: 232px;
+}
+
+.img-section img {
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+.img-text {
+    font-family: 'cereal-book';
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+}
+
+.img-text h4 {
+
+    color: #222222;
+    font-size: 15px;
+}
+
 /* media query */
+@media screen and (min-width:px) {
+    nav {
+        width: 96.5%;
+    }
+}
+
 @media screen and (min-width: 744px) {
+
     .category-colmn {
         display: flex;
         align-items: center;
         padding: 0px 40px;
 
     }
+
     .grid-category {
         gap: 36px;
         padding: 0px 0px;
         margin-top: 9px;
     }
-    .object-colmn{
+
+    .object-colmn {
         height: 69px;
     }
+
     .object-colmn:nth-child(1) {
         width: 39px;
         border-bottom: 2px solid #000000;
@@ -215,7 +265,8 @@ nav {
         padding: 0px 16px 0px;
         gap: 8px;
     }
-    .img-text-filter img{
+
+    .img-text-filter img {
         width: 14px;
         height: 14px;
     }
@@ -336,6 +387,7 @@ nav {
         background: #ff385c;
         border-radius: 60%;
         padding: 10px;
+        width: 32px;
     }
 
     /* right nav */
@@ -427,7 +479,7 @@ nav {
     }
 
     .text-two {
-        padding: 3px 17px 0px 15px;  
+        padding: 3px 17px 0px 15px;
     }
 
     .text-last {
@@ -449,7 +501,7 @@ nav {
         object-fit: scale-down;
         transform: translate(-1px, 0px);
     }
-    
+
     nav {
         padding: 15px 40px 0px 40px;
     }
@@ -494,13 +546,35 @@ nav {
     .search-center-tab {
         display: block;
     }
-    /* .search-center{
-        display: none;
-    } */
+
     .logo-nav {
         display: flex;
         justify-content: space-between;
     }
-  
- 
+
+    .multi-nav {
+        width: 63.5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search-center {
+        margin-inline-start: 241px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    nav {
+        padding: 15px 80px 0px 80px;
+    }
+
+    .category-colmn {
+        padding: 0px 80px;
+    }
+
+    .multi-nav {
+        width: 57.9vw;
+    }
+
+
 }
