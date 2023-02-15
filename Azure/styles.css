@@ -843,7 +843,7 @@ br {
 }
 
 .footer-row {
-    margin: 36px auto 0px  auto;
+    margin: 36px auto 0px auto;
     padding: 0px 18px;
 }
 
@@ -992,7 +992,7 @@ br {
 
     .more-stories {
         position: absolute;
-        left: 250px; 
+        left: 250px;
         margin-top: -12px;
     }
 }
@@ -1128,8 +1128,6 @@ br {
     .top-head {
         margin-top: 1px;
     }
-
-
 }
 
 @media screen and (min-width:860px) {
@@ -1148,7 +1146,6 @@ br {
     .container-box {
         display: flex;
         padding: 25px 15px;
-
     }
 
     .card-img img {
@@ -1222,15 +1219,15 @@ br {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 20%;
-        margin-left: 0px;
-        font-size: 15px;
-        border: none;
         position: absolute;
         top: 90px;
-        padding-left: 0px;
+        border: none;
+        font-size: 15px;
         white-space: unset;
         overflow: unset;
+        width: 20%;
+        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .feat-list ul li a {
@@ -1354,8 +1351,6 @@ br {
         padding-top: 5px;
     }
 
-
-    /* heading text */
     .heading-text {
         margin-left: 5px;
     }
@@ -1364,13 +1359,16 @@ br {
     .msg-icon {
         text-align: center;
     }
-
     .icon-scroll {
         margin: auto;
         margin-left: -40px;
         justify-content: flex-start;
         max-width: 1071px;
         gap: 25px;
+    }
+
+    .img-forza img {
+        width: 100px;
     }
 
     .img-nhs img {
@@ -1386,15 +1384,13 @@ br {
     }
 
     .img-info {
-        width: 94%;
-        margin-left: 17px;
         position: absolute;
-        margin-top: -57px;
+        width: 94%;
+        margin: -57px 0px 0px 17px;
     }
 
     .img-info h3 {
-        padding-left: 35px;
-        padding-right: 80px;
+        padding: 0px 80px 0px 35px;
     }
 
     .link-grp {
@@ -1415,8 +1411,7 @@ br {
 
     .accelerate-img img {
         width: 84%;
-        margin-top: 145px;
-        margin-left: 10px;
+        margin: 145px 0px 0px 10px;
     }
 
     .accelerate-text {
@@ -1599,18 +1594,12 @@ br {
     .search-bar input {
         display: flex;
         width: 100px;
-        transform: translate(68px, 10px);
-        padding: 6px;
-        padding-left: 12px;
-        padding-bottom: 7px;
+        transform: translate(62px, 10px);
+        padding: 6px 6px 7px 12px;
         background: #f8f9fa;
         border: 1px solid #676777;
         border-radius: 3px;
         font-family: 'cereal';
-    }
-
-    .search-bar input {
-        transform: translate(62px, 10px);
     }
 
     .search-bar i {
@@ -1639,12 +1628,16 @@ br {
         display: flex;
     }
 
+    .hamburger-nav .menu-img {
+        transform: translate(2px, 0.6px);
+    }
+
     .mob-header-three ul {
+        font-family: 'cereal';
         list-style-type: none;
         padding-left: 10px;
-        font-family: 'cereal';
-        transform: translate(-7px, 2px);
         margin-left: 10px;
+        transform: translate(-7px, 2px);
     }
 
     .mob-header-three ul li {
@@ -1664,6 +1657,11 @@ br {
     .mob-header-three {
         position: relative;
     }
+
+    .right-nav .support {
+        transform: translate(51px, -10px);
+    }
+
 
     .right-list {
         display: flex;
@@ -1685,17 +1683,15 @@ br {
     }
 
     .right-nav .green-join {
+        color: #111111;
         background-color: #89c402;
         border: 1px solid #6f9e02;
         border-radius: 4px;
-        color: #111111;
         width: 60.73px;
         font-weight: 600;
         font-size: 12px;
-        padding: 9px;
-        padding-left: 0px;
+        padding: 9px 0px 9px 0px;
         line-height: 1;
-        padding-right: 0px;
         text-align: center;
         transform: translate(81px, -11px);
     }
@@ -1717,22 +1713,6 @@ br {
         line-height: 2px;
     }
 
-    .right-nav .support {
-        transform: translate(51px, -10px);
-    }
-
-    .right-nav .learn {
-        transform: translate(35px, -10px);
-    }
-
-    .hamburger-nav .azure-text {
-        transform: translate(1px, -1px);
-    }
-
-    .hamburger-nav .menu-img {
-        transform: translate(2px, 0.6px);
-    }
-
     .img-top {
         display: block;
     }
@@ -1746,6 +1726,11 @@ br {
         height: 450px;
         overflow: hidden;
     }
+
+    .right-nav .learn {
+        transform: translate(35px, -10px);
+    }
+
 
     .top-head {
         background: url(/Azure/Asset/image/Desktop\ hero.jpeg);
@@ -1810,6 +1795,10 @@ br {
 
     .footer-link {
         margin: 40px 0px 0px;
+    }
+
+    .hamburger-nav .azure-text {
+        transform: translate(1px, -1px);
     }
 
 }
@@ -2317,13 +2306,15 @@ br {
 }
 
 @media screen and (min-width:1600px) {
-    .azure{
+    .azure {
         transform: translate(1px, 1px);
     }
+
     .header-four {
         max-width: 1600px;
         margin: auto;
     }
+
     .top-main {
         margin-inline: 49px;
     }
@@ -2442,7 +2433,8 @@ br {
     .col-row {
         margin-left: -120px;
     }
-    .footer-link ul{
+
+    .footer-link ul {
         width: 66%;
         margin-left: 500px;
         margin-top: -10px;
