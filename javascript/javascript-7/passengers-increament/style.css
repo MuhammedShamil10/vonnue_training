@@ -1,0 +1,13 @@
+body{
+    background-color: cornflowerblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,p{
+    color: #fff;
+}
+button{
+    background: rgb(223, 147, 147);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(175, 91, 91);
+}
