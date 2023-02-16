@@ -20,11 +20,6 @@
     src: url(/font/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
 }
 
-
-/* colors 
-#717171
-*/
-
 /* price alert */
 .price-info h2 {
     font-family: 'cereal-medium';
@@ -151,7 +146,7 @@ nav {
     grid-template-columns: repeat(26, 1fr);
     gap: 23px;
     overflow: scroll;
-    box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
+    box-shadow: 0 5px 5px -5px rgb(0 0 0 / 16%);
 }
 
 .grid-category::-webkit-scrollbar {
@@ -165,7 +160,7 @@ nav {
 .object-colmn {
     opacity: 0.5;
     padding: 0px 7px;
-    height: 85px;
+    height: 78px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,31 +179,29 @@ nav {
     font-size: 12px;
 }
 
-/* img */
+/* img-section+ */
 .rowColmn-img {
     padding: 0px 24px;
-    margin: 14px 0px;
+    margin: -20px 0px;
 }
 
 .section-imgAndtext {
     position: relative;
-}
-
-.radio-btn {
-    z-index: 1;
+    margin-top: 40px;
 }
 
 .icon-fav {
     position: absolute;
-    top: 14px;
-    left: 232px;
+    top: 15px;
+    left: 85.2%;
 }
-
 .img-section img {
+    max-height: 272px;
+    min-height: 258px;
     border: 1px solid transparent;
     border-radius: 12px;
 }
-
+/* img text */
 .img-text {
     font-family: 'cereal-book';
     display: flex;
@@ -217,25 +210,36 @@ nav {
 }
 
 .img-text h4 {
-
     color: #222222;
     font-size: 15px;
 }
 
+.navigation {
+    color: #717171;
+    margin-top: 3px;
+}
+.date {
+    color: #717171;
+}
+.price {
+    margin-top: 10px;
+}
+.price-tag {
+    font-weight: 600;
+}
+
 /* media query */
-@media screen and (min-width:px) {
+/* @media screen and (min-width:px) {
     nav {
         width: 96.5%;
     }
-}
+} */
 
 @media screen and (min-width: 744px) {
-
     .category-colmn {
         display: flex;
         align-items: center;
         padding: 0px 40px;
-
     }
 
     .grid-category {
@@ -298,7 +302,6 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-
     }
 
     .logo-img {
@@ -423,7 +426,6 @@ nav {
         color: #222222;
         font-size: 14px;
     }
-
 
 }
 
