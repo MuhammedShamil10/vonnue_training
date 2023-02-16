@@ -640,21 +640,86 @@ Data types:
 
 // console.log(getTempOfTmrw(AVG_TEMPERATURE));
 
-const localForecast = {
-    today: { min: 23.6, max: 43.3 },
-    tomorrow: { min: 34, max: 56 }
-};
-function getMaxTmrw(forecast) {
-    const { tomorrow: { min: maxOftmrw } } = forecast;
-    return maxOftmrw;
-}
-console.log(getMaxTmrw(localForecast));
+// const localForecast = {
+//     today: { min: 23.6, max: 43.3 },
+//     tomorrow: { min: 34, max: 56 }
+// };
+// function getMaxTmrw(forecast) {
+//     const { tomorrow: { min: maxOftmrw } } = forecast;
+//     return maxOftmrw;
+// }
+// console.log(getMaxTmrw(localForecast));
 
-const [a,b,,,,c] = [1,2,4,5,6,7,8,9,0];
-console.log(a,b,c);
+// const [a,b,,,,c] = [1,2,4,5,6,7,8,9,0];
+// console.log(a,b,c);
 
-const s = [1,2,4,5,6,7,9,0];
-const [x,y,z] = s;
-console.log(z);
+// const s = [1,2,4,5,6,7,9,0];
+// const [x,y,z] = s;
+// console.log(z);
+
+// let a = 10, b = 23;
+
+// (() => {
+//     [a,b] = [b,a];
+// })();
+// console.log(a);
+// console.log(b);
+
+// let source = [1,2,3,4,5,6,7];
+// function remevoveNumber(list) {
+//     const [, , , ,...arr] = list;
+//     return arr;
+// }
+// const arr  = remevoveNumber(source);
+// console.log(arr);
+// console.log(source);
+
+// const [a,b, ...everthingElse] = [1,2,4,5,6,7,8,9,0,3];
+// console.log(a);
+// console.log(b);
+// console.log(everthingElse);
+
+// const { streat, ...address} = {
+//     streat: "bathery",
+//     postcode:"******",
+//     city:"kochi"
+// };
+
+// console.log(streat);
+// console.log(address);
+
+// const stats = {
+// max:20,
+// min:10,
+// };
+// const half = (function () {
+
+//     return function half({max, min}) {
+//         return avg = (max + min) / 2.0;
+//     };
+// })();
+// console.log(half(stats));
+
+// const creatList = (name, age, gender) => {
+//     const creatList = (name, age, gender) => ({name, age, gender})or
+//     const list = {
+//         name: name,
+//         age: age,
+//         gender: gender
+//     };
+//     return list;
+// }
+// console.log(creatList("Shamil", 23, "male" ));
+
+// const bicycle = {
+//     gear: 4,
+//     setGear(newGear) {
+//         this.gear = newGear;
+//     }
+// };
+// bicycle.setGear(3);
+// console.log(bicycle.gear);
+
+// import * as lol from "lol_strings";
 
 
