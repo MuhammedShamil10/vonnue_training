@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background: rgb(60, 81, 27);
+    color: #fff;
+    font-family:sans-serif;
+}
+h1{
+    color: #8db2d0;
+}
+button{
+    padding: 10px 5px;
+    border: none;
+    border-radius: 2px;
+}
+
+#apple-shelf {
+    background-color: #8db2d0;
+    width: 200px;
+    height: 100px;
+}
+
+#orange-shelf {
+    margin-top: 10px;
+    background-color: #8db2d0;
+    width: 200px;
+    height: 100px;
+}
