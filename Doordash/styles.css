@@ -74,8 +74,9 @@ body {
 .sign-flex a:nth-child(1) {
     color: #fff;
     font-family: 'cereal-bold';
-    font-size: 17px;
-    margin-left: 1px;
+    font-size: 17.1px;
+    margin-right: 1px;
+    letter-spacing: -0.10px;
     text-decoration: none;
 }
 
@@ -138,7 +139,7 @@ body {
 
 input::placeholder {
     font-size: 16px;
-    color: #494949;
+    color: #555555;
 }
 
 .search-icon img {
@@ -226,12 +227,82 @@ input::placeholder {
 .main-details button img {
     transform: translate(1.7px, -0.5px);
 }
-/* .main-details button span {
-     letter-spacing: 0.7px; 
-*/
+
+/* app img */
+.top-container {
+    margin-top: 115px;
+    background: #fff0ed;
+    height: 881px;
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.img-right img{
+    margin: -98px 0px 0px 74px;
+}
+.img-left img{
+    margin: 0px 0px 0px 0px;
+}
+.down-text {
+    white-space: nowrap;
+
+}
+.img-texts {
+    margin: 20px 0px 0px;
+    padding: 0px 81.6px 0px 16px;
+}
+.img-texts h2 {
+    font-size: 24px;
+    color: #191919;
+    font-family: 'cereal-bold';
+}
+.img-texts h3 {
+    font-size: 14px;
+    color: #191919;
+    line-height: 1.4;
+    font-family: 'cereal-regular';
+    width: 90%;
+}
+.img-texts a {
+    text-decoration: none;
+    border: 1px solid #eb1700;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'cereal-bold';
+    padding: 7px 10px;
+    width: 80px;
+    background: #eb1700;
+}
+.img-texts p {
+    border: 1px solid #eb1700;
+    background: #eb1700;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'cereal-bold';
+    padding: 7px 10px;
+    width: 80px;
+}
 .headingAndtext {
     transform: translate(3px, 0px);
 }
+footer {
+   background:rgb(25, 25, 25); 
+}
+footer h2 {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'cereal-medium';
+}
+footer a {
+    color: #c4c4c4;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'cereal-medium';
+ }
 @media screen and (min-width: 375px) {
     .headingAndtext h3 {
         width: 91%;
@@ -436,4 +507,9 @@ input::placeholder {
         margin-bottom: 94px;
     }
 
+}
+@media screen and (min-width: 1700px) {
+    .head-section {
+        height: 580px;
+    }
 }
