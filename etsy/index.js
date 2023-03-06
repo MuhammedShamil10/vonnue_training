@@ -117,7 +117,7 @@ imgList();
 
 
 let dealsEl = document.getElementById("deals-el");
-let dealsSubDiv=document.createElement("div")
+let dealsSubDiv = document.createElement("div")
 dealsEl.appendChild(dealsSubDiv)
 dealsSubDiv.classList.add("deals-sub-div")
 
@@ -130,7 +130,7 @@ let dealsOfTheDay = [
     {
         img: `https://i.etsystatic.com/22368382/r/il/006d21/4245808662/il_300x300.4245808662_a3x4.jpg`,
         discount: "Up to 40% off on",
-        names: "Women's Ethi"
+        names: "Women's Ethnic Clothing"
     },
     {
         img: `https://i.etsystatic.com/32501528/c/1488/1488/0/0/il/23a5b4/3700725057/il_300x300.3700725057_szgj.jpg`,
@@ -159,7 +159,7 @@ let dealsOfTheDay = [
     }
 ]
 
-function dealsOfThedy () {
+function dealsOfThedy() {
     for (let i = 0; i < dealsOfTheDay.length; i++) {
         const dealsList = document.createElement("li");
         dealsUl.appendChild(dealsList);
@@ -178,3 +178,223 @@ function dealsOfThedy () {
     }
 }
 dealsOfThedy();
+
+let giftsEl = document.getElementById("gift-el");
+let giftsUl = document.createElement("ul");
+
+giftsUl.classList.add("gifts-card")
+giftsEl.appendChild(giftsUl);
+
+let gifts = [
+    {
+        img: `https://i.etsystatic.com/27890741/c/2343/1862/320/560/il/31a0dd/4028709894/il_340x270.4028709894_i6tr.jpg`,
+        video: "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/HFF_Hearts_Video_m6nj4t.mp4",
+        starCount: 5,
+        names: "Personalised Song Plaque With Stand, Any Photo / Song, Any Playlist, Photo and Music Gift, Music Prints",
+        rates: "Assets/img/rate-icon.svg",
+        halfRates: "Assets/img/halfRight-icon.svg",
+        review: "(14,008))",
+        price: "",
+        actualPrice: 1435,
+        discountPercentage: 50,
+        option: ""
+    },
+    {
+        img: `https://i.etsystatic.com/29096897/r/il/52a0f2/3574416678/il_340x270.3574416678_11ex.jpg`,
+        video: `https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/IMG_1134_rlhkb1.mp4`,
+        starCount: 4,
+        names: " Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
+        rates: "Assets/img/rate-icon.svg",
+        halfRates: "Assets/img/halfRight-icon.svg",
+        review: "(5,889)",
+        price: 2127,
+        actualPrice: "",
+        discountPercentage: "",
+        option: "FREE delivery"
+    },
+    {
+        img: `https://i.etsystatic.com/35966576/c/1614/1283/669/351/il/e1510f/4033777789/il_340x270.4033777789_dqlw.jpg`,
+        video: "",
+        starCount: 5,
+        names: "Faceless Portrait, custom illustration, personalised photo, photo illustration, personalised portrait, boyfriend gift, girlfriend gift",
+        rates: "Assets/img/rate-icon.svg",
+        halfRates: "Assets/img/halfRight-icon.svg",
+        review: "(10,281)",
+        price: "",
+        actualPrice: 1521,
+        discountPercentage: 50,
+        option: ""
+    },
+    {
+        img: `https://i.etsystatic.com/24512514/r/il/066b08/3699852893/il_340x270.3699852893_pkjb.jpg`,
+        video: "",
+        starCount: 5,
+        names: "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
+        rates: "Assets/img/rate-icon.svg",
+        halfRates: "Assets/img/halfRight-icon.svg",
+        review: "(14,357)",
+        price: "",
+        actualPrice: 3254,
+        discountPercentage: 50,
+        option: "FREE delivery"
+    },
+    {
+        img: `https://i.etsystatic.com/32477306/c/2000/1589/0/256/il/0bcd64/3491080620/il_340x270.3491080620_oh18.jpg`,
+        video: "",
+        starCount: 5,
+        names: " Heart Keychain Set - Made with Authentic LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality & DURABLE",
+        rates: "Assets/img/rate-icon.svg",
+        halfRates: "Assets/img/halfRight-icon.svg",
+        review: "(7,665)",
+        price: "",
+        actualPrice: 1523,
+        discountPercentage: 70,
+        option: "FREE delivery"
+    },
+    {
+        img: `https://i.etsystatic.com/26694795/c/2445/1943/282/0/il/035b01/3254592822/il_340x270.3254592822_5dss.jpg`,
+        video: `https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/PB-42_convert-video-online.com_cfle3f.mp4`,
+        starCount: 5,
+        names: "Handmade Damascus Pocket Knife Rose Wood Handle Birthday Gift Folding Knife Groomsmen Gift Anniversary Wedding Personalized Gift for Men",
+        rates: "Assets/img/rate-icon.svg",
+        halfRates: "Assets/img/halfRight-icon.svg",
+        review: "(6,836)",
+        price: "",
+        actualPrice: 7613,
+        discountPercentage: 70,
+        option: ""
+    }
+]
+
+
+
+function giftUpdates() {
+    for (let i = 0; i < gifts.length; i++) {
+
+        let giftsList = document.createElement("li");
+        giftsUl.appendChild(giftsList);
+        let container = document.createElement("div");
+        giftsList.appendChild(container);
+        container.classList.add("img-container1");
+        // let giftImg = document.createElement("img");
+        // giftsList.appendChild(giftImg);
+        // giftImg.src = gifts[i].img
+
+        function playVideo() {
+
+            if (gifts[i].video === "") {
+
+                let giftImg = document.createElement("img");
+                container.appendChild(giftImg);
+                giftImg.src = gifts[i].img;
+
+
+            } else {
+                let plyVideo = document.createElement("video");
+                container.appendChild(plyVideo);
+                plyVideo.classList.add("video-el");
+                plyVideo.src = gifts[i].video;
+                plyVideo.poster = gifts[i].img;
+
+                plyVideo.addEventListener("mouseover", function () {
+                    plyVideo.play()
+                    plyVideo.muted = "muted";
+
+                    plyVideo.addEventListener("mouseleave", function () {
+                        plyVideo.pause();
+                        plyVideo.load();
+
+
+                    });
+
+                })
+            }
+
+            let gName = document.createElement("h3");
+            giftsList.appendChild(gName);
+            gName.innerHTML = gifts[i].names;
+
+            if (gifts[i].starCount === 5) {
+                for (let j = 0; j < 5; j++) {
+                    let strCount = document.createElement("span");
+
+                    giftsList.appendChild(strCount);
+
+                    const gRates = document.createElement("img");
+                    strCount.appendChild(gRates);
+                    gRates.src = gifts[i].rates;
+
+                }
+            } else if (gifts[i].starCount === 4) {
+                for (let k = 0; k < 4; k++) {
+                    let hStrCount = document.createElement("span");
+                    giftsList.appendChild(hStrCount);
+                    hStrCount.classList.add("rates");
+                    let imgRates = document.createElement("img");
+                    hStrCount.appendChild(imgRates);
+                    imgRates.src = gifts[i].rates;
+                }
+                let hRates = document.createElement("span");
+                giftsList.appendChild(hRates);
+                hRates.classList.add("hRates");
+                let hImgRates = document.createElement("img");
+                hRates.appendChild(hImgRates);
+                hImgRates.src = gifts[i].halfRates;
+            }
+
+            const reView = document.createElement("span");
+            giftsList.appendChild(reView);
+            reView.innerHTML = gifts[i].review;
+
+
+            function priceInfo() {
+                if (gifts[i].price != "") {
+                    const finalPrice = document.createElement("h4");
+                    giftsList.appendChild(finalPrice);
+                    finalPrice.innerHTML = ` ₹ ${gifts[i].price}`;
+                }
+                else {
+
+                    let price = Math.floor(gifts[i].actualPrice * (gifts[i].discountPercentage / 100));
+                    console.log(price)
+                    const finalPrice = document.createElement("h4");
+                    giftsList.appendChild(finalPrice);
+                    finalPrice.innerHTML = ` ₹ ${price}`;
+                }
+            }
+            priceInfo();
+
+
+            if (gifts[i].actualPrice == "" || gifts[i].discountPercentage == "") {
+                gifts[i].actualPrice = "";
+                gifts[i].discountPercentage = ";"
+            } else {
+
+                
+                
+                const saveContainer = document.createElement("div");
+                giftsList.appendChild(saveContainer);
+                saveContainer.classList.add("price-both")
+                
+                const linePrice = document.createElement("h5");
+                saveContainer.appendChild(linePrice);
+                linePrice.innerHTML = ` ₹ ${gifts[i].actualPrice}`;
+                
+                
+                const discountPrice = document.createElement("span");
+                saveContainer.appendChild(discountPrice);
+                discountPrice.classList.add("price-perc")
+                discountPrice.innerHTML = `  (${gifts[i].discountPercentage}% off)`;
+            
+                const dOption = document.createElement("p");
+                giftsList.appendChild(dOption);
+                dOption.innerHTML = gifts[i].option;
+            }
+
+
+        }
+        playVideo();
+    }
+
+}
+giftUpdates();
