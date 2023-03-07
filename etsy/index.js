@@ -195,6 +195,8 @@ let gifts = [
         halfRates: "Assets/img/halfRight-icon.svg",
         review: "(14,008))",
         price: "",
+        fav: "Assets/img/fav-icon.svg",
+        redFav: "Assets/img/red-fav.svg",
         actualPrice: 1435,
         discountPercentage: 50,
         option: ""
@@ -208,6 +210,8 @@ let gifts = [
         halfRates: "Assets/img/halfRight-icon.svg",
         review: "(5,889)",
         price: 2127,
+        fav: "Assets/img/fav-icon.svg",
+        redFav: "Assets/img/red-fav.svg",
         actualPrice: "",
         discountPercentage: "",
         option: "FREE delivery"
@@ -221,6 +225,8 @@ let gifts = [
         halfRates: "Assets/img/halfRight-icon.svg",
         review: "(10,281)",
         price: "",
+        fav: "Assets/img/fav-icon.svg",
+        redFav: "Assets/img/red-fav.svg",
         actualPrice: 1521,
         discountPercentage: 50,
         option: ""
@@ -234,6 +240,8 @@ let gifts = [
         halfRates: "Assets/img/halfRight-icon.svg",
         review: "(14,357)",
         price: "",
+        fav: "Assets/img/fav-icon.svg",
+        redFav: "Assets/img/red-fav.svg",
         actualPrice: 3254,
         discountPercentage: 50,
         option: "FREE delivery"
@@ -247,6 +255,8 @@ let gifts = [
         halfRates: "Assets/img/halfRight-icon.svg",
         review: "(7,665)",
         price: "",
+        fav: "Assets/img/fav-icon.svg",
+        redFav: "Assets/img/red-fav.svg",
         actualPrice: 1523,
         discountPercentage: 70,
         option: "FREE delivery"
@@ -260,6 +270,8 @@ let gifts = [
         halfRates: "Assets/img/halfRight-icon.svg",
         review: "(6,836)",
         price: "",
+        fav: "Assets/img/fav-icon.svg",
+        redFav: "Assets/img/red-fav.svg",
         actualPrice: 7613,
         discountPercentage: 70,
         option: ""
@@ -308,6 +320,9 @@ function giftUpdates() {
                     });
 
                 })
+
+            
+
             }
 
             let gName = document.createElement("h3");
@@ -317,12 +332,13 @@ function giftUpdates() {
             if (gifts[i].starCount === 5) {
                 for (let j = 0; j < 5; j++) {
                     let strCount = document.createElement("span");
-
                     giftsList.appendChild(strCount);
+                    strCount.classList.add("rates");
 
                     const gRates = document.createElement("img");
                     strCount.appendChild(gRates);
                     gRates.src = gifts[i].rates;
+                    
 
                 }
             } else if (gifts[i].starCount === 4) {
@@ -333,10 +349,12 @@ function giftUpdates() {
                     let imgRates = document.createElement("img");
                     hStrCount.appendChild(imgRates);
                     imgRates.src = gifts[i].rates;
+
+                    
                 }
                 let hRates = document.createElement("span");
                 giftsList.appendChild(hRates);
-                hRates.classList.add("hRates");
+                hRates.classList.add("h-Rates");
                 let hImgRates = document.createElement("img");
                 hRates.appendChild(hImgRates);
                 hImgRates.src = gifts[i].halfRates;
@@ -344,6 +362,7 @@ function giftUpdates() {
 
             const reView = document.createElement("span");
             giftsList.appendChild(reView);
+            reView.classList.add("t-Review")
             reView.innerHTML = gifts[i].review;
 
 
@@ -386,12 +405,40 @@ function giftUpdates() {
                 discountPrice.classList.add("price-perc")
                 discountPrice.innerHTML = `  (${gifts[i].discountPercentage}% off)`;
             
+            }
+
+            if (gifts[i].option === "FREE delivery") {
                 const dOption = document.createElement("p");
                 giftsList.appendChild(dOption);
                 dOption.innerHTML = gifts[i].option;
+            }else if (gifts.option = "") {
+                dOption.innerHTML = "";
             }
+            
+            const favContainer = document.createElement("span");
+            giftsList.appendChild(favContainer);
+            favContainer.classList.add("fav-icon");
 
+            const favImg = document.createElement("img");
+            favContainer.appendChild(favImg);
+            favImg.classList.add("fav-img");
+            let state=0;
+            favImg.src = gifts[i].fav;
 
+                    favImg.addEventListener("click", function(){
+                        if(state === 0){
+                        const favRedImg = document.createElement("img");
+                        favContainer.appendChild(favRedImg);
+                        favRedImg.classList.add("favRed-img");
+                        favImg.src = gifts[i].redFav;
+                        state=1;
+                        }
+                     else{
+                        favImg.src = gifts[i].fav;
+                        state=0;
+                        }
+            })
+            
         }
         playVideo();
     }

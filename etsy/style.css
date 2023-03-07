@@ -243,18 +243,23 @@ header button {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 0 12px;
+    margin: 10px;
 }
 
 .img-container1 img {
     width: 100%;
     height: 100%;
+    border-radius: 7px;
 }
 .img-container1 video {
     width: 100%;
     height: 100%;
 }
+
 .gifts-card ul li{
+    position: relative;
     list-style-type:  none;
+    padding: 10px
 }
 .gifts-card li h3{
     font-size: 13px;
@@ -269,21 +274,130 @@ header button {
     overflow: hidden;
 }
 
-.gifts-card span img {
+/* .gifts-card span img {
     width: 14px;
-}
+} */
+
 .gifts-card h5{
     text-decoration: line-through;
     color: #258635;
+    font-size: 13px;
+    font-family: 'graphic-Regular';
+    font-weight: 300;
 }
 .price-perc {
+    font-size: 13px;
     color: #258635;
+    font-family: 'graphic-Regular';
+    font-weight: 300;
 }
+
+
 .price-both {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+}
+/* march 7 */
+.gift-heading h2 {
+    font-size: 18px;
+    font-family: 'graphic-Regular';
+    text-align: center;
+    margin-top: 10px;
+}
+.gifts-card p {
+    font-size: 11px;
+    font-family: 'graphic-medium';
+    color: #222222;
+    background: #d4e9d7;
+    padding: 3px 6px;
+    width: 84px;
+    border-radius: 15px;
+}
+
+.gifts-card h4 {
+    font-size: 15px;
+    font-family: 'graphic-Regular';
+}
+.t-Review {
+    font-size: 13px;
+    color: #595959;
+    font-family: 'graphic-Regular';
+    font-weight: 300;
+    margin-left: 5px;
+}
+.gifts-card li:hover {
+   box-shadow:0 2px 18px rgba(34, 34, 34, 20%) ;
+   border-radius: 10px;
+   transition: .5s;
+
+}
+.img-container1 video{
+    width: 100%;
+    /* height: 196px; */
+    border-radius: 10px;
+}
+
+.fav-icon {
+    display: none;
+}
+.fav-img {
+    width: 25px;
+    border: 1px solid #dddd;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+.favRed-img {
+    width: 18px;
+}
+.fav-icon img {
+    position: absolute;
+    bottom: 81%;
+    right: 10%;
+}
+.gifts-card li:hover .fav-icon{
+    display: flex;
+    transition: 2s;
+}
+.rates img{
+    width: 12.5px;
+}
+.h-Rates img{
+    width: 12.5px;
+}
+.main-container {
+    background: #fdebd2;
+}
+
+.first-wave img{
+    color: #fdebd2;
+    background-color: #fdebd2;
+    width: 100%;
+    height: 18px;
+}
+.aboutEtsy {
+    padding: 36px 30px;
+}
+.aboutEtsy h2 {
+    font-size: 32px;
+    color: #222222;
+    margin: 0px 0px 6px;
+}
+.aboutEtsy a {
+    font: 14px;
+    color: #222222;
+}
+.community {
+    margin: 0px 0px 6px;
+    padding: 36px 0px 0px;
+}
+
+.whatIsEtsty::after {
+    content: "Here are some of the ways we’re making a positive impact, together.";
+    text-decoration: dotted;
+    
 }
 
 
@@ -326,6 +440,16 @@ header button {
     }
     .dealsOfTheDay {
         padding: 0px 30px;
+    }
+    /* march 7 */
+    .gifts-card ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .img-container1 video {
+        height: 140px;
+    }
+    .gift-heading h2 {
+        text-align: start;
     }
 
 }
@@ -398,6 +522,13 @@ header button {
         grid-template-columns: repeat(6, 1fr);
         gap: 22px;
     }
+    /* march 7 */
+    .gifts-card ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .gifts-card li:nth-child(6) {
+        display: none;
+    }
 
 }
 
@@ -429,5 +560,14 @@ header button {
         padding: 0px 36px;
 
     }
+    /* march7 */
+    .gifts-section {
+        padding: 0px 36px;
+    }
+    .img-container1 video {
+        height: 150px;
+    }
 
 }
+
+
