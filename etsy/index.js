@@ -445,3 +445,21 @@ function giftUpdates() {
 
 }
 giftUpdates();
+
+
+let ShopEl = document.getElementById("shope-el");
+
+let aboutEl = document.getElementById("about-el");
+let helpEl = document.getElementById("help-el");
+
+
+function mClick(){
+    console.log("hasd")
+    let x = document.getElementById("list-el");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }else {
+        x.style.display = "none"
+    }
+}
+mClick();

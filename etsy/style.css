@@ -46,6 +46,7 @@ header button {
     display: none;
 }
 
+
 .list-ul {
     display: none;
 }
@@ -378,28 +379,134 @@ header button {
     height: 18px;
 }
 .aboutEtsy {
-    padding: 36px 30px;
+    padding: 36px 30px 75px 30px;
+    text-align: center;
 }
 .aboutEtsy h2 {
     font-size: 32px;
     color: #222222;
     margin: 0px 0px 6px;
 }
+/* March 9 */
+.aboutEtsy h2 {
+    font-family: 'graphic-light';
+    font-weight: 300;
+    font-size: 32px;
+}
 .aboutEtsy a {
     font: 14px;
     color: #222222;
+}
+.theEtsy h3{
+    font-size: 24px;
+    color: #222222;
+    margin: 18px 0px 18px;
+    font-family: 'graphic-Medium';
+    font-weight: 200;
+    line-height: 1.4;
 }
 .community {
     margin: 0px 0px 6px;
     padding: 36px 0px 0px;
 }
-
+.theEtsy {
+   margin: 0px 0px 6px;
+   padding: 36px 0px 0px; 
+}
+.theEtsy p {
+    font-family: 'graphic-Regular';
+    font-size: 16px;
+    line-height: 2;
+}
 .whatIsEtsty::after {
     content: "Here are some of the ways we’re making a positive impact, together.";
-    text-decoration: dotted;
-    
+    border-bottom: 2px dotted #222222;
 }
 
+.help-center h4 {
+    font-size: 18px;
+    color: #222222;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    font-family: 'graphic-Regular';
+}
+.help-center a {
+    font-size: 16px;
+    font-family: 'graphic-Medium';
+    margin: 12px 0px 0px;
+    padding: 12px 18px;
+    border: 2px solid #222222;
+    border-radius: 24px;
+    text-decoration: none;
+}
+
+/* footer 9*/
+.footer {
+    margin-top: -5px;
+    background: #d7e6f5;
+    padding: 18px 24px 0px;
+}
+.img-containeR img {
+    margin-top: -33px;
+    height: 50px;
+    color: #d7e6f5;
+
+    /* background: #d7e6f5; */
+}
+.footer p {
+    font-size: 16px;
+    color: #222222;
+    margin: 0px 0px 12px;
+    font-family: 'graphic-Medium';
+    text-align: center;
+}
+.mail {
+  padding: 0px 0px 36px;
+}
+.mailBoth {
+    border: 1px solid #fff;
+    border-radius: 96px;
+    box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+    background: #fff;
+    padding: 0px;
+}
+.mailBoth input {
+    border: none;
+    width: 150px;
+}
+.mailBoth input::placeholder {
+    font-size: 16px;
+    padding: 9px 12px 9px 18px;
+}
+.mailBoth button {
+    border: none;
+    background: transparent;
+    padding: 12px 21px 12px 15px;
+    font-size: 16px;
+    color: #222222;
+    font-family: 'graphic-Medium';
+}
+.footerSecond {
+    margin-top: -19px;
+}
+.img-footer img {
+    transform: rotate(180deg);
+    height: 20px;
+}
+.globalHands {
+    margin-top: -5px;
+    background: #4d6bc6;
+    text-align: center;
+
+}
+.global-text {
+    font-size: 16px;
+    background: #4d6bc6;
+    text-align: center;
+    color: #fff;
+    padding: 0px 12px;
+    border-bottom: 1px solid #fff;
+}
 
 @media screen and (min-width: 480px) {
     .dealsUl {
@@ -528,6 +635,37 @@ header button {
     }
     .gifts-card li:nth-child(6) {
         display: none;
+    }
+    /* march 8 */
+    .aboutEtsy {
+        /* display: flex; */
+        gap: 50px;
+        text-align: left;
+    }
+    .first-community {
+        width: 100%;
+    }
+    .whatIsEtsty {
+        width: 100%;
+    }
+    .support {
+        width: 92%;
+    }
+    .privacy {
+        width: 91%;
+    }
+    .help-center{
+        text-align: center;
+    }
+    .aboutEtsy h2{
+        text-align: center;
+    }
+    .aboutEtsy a{
+        text-align: center;
+    }
+    nav {
+        background: #2f46cc;
+        padding: 12px 24px;
     }
 
 }
