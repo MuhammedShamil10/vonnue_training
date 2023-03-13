@@ -99,9 +99,13 @@ function imgList() {
         imgLi.classList.add("img-list");
         imgRowUl.appendChild(imgLi);
 
+        let imgC = document.createElement("div");
+        imgC.classList.add("img-containerBox");
+        imgLi.appendChild(imgC);
+
         const imgDiscover = document.createElement("img");
         imgDiscover.classList.add("img-small");
-        imgLi.appendChild(imgDiscover);
+        imgC.appendChild(imgDiscover);
         imgDiscover.src = `${imgCount[i].imgPath}`
 
         const discoverHeading = document.createElement("span");
@@ -448,18 +452,40 @@ giftUpdates();
 
 
 let ShopEl = document.getElementById("shope-el");
-
 let aboutEl = document.getElementById("about-el");
 let helpEl = document.getElementById("help-el");
 
 
-function mClick(){
-    console.log("hasd")
-    let x = document.getElementById("list-el");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    }else {
-        x.style.display = "none"
-    }
-}
-mClick();
+let toggleBtn=document.querySelectorAll(".fa-btn");
+let toggles=document.querySelectorAll('.fa-show');  
+let faToggle = document.querySelectorAll(".fa-angle-down");
+
+    // let x = document.querySelectorAll("#list-el");
+    toggleBtn.forEach((item,idx)=>{
+        item.addEventListener("click",()=> {
+            toggles[idx].classList.toggle("active");
+            faToggle[idx].classList.toggle("active");
+        })
+    })
+
+
+
+    // toggleBtn.forEach((item,idx)=>{
+    //     item.addEventListener("click",()=> {
+    //         toggles[idx].classList.toggle("active");
+    //         bToggles[idx].classList.toggle("active");
+    //         cToggles[idx].classList.toggle("active");
+    //         dToggles[idx].classList.toggle("active");
+    //     })
+    // })
+    
+
+    // if (x.style.display === "none") {
+    //     x.style.display = "block";
+    // }else {
+    //     x.style.display = "none";
+    // }
+    // $(".fa-solid").click(function(){
+    //     $(this).toggleClass("down");
+    // });
+
