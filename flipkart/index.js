@@ -54,11 +54,17 @@ function shopList() {
          let scrollIcon = document.createElement("span");
          scrollIcon.classList.add("downImg")
          shoppingListEl.appendChild(scrollIcon);
-         scrollIcon.innerHTML = shopingCategory[i].img;
+         scrollIcon.innerHTML   = shopingCategory[i].img;
     }
 }
 shopList();
 
+function fibu(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibu(n-1) + fibu(n+1);
+}
 
 
 // let num = prompt("enter a number");
