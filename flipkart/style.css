@@ -121,8 +121,29 @@ body{
     opacity: 0.5;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 >>>>>>> afeced3 (feat:nav)
 =======
 >>>>>>> 77b2e42 (twoNav)
+=======
+.filterHeading {
+    border-bottom: 1px solid rgb(192, 180, 180);
+    padding: 10px;
+}
+.filText {
+    font-size: 18px;
+    font-family: 'roboto-medium'
+}
+.blueText {
+    font-size: 12px;
+    font-family: 'roboto-medium';
+    color: #2874f0;
+}
+.filterCategories {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(191, 190, 190);
+}
+>>>>>>> ae509aa (same)
