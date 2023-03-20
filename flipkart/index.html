@@ -65,16 +65,11 @@
             <!-- <span class="blueText">CLEAR ALL</span> -->
         </div>
         <div class="filterCategories">
+            <section>
             <span>CATEGORIES</span>
             <span><i class="fa-solid fa-angle-left"></i>Mobile & Accessories</span>
-        </div>
-    </div>
-    <div class="mobile-container">
-        <section>
-            <div><span>CATEGORIES</span></div>
-            <div><span>Mobile & Accessories</span></div>
-            <div><span>Mobile</span></div>
         </section>
+        </div>
     </div>
     <div class="priceRange">
         <div class="price">
@@ -85,19 +80,37 @@
 
         </div>
         <div class="min-max">
-            <span>Min</span>
+            <select name="" id="min">
+                <option value="min">Min</option>
+                <option value="min">₹10000</option>
+                <option value="min">₹20000</option>
+                <option value="min">₹30000</option>
+            </select>
             <span>to</span>
-            <span>12000+</span>
+            <select name="" id="max">
+                <option value="max">Max</option>
+                <option value="max">₹40000</option>
+                <option value="max">₹50000</option>
+                <option value="max">₹60000+</option>
+            </select>
         </div>
     </div>
-    <div class="brandName">
-        <!-- i -->
-        <!-- radio-btn -->
-        <div class="radio-range">
+    <div class="brandContainer">
+        <div class="brandNames">
             
+            <h4>BRAND</h4>
+            <i class="fa-solid fa-angle-up"></i>
         </div>
-        <span>Apple</span>
-        
+        <div class="brandOption">
+            
+    </div>
+        <span id="apple-el">Apple</span>
+        <span id="samsung-el">Samsung</span>
+        <span id="poco-el">Poco</span>
+        <span id="oppp">Oppo</span>
+    </div>
+    <div id="mobileContainer-el">
+
     </div>
 </div>
     <script src="/index.js"></script>

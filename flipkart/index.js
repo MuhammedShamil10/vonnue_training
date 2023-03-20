@@ -59,12 +59,12 @@ function shopList() {
 }
 shopList();
 
-function fibu(n) {
-    if (n <= 1) {
-        return n;
-    }
-    return fibu(n-1) + fibu(n+1);
-}
+// function fibu(n) {
+//     if (n <= 1) {
+//         return n;
+//     }
+//     return fibu(n-1) + fibu(n+1);
+// }
 
 
 // let num = prompt("enter a number");
@@ -144,5 +144,16 @@ function fibu(n) {
 // }
 // theFirst();
 // theSecond();
+
+// getName();
+// console.log(x);
+// console.log(getName);
+
+// var x = 7;
+
+// function getName() {
+//     console.log("hey");
+// }
+
 
 
