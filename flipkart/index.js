@@ -69,7 +69,16 @@ let mobiles = [
       price: "",
       actualPrice: "79,900",
       percentage: "9%",
-      off: "off"
+      off: "off",
+      feature:[
+        {
+        storage: "128 GB ROM",
+        dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
+        camera: "12MP + 12MP | 12MP Front Camera",
+        processor: "A15 Bionic Chip, 6 Core Processor",
+        warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
+      }
+    ]
     },
     {
         img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/l/8/r/-original-imaghxemnnnkd8bg.jpeg?q=70`,
@@ -80,7 +89,17 @@ let mobiles = [
         price: "",
         actualPrice: "1,22,999",
         percentage: "5%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "128 GB ROM",
+          dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
+          camera: "48MP + 12MP | 12MP Front Camera",
+          battery: "",
+          processor: "A16 Bionic Chip, 6 Core Processor",
+          warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
@@ -91,7 +110,17 @@ let mobiles = [
         price: "",
         actualPrice: "1,24,999",
         percentage: "16%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "12 GB RAM|256 GB ROM",
+          dimention: "17.27cm (6.8 inch) Quad HD+ Display",
+          camera: "200MP + 12MP + 12MP + 10MP | 12MP Front Camera",
+          battery: "5000 mAh Lithium Ion Battery",
+          processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
+          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
@@ -102,7 +131,17 @@ let mobiles = [
         price: "",
         actualPrice: "94,999",
         percentage: "9%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "8 GB RAM | 256 GB ROM",
+          dimention: "15.49cm (6.1 inch) Full  HD+ Display",
+          camera: "50MP + 10MP + 12MP | 12MP Front Camera",
+          battery: "3900 mAh Lithium Ion Battery",
+          processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
+          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70`,
@@ -113,7 +152,17 @@ let mobiles = [
         price: "",
         actualPrice: "69,900",
         percentage: "9%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "128 GB ROM",
+          dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
+          camera: "12MP + 12MP | 12MP Front Camera",
+          battery: "",
+          processor: "A15 Bionic Chip, 6 Core Processor",
+          warranty: "Brand Warranty for 1 Year"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/1/k/g/-original-imagc7ukmgugpdfy.jpeg?q=70`,
@@ -124,7 +173,17 @@ let mobiles = [
         price: "",
         actualPrice: "13,999",
         percentage: "21%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+          dimention: "16.76cm (6.6 inch) Full HD+ Display",
+          camera: "50MP + 2MP 0.3MP | 8MP Front Camera",
+          battery: "5000 mAh Lithium Polmer Battery",
+          processor: "Unisoc Tiger T616 Processor",
+          warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
@@ -135,7 +194,17 @@ let mobiles = [
         price: "",
         actualPrice: "13,999",
         percentage: "21%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+          dimention: "17.04cm (6.71 inch) HD+ Display",
+          camera: "50PM Rear Camera | 5MP Front Camera",
+          battery: "5000 mAh Battery",
+          processor: "Mediatek Helio G85 Processor",
+          warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70`,
@@ -146,7 +215,17 @@ let mobiles = [
         price: "",
         actualPrice: "18,999",
         percentage: "26%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
+          dimention: "16.71cm (6.58 inch) Full HD+ Display",
+          camera: "50MP + 2MP | 12MP Front Camera",
+          battery: "5000 mAh Lithium Ion Battery",
+          processor: "Mediatek Dimensity 700 Processor",
+          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+        }
+      ]
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/kzhbfrk0/mobile/0/r/j/-original-imagbgxffuvx56mm.jpeg?q=70`,
@@ -157,18 +236,38 @@ let mobiles = [
         price: "",
         actualPrice: "47,990",
         percentage: "27%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "12 GB RAM | 256 GB ROM",
+          dimention: "16.51 cm (6.5 inch) Full HD+ AMOLED Display",
+          camera: "50MP + 8MP + 2MP | 32MP Front Camera",
+          battery: "4500 mAh Lithium-ion Polymer Battery",
+          processor: "MediaTek Dimensity 1200-Max Processor",
+          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+        }
+      ]
+    
       },
       {
         img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/d/u/7/-original-imagmgy5ywvzdv6g.jpeg?q=70`,
         favIcon: "Assets/img/flipFav.svg",
-        phoneName: "APPLE iPhone 14(Starlight, 128 GB",
+        phoneName: "ASUS ROG 5s(Starlight, 128 GB",
         rating: `4.3 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
         review: "3,845 Rating & 400 Reviews",
         price: "",
         actualPrice: "38,999",
         percentage: "23%",
-        off: "off"
+        off: "off",
+        feature:[
+          {
+          storage: "128 GB ROM",
+          dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
+          camera: "12MP + 12MP | 12MP Front Camera",
+          processor: "A15 Bionic Chip, 6 Core Processor",
+          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+        }
+      ]
       }
 ]
 
@@ -182,6 +281,13 @@ function brandCategory() {
         let brandName = document.createElement("div");
         brandName.classList.add("product-container");
         mobileContainerEl.appendChild(brandName);
+
+        let mobileImg = document.createElement("span");
+        brandName.appendChild(mobileImg);
+        let phoneImg = document.createElement("img");
+        mobileImg.appendChild(phoneImg);
+        phoneImg.src = mobiles[i].img;
+        
         let productImg = document.createElement("span");
         productImg.classList.add("mobileImg");
         brandName.appendChild(productImg);
@@ -194,17 +300,60 @@ function brandCategory() {
         brandName.appendChild(productName);
         productName.innerHTML = mobiles[i].phoneName;
 
+        let productRating = document.createElement("span");
+        productRating.classList.add("productRating");
+        brandName.appendChild(productRating);
+        productRating.innerHTML = mobiles[i].rating;
+
+        let productReview = document.createElement("span");
+        productReview.classList.add("productReview");
+        brandName.appendChild(productReview);
+        productReview.innerHTML = mobiles[i].review;
+
+        let productPrice = document.createElement("span");
+        productPrice.classList.add("productPrice");
+        brandName.appendChild(productPrice);
+        productPrice.innerHTML = mobiles[i].price;
+
+        let productAprice = document.createElement("span");
+        productAprice.classList.add("productAPrice");
+        brandName.appendChild(productAprice);
+        productAprice.innerHTML = mobiles[i].actualPrice;
+
+        let productPercentage = document.createElement("span");
+        productPercentage.classList.add("productPercentage");
+        brandName.appendChild(productPercentage);
+        productPercentage.innerHTML = mobiles[i].percentage + " ";
+
+        let productOff = document.createElement("span");
+        productPercentage.classList.add("productOff");
+        brandName.appendChild(productOff);
+        productOff.innerHTML = mobiles[i].off;
+
+  
+
         
     }
 }
 brandCategory();
 
+// function a() {
+//   console.log(b);
+// }
+// var b = 10;
+// a();
+// console.log(a);
 
-
+// let a = 109; 
+// var b = 100;
 // namaste javascript....:-
-
-
-
+// function ab(){
+//   return function oi() {
+//     console.log("Sample..."); 
+//   }
+// }
+// let l = ab();
+// console.log(l);
 // let num = prompt("enter a number");
 
 // sum = 0;
