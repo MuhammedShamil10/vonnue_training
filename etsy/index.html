@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div>
+        <div class="nav-search-bar">
+            <header>
+                <div class="etsyLogo-img">
+                    <a href="#">
+                        <img src="/Assets/img/Etsy.svg" alt="">
+                    </a>
+                </div>
+                <div class="searchBar-container-second-head">
+                    <div class="searchBar">
+                        <input type="text" placeholder="Search for anything">
+                        <button>
+                            <span>
+                                <img src="/Assets/img/search-icon.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="account-container">
+                    <nav class="headerNav">
+                        <ul class="profile-items">
+                            <li>
+                                <button>Sign in</button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img class="fav" src="/Assets/img/fav-icone.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img class="cart" src="/Assets/img/cart-icon.svg" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="searchBar-container">
+                <button>
+                    <span>
+                        <img src="/Assets/img/hamburger.svg" alt="">
+                    </span>
+                </button>
+                <div class="searchBar">
+                    <input type="text" placeholder="Search for anything">
+                    <button>
+                        <span>
+                            <img src="/Assets/img/search-icon.svg" alt="">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="" id="list-el">
+
+            </div>
+        </div>
+        <main>
+            <div class="discover-container">
+                <div class="head-container">
+                    <h2>Discover one-of-a-kind items from independent creators</h2>
+                </div>
+                <div class="img-container" id="img-row">
+
+                </div>
+            </div>
+        </main>
+
+        <div class="deals-container">
+            <div class="dealsOfTheDay" id="deals-el">
+                <div class="deals-text">
+                    <h2>Deals of the day</h2> <span>Shop all deals <i
+                            class="fa-sharp fa-solid fa-arrow-right"></i></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="second-img-container">
+            <div class="gifts-section">
+                <div class="gift-heading">
+                    <h2>Popular gifts right now</h2>
+                </div>
+                <div class="gifts-card" id="gift-el">
+
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="main-container">
+                <!-- <span class="waves-img"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 48" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                <path d="M1400 0l-55 12-23 10-23 4-6-1-9 1-5 2-24 8h-11l-18-5-11-1-10-1h-7l-8 3-8 1-14-4v1l-3 1-9-5-3-1-17 2-10-1-9-1-8 1-7 1-2 1h-13l-2-1-13-2h-20l-11 2-14 3h-18l-10 1-3-1-2-1-4-1h-4l-16 1h-2l-7-1h-6l-8 1-6-2-5-1-2 1-20-1-10 2h-6l-11-1-9-1h-4l-3 1-19 1h-19l-3-1-11 1h-2l-7 3h-23l-3 1h-19l-16-1-17 1h-8l-2-1-20-2-4 1-4-1h-2l-12 1-2 1h-13l-9 1h-4l-6-1-10 1-9-1h-15l-9 2-12-2-12-2-3 2-5 2-11-3-6 1h-6l-28 1-5 2h-33l-3 1-4 2h-17l-5 1-4-1-7-1h-5l-4 1-13 3-2-2-2-1h-15l-22-1h-2l-11 1h-5l-2-1h-19l-9 1-6-1h-2l-9 2-15 2h-4l-12 1h-25l-12 1-7 1h-4l-4 1h-4l-4 1h-20l-3-1h-7l-1-1v-4l-1 1h-2l-9 1-2 2-6 2-7 1-5 2h-2l-3-2-8-1h-4l-11 3h-1l-3-2-11-3-20-6-9-3h-3l-9 2h-5l-11-4-13-3-11-15-21-4L0 0h1400z"></path>
+            </svg></span> -->
+                <div class="first-wave">
+                    <!-- <img src="/Assets/img/wave.svg" alt="" width="100%"> -->
+                    <img src="/Assets/img/top-footer.svg" alt="" width="100%">
+                </div>
+                <div class="aboutEtsy">
+                    <div class="etsyStory">
+
+                        <h2>What is Etsy?</h2>
+                        <a href="#">Read our wonderfully weird story</a>
+
+                    </div>
+                    <div class="theEtsy">
+                        <div class="first-community">
+                            <h3>A community doing good</h3>
+                            <p class="whatIsEtsty">
+
+                                Etsy is a global online marketplace, where people come together to make, sell,
+                                buy and collect unique items. We’re also a community pushing for positive change for
+                                small businesses,
+                                people, and the planet.
+
+                            </p>
+                        </div>
+                        <div class="Support">
+                            <h3>Support independent creators</h3>
+                            <p>
+                                There’s no Etsy warehouse – just millions of people selling the things they love.
+                                We make the whole process easy, helping you connect directly with makers to find
+                                something extraordinary.
+                            </p>
+                        </div>
+                        <div class="privacy">
+                            <h3>Peace of mind</h3>
+                            <p>
+                                Your privacy is the highest priority of our dedicated team. And if you ever need
+                                assistance,
+                                we are always ready to step in for support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="help-center">
+                        <h4> Have a question? Well, we’ve got some answers. </h4>
+                        <a href="#">Go to Help Center</a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-containeR">
+                <img src="/Assets/img/svgexport-22.svg" alt="" width="100%">
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>
+                    Yes! Send me exclusive offers, unique gift ideas,
+                    and personalised tips for shopping and selling on Etsy.
+                </p>
+                <div class="mail">
+                    <div class="mailBoth">
+                        <input type="text" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerSecond">
+                <div class="img-footer">
+                    <span>
+                        <img src="/Assets/img/svgexport-23.svg" alt="" width="100%">
+                    </span>
+                </div>
+                <div class="globText">
+                    <div class="globalHands">
+                        <img src="/Assets/img/hand.svg" alt="" width="36px">
+                    </div>
+                    <div class="global-text">
+                        <span>
+                            Etsy is powered by 100% renewable electricity.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <nav class="footerNav">
+                <div class="footerAndNav">
+                    <div class="nav-section" id="shop-el">
+                        <div class="fa-btn">
+                            <h1 >
+                                Shop
+                             
+                            </h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="fa-show">
+                            <li >Gift cards</li>
+                            <li >Sitemap</li>
+                            <li >Etsy blog</li>
+                            <li >Etsy United Kingdom</li>
+                            <li >Etsy Germany</li>
+                            <li >Etsy Canada</li>
+                        </ul>
+                    </div>
+                    <div class="nav-section" >
+                        <div class="fa-btn">
+                            <h1>Sell</h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                            
+                                <ul class="fa-show">
+                                    <li>Sell on Etsy</li>
+                                    <li>Teams</li>
+                                    <li>Forums</li>
+                                    <li>Affiliates</li>
+                                </ul>
+                    </div>
+               
+                    <div class="nav-section" id="about-el">
+                        <div class="fa-btn">
+                            <h1>About</h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                      
+                          <ul class="fa-show">
+                            <li>Etsy, Inc.</li>
+                            <li>Policies</li>
+                            <li>Investores</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Impact</li>
+                            <li>Legal imprint</li>
+                        </ul>
+                    </div>
+                    <div class="nav-section" id="help-el">
+                        <div class="fa-btn">
+                            <h1>
+                                Help
+                            </h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                     
+                        <ul class="fa-show">
+                            <li>Help Centre</li>
+                            <li>Privacy Settings</li>
+                        </ul>
+                    </div>
+                    <div class="etsyApp-container">
+                        <div class="downApp">
+                            <a href="#">
+                                <span>
+                                    <img src="/Assets/img/E.svg" alt="">
+                                </span>
+                                <span>
+                                    Download the Etsy App
+                                </span>
+                            </a>
+                        </div>
+                        <ul class="social-media">
+                            <li>
+                                <img src="/Assets/img/insta.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/Assets/img/fb.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/Assets/img/pint.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/Assets/img/twt.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="/Assets/img/utube.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+
+
+            <!-- 900px -->
+            <nav class="footerNav-one">
+                <div class="navAndApp">
+                    <div class="nav-section" id="shop-el">
+                        <div class="fa-btn">
+                            <h1 >
+                                Shop
+                             
+                            </h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <ul class="fa-show">
+                            <li >Gift cards</li>
+                            <li >Sitemap</li>
+                            <li >Etsy blog</li>
+                            <li >Etsy United Kingdom</li>
+                            <li >Etsy Germany</li>
+                            <li >Etsy Canada</li>
+                        </ul>
+                    </div>
+                    <div class="nav-section" >
+                        <div class="fa-btn">
+                            <h1>Sell</h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                            
+                                <ul class="fa-show">
+                                    <li>Sell on Etsy</li>
+                                    <li>Teams</li>
+                                    <li>Forums</li>
+                                    <li>Affiliates</li>
+                                </ul>
+                    </div>
+               
+                    <div class="nav-section" id="about-el">
+                        <div class="fa-btn">
+                            <h1>About</h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                      
+                          <ul class="fa-show">
+                            <li>Etsy, Inc.</li>
+                            <li>Policies</li>
+                            <li>Investores</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Impact</li>
+                            <li>Legal imprint</li>
+                        </ul>
+                    </div>
+                    <div class="nav-section" id="help-el">
+                        <div class="fa-btn">
+                            <h1>
+                                Help
+                            </h1>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                     
+                        <ul class="fa-show">
+                            <li>Help Centre</li>
+                            <li>Privacy Settings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="etsyApp-container">
+                    <div class="downApp">
+                        <a href="#">
+                            <span>
+                                <img src="/Assets/img/E.svg" alt="">
+                            </span>
+                            <span>
+                                Download the Etsy App
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="social-media">
+                        <li>
+                            <img src="/Assets/img/insta.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="/Assets/img/fb.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="/Assets/img/pint.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="/Assets/img/twt.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="/Assets/img/utube.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </nav>  
+            <!--  -->
+            <div class="etsy-lang">
+                <div class="leveling">
+                    <div class="language">
+                        <span class="etsyWorld">
+                            <img src="/Assets/img/etsy-world.svg" alt="" width="18px">
+                        </span>
+                        <span>
+                            India      
+                        </span>
+                        <span>
+                            | 
+                        </span>
+                        <span>
+                            English  (UK)
+                        </span>
+                        <span>
+                            | 
+                        </span>
+                        <span>
+                            ₹ (INR)
+                        </span>
+                    </div>
+                    <div class="copyrights">
+                        <span> 
+                        © 2023 Etsy, Inc.                        
+                        </span>
+                        <ul class="lists">
+                            <li>
+                                <a href="#">Terms of use</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Interest-based ads</a>
+                            </li>
+                            <li>
+                                <a href="#">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
+

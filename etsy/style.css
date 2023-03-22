@@ -1,0 +1,1117 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'graphic-Medium';
+    src: url(/Assets/font/Graphik-Medium-Web.woff2);
+}
+
+@font-face {
+    font-family: 'graphic-Regular';
+    src: url(/Assets/font/Graphik-Regular-Web.woff2);
+}
+
+@font-face {
+    font-family: 'graphic-light';
+    src: url(/Assets/font/Guardian-EgypTT-Light.woff2);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    border: none;
+    background: transparent;
+}
+
+.searchBar-container-second-head {
+    display: none;
+}
+
+.searchBar {
+    display: none;
+}
+
+
+.list-ul {
+    display: none;
+}
+
+.etsyLogo-img img {
+    margin-left: -3px
+}
+
+.searchBar-container button {
+    border: none;
+    background: transparent;
+    padding-right: 12px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(34, 34, 34, .05);
+    border: 2px solid #222;
+    border-radius: 96px;
+    width: 100%;
+}
+
+.searchBar input {
+    background: rgba(227, 218, 218, 0.05);
+    border: none;
+    width: 57%;
+    padding: 16px 8px 13px 0px;
+}
+
+.searchBar button img {
+    transform: translateX(8px);
+}
+
+.profile-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    height: 48px;
+}
+
+.profile-items button {
+    font-family: 'graphic-medium';
+}
+
+.account-container {
+    display: flex;
+}
+
+.searchBar-container {
+    display: flex;
+}
+
+.nav-search-bar {
+    padding: 0px 12px;
+    height: 109px;
+}
+
+.searchBar input::placeholder {
+    font-size: 15px;
+    padding: 10px 0px 100px 0px;
+    font-family: 'graphic-Regular';
+    transform: translate(0px, -2px);
+}
+
+.estyLogo-img a {
+    margin-left: -3px;
+}
+
+.profile-items li a {
+    padding: 12px;
+}
+
+.profile-items button {
+    padding: 9px 15px;
+}
+
+.estyLogo-img img {
+    margin-left: -3px;
+}
+
+.discover-container {
+    margin-top: -1px;
+    margin-bottom: 129px;
+}
+
+.head-container h2 {
+    font-size: 21px;
+    color: #222222;
+    background: #d7e6f5;
+    padding: 24px 9px 0px;
+    font-family: 'graphic-light';
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+    height: 179px;
+}
+/* img - container */
+.help-center a:hover {
+    padding: 13px 19px;
+    transition: 0.2s;
+}
+.profile-items li img:hover {
+    background: rgba(237, 233, 233, 0.867);
+    border-radius: 27px;
+    transition: 0.3s;
+}
+.profile-items li:hover {
+    background: rgba(94, 88, 88, 0.867);
+    border-radius: 27px;
+    transition: 0.3s;
+}
+.cart {
+    padding: 10px;
+}
+.fav {
+    padding: 10px;
+}
+.profile-items button {
+    padding: 10px;
+}
+.img-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #d7e6f5;
+    padding: 0px 6px 6px;
+    height: 219px;
+}
+
+.img-ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -6px;
+}
+
+.img-container {
+    margin-top: -100px;
+}
+
+.img-ul li span {
+    font-size: 13px;
+    font-family: 'graphic-Medium';
+    width: 60%;
+    margin-top: 9px;
+}
+
+.img-small {
+    width: 85px;
+    border-radius: 50%;
+}
+
+/* deals */
+.dealsOfTheDay {
+    margin: 0px 0px 30px;
+    padding: 0px 12px;
+}
+
+.deals-text {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.deals-text h2 {
+    font-size: 24px;
+    font-family: 'graphic-Regular';
+}
+
+.deals-text span {
+    font-size: 13px;
+    font-family: 'graphic-Medium';
+}
+
+.deals-text i {
+    margin-left: 6px;
+}
+.dealsUl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    gap: 10px;
+}
+.dealsUl li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dddd;
+    border-radius: 12px;
+}
+
+.dealsUl span:nth-child(2) {
+    font-size: 13px;
+    color: #242323;
+    padding: 12px 12px 0px 12px;
+    font-family: 'Graphic-Regular';
+}
+.dealsUl span:nth-child(3) {
+    font-size: 16px;
+    color: #242323;
+    margin-bottom: 5px;
+    padding: 5px 12px 12px 12px;
+    font-family: 'Graphic-Medium';
+    width: 99%;
+}
+.dealsUl img {
+    border-top-left-radius:  12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+   
+}
+/* video */
+
+.video-el {
+    width: 337px;
+    height: 261px;
+    object-fit: cover;
+}
+
+.gifts-card ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 12px;
+    margin: 10px;
+}
+
+.img-container1 img {
+    width: 100%;
+    height: 100%;
+    min-height: 83px;
+    border-radius: 7px;
+}
+.img-container1 video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* height: 100%; */
+}
+
+.gifts-card ul li{
+    position: relative;
+    list-style-type:  none;
+    padding: 10px
+}
+.gifts-card li h3{
+    font-size: 13px;
+    font-family: 'graphic-Regular';
+    -webkit-line-clamp: 1;
+    letter-spacing: .1px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-bottom: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* .gifts-card span img {
+    width: 14px;
+} */
+
+.gifts-card h5{
+    text-decoration: line-through;
+    color: #258635;
+    font-size: 13px;
+    font-family: 'graphic-Regular';
+    font-weight: 300;
+}
+.price-perc {
+    font-size: 13px;
+    color: #258635;
+    font-family: 'graphic-Regular';
+    font-weight: 300;
+}
+
+
+.price-both {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+/* march 7 */
+.gift-heading h2 {
+    font-size: 18px;
+    font-family: 'graphic-Regular';
+    text-align: center;
+    margin-top: 10px;
+}
+.gifts-card p {
+    font-size: 11px;
+    font-family: 'graphic-medium';
+    color: #222222;
+    background: #d4e9d7;
+    padding: 3px 6px;
+    width: 84px;
+    border-radius: 15px;
+}
+
+.gifts-card h4 {
+    font-size: 15px;
+    font-family: 'graphic-Regular';
+}
+.t-Review {
+    font-size: 13px;
+    color: #595959;
+    font-family: 'graphic-Regular';
+    font-weight: 300;
+    margin-left: 5px;
+}
+.gifts-card li:hover {
+   box-shadow:0 2px 18px rgba(34, 34, 34, 20%) ;
+   border-radius: 10px;
+   transition: .5s;
+
+}
+
+
+.fav-icon {
+    display: none;
+}
+.fav-img {
+    width: 25px;
+    border: 1px solid #dddd;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+.favRed-img {
+    width: 18px;
+}
+.fav-icon img {
+    position: absolute;
+    bottom: 81%;
+    right: 10%;
+}
+.gifts-card li:hover .fav-icon{
+    display: flex;
+    transition: 2s;
+}
+.rates img{
+    width: 12.5px;
+}
+.h-Rates img{
+    width: 12.5px;
+}
+.main-container {
+    background: #fdebd2;
+}
+
+.first-wave img{
+    color: #fdebd2;
+    background-color: #fdebd2;
+    width: 100%;
+    height: 18px;
+}
+.aboutEtsy {
+    padding: 36px 30px 75px 30px;
+    text-align: center;
+}
+.aboutEtsy h2 {
+    font-size: 32px;
+    color: #222222;
+    margin: 0px 0px 6px;
+}
+/* March 9 */
+.aboutEtsy h2 {
+    font-family: 'graphic-light';
+    font-weight: 300;
+    font-size: 32px;
+}
+.aboutEtsy a {
+    font: 14px;
+    color: #222222;
+}
+.theEtsy h3{
+    font-size: 24px;
+    color: #222222;
+    margin: 18px 0px 18px;
+    font-family: 'graphic-Medium';
+    font-weight: 200;
+    line-height: 1.4;
+}
+.community {
+    margin: 0px 0px 6px;
+    padding: 36px 0px 0px;
+}
+/* 13 */
+.theEtsy {
+   margin: 0px 0px 6px;
+   padding: 36px 0px 0px; 
+}
+.theEtsy p {
+    font-family: 'graphic-Regular';
+    font-size: 16px;
+    line-height: 2;
+}
+.whatIsEtsty::after {
+    content: "Here are some of the ways we’re making a positive impact, together.";
+    border-bottom: 2px dotted #222222;
+}
+
+.help-center h4 {
+    font-size: 18px;
+    color: #222222;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    font-family: 'graphic-Regular';
+}
+.help-center a {
+    font-size: 16px;
+    font-family: 'graphic-Medium';
+    margin: 12px 0px 0px;
+    padding: 12px 18px;
+    border: 2px solid #222222;
+    border-radius: 24px;
+    text-decoration: none;
+}
+
+/* footer 9*/
+.footer {
+    margin-top: -5px;
+    background: #d7e6f5;
+    padding: 21px 24px 24px;
+}
+.img-containeR img {
+    margin-top: -33px;
+    height: 50px;
+    color: #d7e6f5;
+
+    /* background: #d7e6f5; */
+}
+.footer p {
+    font-size: 16px;
+    color: #222222;
+    margin: 0px 0px 12px;
+    font-family: 'graphic-Medium';
+    text-align: center;
+}
+/* march 13 */
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  padding: 0px 0px 36px;
+}
+
+.mailBoth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 96px;
+    box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+    background: #fff;
+    padding: 0px;
+    max-width: 480px;
+    width: 100%;
+}
+/* march 13 */
+.mailBoth input {
+    border: none;
+    width: 150px;
+}
+.mailBoth input::placeholder {
+    font-size: 16px;
+    padding: 9px 12px 9px 18px;
+}
+.mailBoth button {
+    border: none;
+    background: transparent;
+    padding: 12px 21px 12px 15px;
+    font-size: 16px;
+    color: #222222;
+    font-family: 'graphic-Medium';
+}
+/* march 13 */
+.footerSecond {
+    margin-top: -19px;
+}
+.img-footer img {
+    transform: rotate(180deg);
+    height: 20px;
+}
+.globalHands {
+    margin-top: -5px;
+    background: #4d6bc6;
+    text-align: center;
+
+}
+.global-text {
+    font-size: 18px;
+    background: #4d6bc6;
+    text-align: center;
+    color: #fff;
+    padding: 5px 12px 15px 12px;
+}
+.global-text span {
+    border-bottom: 2px dashed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'graphic-Regular';
+}
+.fa-show{
+    display: none;
+}
+.fa-show.active{
+    display: block;
+
+}
+.footerNav {
+    background: #2f466c;
+    padding: 12px 24px;
+    margin-top: -1px;
+}
+
+.nav-section h1{
+    font-size: 16px;
+    font-family: 'graphic-Regular';
+    color: #fff;
+
+}
+.fa-show li {
+    color: #fff;
+    font-family: 'Graphic-Regular';
+    list-style-type: none;
+    font-size: 14px;
+    padding: 10px 5px;
+}
+/* march 10 */
+.nav-section {
+    padding: 27px 0px;
+}
+.fa-btn {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.fa-angle-down.active {
+    transform: rotate(180deg);
+}
+.etsyApp-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.etsyApp-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 5px;
+    width: 210px;
+}
+.etsyApp-container a span {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'graphic-Medium';
+    display: flex;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.downApp {
+    display: flex;
+    justify-content: center;
+}
+.downApp a {
+    text-decoration: none;
+}
+.etsy-lang {
+    padding: 18px 24px;
+    background: #232347;
+}
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.language span {
+    font-family: 'graphic-Medium';
+    font-size: 13px;
+    color: #fff;
+}
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 24px; 
+}
+.copyrights span {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Graphic-light';
+    margin-bottom: 12px;
+    text-align: center;
+}
+/* match 13 */
+.lists {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    list-style-type: none;
+}
+.lists a {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Graphic-Regular';
+    list-style-type: none;
+    
+}
+.deals-text {
+    padding-bottom: 15px;
+}
+.footerNav-one {
+    display: none;
+}
+
+.img-ul li:hover {
+    border-bottom: 2px solid #222222;
+}
+.img-ul li img:hover {
+    width: 88px;
+
+}
+.dealsUl li:hover {
+    box-shadow: 0 4px 20px rgb(34 34 34 / 15%);
+}
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    .dealsUl {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 505px) {
+    .copyrights {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        column-gap: 7px;
+    }
+    .etsyLogo-img img {
+        width: 80px;
+    }
+} 
+
+@media screen and (min-width: 640px) {
+    .footerNav-one {
+        display: block;
+    }
+    .img-container {
+        margin-top: -88px;
+    }
+    .gift-heading h2 {
+        font-size: 28px;
+        padding: 33px 26px 5px 26px;
+    }
+    .img-ul {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
+        padding: 0px 24px;
+        height: 87px;
+    }
+
+    .img-ul li span {
+        margin-top: 10px;
+        width: 72%;
+        line-height: 1.3;
+    }
+
+    .head-container h2 {
+        font-size: 27px;
+        padding: 25px 12px 0px;
+        line-height: 1.5;
+        height: 166px;
+    }
+
+    .img-small img {
+        width: 84px;
+    }
+
+    .searchBar input {
+        width: 81%;
+    }
+    .dealsOfTheDay {
+        padding: 0px 30px;
+    }
+    /* march 7 */
+    .gifts-card ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gift-heading h2 {
+        text-align: start;
+    }
+    .globText {
+        display: flex;
+        justify-content: center;
+        background: #4d6bc6;
+        margin-top: -6px;
+        padding: 6px 0px;
+    }
+    /* 13 */
+    .fa-btn i {
+        display: none;
+    }
+    .footerNav {
+        display: flex;
+    }
+    .fa-show {
+        display: block;
+    }
+    .fa-show li {
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+    .footerNav {
+        display: none;
+    }
+    .footerNav-one {
+        background: #2f466c;
+        padding: 12px 24px;
+        margin-top: -1px;
+        position: relative;
+    }
+    .navAndApp {
+        display: flex;
+        justify-content: space-between;
+        width: 86%;
+    }
+    .etsyApp-container {
+        position: absolute;
+        bottom: 38px;
+        right: 44px;
+        width: 24%;
+        align-items: center;
+    }
+    .downApp {
+        width: 92%;
+    }
+    .social-media {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+
+ 
+
+}
+@media screen and (min-width: 654px) {
+    .img-ul {
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .searchBar input {
+        padding: 16px 8px 13px 7px;
+        width: 89%;
+    }
+  
+}
+
+@media screen and (min-width: 900px) {
+    .searchBar-container {
+        display: none;
+    }
+
+    .searchBar-container-second-head {
+        display: block;
+        width: 66.32%;
+    }
+
+    header {
+        padding: 12px 36px;
+    }
+
+    .etsyLogo-img img {
+        width: 80px;
+        margin: 1px -11px 1px -6px;
+        transform: translate(3px, 3px);
+    }
+
+    .nav-search-bar {
+        padding: 0px;
+    }
+
+    .searchBar input {
+        width: 89%;
+        padding: 16px 0px 13px 8px;
+    }
+
+    .list-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 36px;
+    }
+
+    .list-items {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        font-size: 13px;
+        padding: 0px 0px 13px;
+        font-family: 'graphic-Regular';
+        line-height: 1.3;
+        list-style-type: none;
+    }
+
+    .head-container {
+        margin-top: 13px;
+    }
+
+    .head-container h2 {
+        font-size: 32px;
+        height: 157px;
+    }
+
+    .img-small {
+        width: 114px;
+    }
+    .dealsUl {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 22px;
+    }
+    /* march 7 */
+    .gifts-card ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .gifts-card li:nth-child(6) {
+        display: none;
+    }
+    /* march 8 */
+    .aboutEtsy {
+        /* display: flex; */
+        gap: 50px;
+        text-align: left;
+    }
+    /* 13 */
+    .theEtsy {
+        display: flex;
+        gap: 68px;
+    }
+    .first-community {
+        width: 83%;
+    }
+    .support {
+        width: 92%;
+    }
+    .privacy {
+        width: 91%;
+    }
+    .whatIsEtsty {
+        width: 100%;
+    }
+    .help-center{
+        text-align: center;
+    }
+    .aboutEtsy h2{
+        text-align: center;
+    }
+    .aboutEtsy a{
+        text-align: center;
+    }
+    /* nav {
+        background: #2f46cc;
+        padding: 12px 24px;
+    } */
+    /* 13 */
+    .leveling {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copyrights {
+        display: flex;
+        justify-content: space-between;
+    }
+    .etsyStory {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+    .img-ul {
+        padding: 0px 80px;
+        margin-top: 0px;
+        max-width: 1110px;
+        gap: 55px;
+    }
+
+    .img-ul li span {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .head-container {
+        margin-top: -5px;
+    }
+
+    .head-container h2 {
+        padding: 18px 12px 0px;
+    }
+    .dealsOfTheDay {
+        padding: 0px 36px;
+
+    }
+    /* march7 */
+    .gifts-section {
+        padding: 0px 36px;
+    }
+    .img-container1 video {
+        height: 150px;
+    }
+/* 13 */
+}
+@media screen and (min-width: 1607px) {
+    .footerNav-one {
+        padding: 12px 95px;
+    }
+    .etsyApp-container {
+        bottom: 61px;
+        right: 217px;
+    }
+    .etsy-lang {
+        padding: 18px 91px;
+    }
+    .theEtsy {
+        gap: 0px;
+    }
+    .first-community {
+        width: 100%;
+    }
+    .first-community p {
+        width: 402px;
+    }
+    .support {
+        width: 93%;
+    }
+    .support h3 {
+        white-space: nowrap;
+        width: 300px;
+    }
+    .img-containeR img {
+        padding: 9px 0px;
+    }
+    .support p {
+        width: 421px;
+    }
+    .privacy p {
+        width: 406px;
+    }
+    .theEtsy h3 {
+        font-size:  28px;
+        width: 300px;
+    }
+    .aboutEtsy {
+        margin-inline: 140px;
+    }
+    .help-center {
+        margin-top: 41px;
+    }
+    .footer {
+        margin-top: -15px;
+        padding: 38px 24px 24px;
+    }
+    .globText {
+        margin-top: -6px;
+    }
+    .main-container {
+        margin-bottom: -11px;
+    }
+    .dealsOfTheDay {
+        margin-inline: 105px;
+    }
+    .gifts-section {
+        margin-inline: 105px;
+    }
+    .nav-search-bar {
+        margin-inline: auto;
+        width: 85%;
+    }
+    .searchBar-container-second-head {
+        width: 80.32%;
+    }
+    header {
+        gap: 21px;
+    }
+    .profile-items li {
+        white-space: nowrap;
+    }
+    .list-ul {
+        margin-top: 2px;
+    }
+}
+@media screen and (min-width: 1767px) {
+    .dealsOfTheDay {
+        margin-inline: 255px;
+    }
+    .gifts-section {
+        margin-inline: 255px;
+    }
+    .aboutEtsy {
+        margin-inline: 295px;
+    }
+    .theEtsy {
+        gap: 40px;
+    }
+    .theEtsy p {
+        width: 416px;
+    }
+    .nav-search-bar {
+        width: 73%;
+    }
+    .footerNav-one {
+       padding: 0px 250px;
+    }
+    .etsy-lang {
+        padding: 23px 235px;
+    }
+    .img-ul li img:hover {
+        width: 122px;
+        height: 120px;
+        box-shadow: 0 4px 20px rgb(34 34 34 / 15%);
+    }
+    .img-containerBox {
+        width: 118px;
+        height: 118px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .img-containerBox img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
