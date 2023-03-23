@@ -133,4 +133,26 @@ body{
     flex-direction: column;
     border-bottom: 1px solid rgb(191, 190, 190);
 }
+.filterCategories span{
+ font-family: 'roboto-medium';
+}
+.filterCategories section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.first {
+    font-size: 12px;
+}
+.second {
+    font-size: 14px;
+    color: #878787;
+}
+.second i {
+    padding-right: 5px;
+}
+.third {
+    font-size: 14px;
+}
 
