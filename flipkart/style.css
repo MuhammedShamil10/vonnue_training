@@ -148,7 +148,32 @@ body{
     border-bottom: 1px solid rgb(191, 190, 190);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ae509aa (same)
 =======
+=======
+.filterCategories span{
+ font-family: 'roboto-medium';
+}
+.filterCategories section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.first {
+    font-size: 12px;
+}
+.second {
+    font-size: 14px;
+    color: #878787;
+}
+.second i {
+    padding-right: 5px;
+}
+.third {
+    font-size: 14px;
+}
+>>>>>>> 6e3b8d1 (added js)
 
 >>>>>>> c1b3e72 (same)

@@ -29,6 +29,7 @@ let categories = [{
         img: ""
 =======
 let shopingCategory = [
+<<<<<<< HEAD
     {
         name: "Electrinics",
         img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
@@ -67,6 +68,44 @@ let shopingCategory = [
         name: "offer Zone",
         img: ""
     }
+=======
+  {
+    name: "Electrinics",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "TVs & Appliances",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "Men",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "Women",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "Baby & Kids",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "Home & Furniture",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "Sports,Bools & More",
+    img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+  },
+  {
+    name: "Flights",
+    img: ""
+  },
+  {
+    name: "Offer Zone",
+    img: ""
+  }
+>>>>>>> 6e3b8d1 (added js)
 
     
 ]
@@ -98,34 +137,34 @@ shoppingContainer.classList.add("shoppig-container");
 let shoppingListEl = document.getElementById("shopList-el");
 
 function shopList() {
-    for(let i = 0; i < shopingCategory.length; i++) {
-         let firstSopping = document.createElement("span");
-         firstSopping.classList.add("category");
-         shoppingListEl.appendChild(firstSopping);
-         firstSopping.innerHTML = shopingCategory[i].name;
+  for (let i = 0; i < shopingCategory.length; i++) {
+    let firstSopping = document.createElement("span");
+    firstSopping.classList.add("category");
+    shoppingListEl.appendChild(firstSopping);
+    firstSopping.innerHTML = shopingCategory[i].name;
 
-         let scrollIcon = document.createElement("span");
-         scrollIcon.classList.add("downImg");
-         shoppingListEl.appendChild(scrollIcon);
-         scrollIcon.innerHTML   = shopingCategory[i].img;
-    }
+    let scrollIcon = document.createElement("span");
+    scrollIcon.classList.add("downImg");
+    shoppingListEl.appendChild(scrollIcon);
+    scrollIcon.innerHTML = shopingCategory[i].img;
+  }
 }
 shopList();
 
 
 let mobiles = [
-    {
-      img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/e/l/d/-original-imagnhusa2upmgeq.jpeg?q=70`,
-      favIcon: "Assets/img/flipFav.svg",
-      phoneName: "APPLE iPhone 14(Yellow, 128 GB)",
-      rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-      review: "22,308 Rating & 880 Reviews",
-      price: "",
-      actualPrice: "79,900",
-      percentage: "9%",
-      off: "off",
-      feature:[
-        {
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/e/l/d/-original-imagnhusa2upmgeq.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "APPLE iPhone 14(Yellow, 128 GB)",
+    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "22,308 Rating & 880 Reviews",
+    price: "",
+    actualPrice: "79,900",
+    percentage: "9%",
+    off: "off",
+    feature: [
+      {
         storage: "128 GB ROM",
         dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
         camera: "12MP + 12MP | 12MP Front Camera",
@@ -133,196 +172,196 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
     ]
-    },
-    {
-        img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/l/8/r/-original-imaghxemnnnkd8bg.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "APPLE iPhone 14 Pro(Deep Purple, 128 GB)",
-        rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "864 Rating & 71 Reviews",
-        price: "",
-        actualPrice: "1,22,999",
-        percentage: "5%",
-        off: "off",
-        feature:[
-          {
-          storage: "128 GB ROM",
-          dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
-          camera: "48MP + 12MP | 12MP Front Camera",
-          battery: "",
-          processor: "A16 Bionic Chip, 6 Core Processor",
-          warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
-        }
-      ]
-      },
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/l/8/r/-original-imaghxemnnnkd8bg.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "APPLE iPhone 14 Pro(Deep Purple, 128 GB)",
+    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "864 Rating & 71 Reviews",
+    price: "",
+    actualPrice: "1,22,999",
+    percentage: "5%",
+    off: "off",
+    feature: [
       {
-        img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "SAMSUNG Galaxy S23 Ultra 5G(Cream, 256 GB)",
-        rating: `4.1 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "22,308 Rating & 880 Reviews",
-        price: "",
-        actualPrice: "1,24,999",
-        percentage: "16%",
-        off: "off",
-        feature:[
-          {
-          storage: "12 GB RAM|256 GB ROM",
-          dimention: "17.27cm (6.8 inch) Quad HD+ Display",
-          camera: "200MP + 12MP + 12MP + 10MP | 12MP Front Camera",
-          battery: "5000 mAh Lithium Ion Battery",
-          processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
-          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
-        }
-      ]
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "SAMSUNG Galaxy S23 5G(Phantom Black, 256 GB)",
-        rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "22,308 Rating & 880 Reviews",
-        price: "",
-        actualPrice: "94,999",
-        percentage: "9%",
-        off: "off",
-        feature:[
-          {
-          storage: "8 GB RAM | 256 GB ROM",
-          dimention: "15.49cm (6.1 inch) Full  HD+ Display",
-          camera: "50MP + 10MP + 12MP | 12MP Front Camera",
-          battery: "3900 mAh Lithium Ion Battery",
-          processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
-          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
-        }
-      ]
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "APPLE iPhone 13(Blue, 128 GB)",
-        rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "1,96,141 Rating & 10,721 Reviews",
-        price: "",
-        actualPrice: "69,900",
-        percentage: "9%",
-        off: "off",
-        feature:[
-          {
-          storage: "128 GB ROM",
-          dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
-          camera: "12MP + 12MP | 12MP Front Camera",
-          battery: "",
-          processor: "A15 Bionic Chip, 6 Core Processor",
-          warranty: "Brand Warranty for 1 Year"
-        }
-      ]
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/1/k/g/-original-imagc7ukmgugpdfy.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "realme C35(Glowing black, 64 GB)",
-        rating: `4.4 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "1,74,850 Rating & 9,939 Reviews",
-        price: "",
-        actualPrice: "13,999",
-        percentage: "21%",
-        off: "off",
-        feature:[
-          {
-          storage: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
-          dimention: "16.76cm (6.6 inch) Full HD+ Display",
-          camera: "50MP + 2MP 0.3MP | 8MP Front Camera",
-          battery: "5000 mAh Lithium Polmer Battery",
-          processor: "Unisoc Tiger T616 Processor",
-          warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
-        }
-      ]
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "POCO C55(Cool Blue, 128 GB)",
-        rating: "",
-        review: "",
-        price: "",
-        actualPrice: "13,999",
-        percentage: "21%",
-        off: "off",
-        feature:[
-          {
-          storage: "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
-          dimention: "17.04cm (6.71 inch) HD+ Display",
-          camera: "50PM Rear Camera | 5MP Front Camera",
-          battery: "5000 mAh Battery",
-          processor: "Mediatek Helio G85 Processor",
-          warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
-        }
-      ]
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "POCO M4 5G(Yellow, 128 GB)",
-        rating: `4.2 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "29,519 Rating & 2,248 Reviews",
-        price: "",
-        actualPrice: "18,999",
-        percentage: "26%",
-        off: "off",
-        feature:[
-          {
-          storage: "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
-          dimention: "16.71cm (6.58 inch) Full HD+ Display",
-          camera: "50MP + 2MP | 12MP Front Camera",
-          battery: "5000 mAh Lithium Ion Battery",
-          processor: "Mediatek Dimensity 700 Processor",
-          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
-        }
-      ]
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/kzhbfrk0/mobile/0/r/j/-original-imagbgxffuvx56mm.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "OPPO Reno Pro 5G(Starlight black, 256 GB)",
-        rating: `4.3 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "8,269 Rating & 1089 Reviews",
-        price: "",
-        actualPrice: "47,990",
-        percentage: "27%",
-        off: "off",
-        feature:[
-          {
-          storage: "12 GB RAM | 256 GB ROM",
-          dimention: "16.51 cm (6.5 inch) Full HD+ AMOLED Display",
-          camera: "50MP + 8MP + 2MP | 32MP Front Camera",
-          battery: "4500 mAh Lithium-ion Polymer Battery",
-          processor: "MediaTek Dimensity 1200-Max Processor",
-          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
-        }
-      ]
-    
-      },
-      {
-        img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/d/u/7/-original-imagmgy5ywvzdv6g.jpeg?q=70`,
-        favIcon: "Assets/img/flipFav.svg",
-        phoneName: "ASUS ROG 5s(Starlight, 128 GB",
-        rating: `4.3 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
-        review: "3,845 Rating & 400 Reviews",
-        price: "",
-        actualPrice: "38,999",
-        percentage: "23%",
-        off: "off",
-        feature:[
-          {
-          storage: "128 GB ROM",
-          dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
-          camera: "12MP + 12MP | 12MP Front Camera",
-          processor: "A15 Bionic Chip, 6 Core Processor",
-          warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
-        }
-      ]
+        storage: "128 GB ROM",
+        dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
+        camera: "48MP + 12MP | 12MP Front Camera",
+        battery: "",
+        processor: "A16 Bionic Chip, 6 Core Processor",
+        warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "SAMSUNG Galaxy S23 Ultra 5G(Cream, 256 GB)",
+    rating: `4.1 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "22,308 Rating & 880 Reviews",
+    price: "",
+    actualPrice: "1,24,999",
+    percentage: "16%",
+    off: "off",
+    feature: [
+      {
+        storage: "12 GB RAM|256 GB ROM",
+        dimention: "17.27cm (6.8 inch) Quad HD+ Display",
+        camera: "200MP + 12MP + 12MP + 10MP | 12MP Front Camera",
+        battery: "5000 mAh Lithium Ion Battery",
+        processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
+        warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+      }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "SAMSUNG Galaxy S23 5G(Phantom Black, 256 GB)",
+    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "22,308 Rating & 880 Reviews",
+    price: "",
+    actualPrice: "94,999",
+    percentage: "9%",
+    off: "off",
+    feature: [
+      {
+        storage: "8 GB RAM | 256 GB ROM",
+        dimention: "15.49cm (6.1 inch) Full  HD+ Display",
+        camera: "50MP + 10MP + 12MP | 12MP Front Camera",
+        battery: "3900 mAh Lithium Ion Battery",
+        processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
+        warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+      }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "APPLE iPhone 13(Blue, 128 GB)",
+    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "1,96,141 Rating & 10,721 Reviews",
+    price: "",
+    actualPrice: "69,900",
+    percentage: "9%",
+    off: "off",
+    feature: [
+      {
+        storage: "128 GB ROM",
+        dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
+        camera: "12MP + 12MP | 12MP Front Camera",
+        battery: "",
+        processor: "A15 Bionic Chip, 6 Core Processor",
+        warranty: "Brand Warranty for 1 Year"
+      }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/1/k/g/-original-imagc7ukmgugpdfy.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "realme C35(Glowing black, 64 GB)",
+    rating: `4.4 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "1,74,850 Rating & 9,939 Reviews",
+    price: "",
+    actualPrice: "13,999",
+    percentage: "21%",
+    off: "off",
+    feature: [
+      {
+        storage: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+        dimention: "16.76cm (6.6 inch) Full HD+ Display",
+        camera: "50MP + 2MP 0.3MP | 8MP Front Camera",
+        battery: "5000 mAh Lithium Polmer Battery",
+        processor: "Unisoc Tiger T616 Processor",
+        warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
+      }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "POCO C55(Cool Blue, 128 GB)",
+    rating: "",
+    review: "",
+    price: "",
+    actualPrice: "13,999",
+    percentage: "21%",
+    off: "off",
+    feature: [
+      {
+        storage: "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+        dimention: "17.04cm (6.71 inch) HD+ Display",
+        camera: "50PM Rear Camera | 5MP Front Camera",
+        battery: "5000 mAh Battery",
+        processor: "Mediatek Helio G85 Processor",
+        warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
+      }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "POCO M4 5G(Yellow, 128 GB)",
+    rating: `4.2 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "29,519 Rating & 2,248 Reviews",
+    price: "",
+    actualPrice: "18,999",
+    percentage: "26%",
+    off: "off",
+    feature: [
+      {
+        storage: "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
+        dimention: "16.71cm (6.58 inch) Full HD+ Display",
+        camera: "50MP + 2MP | 12MP Front Camera",
+        battery: "5000 mAh Lithium Ion Battery",
+        processor: "Mediatek Dimensity 700 Processor",
+        warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+      }
+    ]
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/kzhbfrk0/mobile/0/r/j/-original-imagbgxffuvx56mm.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "OPPO Reno Pro 5G(Starlight black, 256 GB)",
+    rating: `4.3 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "8,269 Rating & 1089 Reviews",
+    price: "",
+    actualPrice: "47,990",
+    percentage: "27%",
+    off: "off",
+    feature: [
+      {
+        storage: "12 GB RAM | 256 GB ROM",
+        dimention: "16.51 cm (6.5 inch) Full HD+ AMOLED Display",
+        camera: "50MP + 8MP + 2MP | 32MP Front Camera",
+        battery: "4500 mAh Lithium-ion Polymer Battery",
+        processor: "MediaTek Dimensity 1200-Max Processor",
+        warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
+      }
+    ]
+
+  },
+  {
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/d/u/7/-original-imagmgy5ywvzdv6g.jpeg?q=70`,
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "ASUS ROG 5s(Phantom Black, 256 GB",
+    rating: `4.2 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    review: "703 Rating & 86 Reviews",
+    price: "",
+    actualPrice: "63,999",
+    percentage: "25%",
+    off: "off",
+    feature: [
+      {
+        storage: "12 GB RAM | 256 GB ROM",
+        dimention: "17.22cm (6.78 inch) Full HD+ Display",
+        camera: "64MP + 13MP 5MP | 24PM Front Camera",
+        processor: "Qualcomm Snapdragon 888 Plus Processor",
+        warranty: "1 Year Brand warranty"
+      }
+    ]
+  }
 ]
 
 
@@ -331,65 +370,74 @@ let mobileContainerEl = document.getElementById("products-el");
 
 
 function brandCategory() {
-    for (let i = 0; i < mobiles.length; i ++) {
-        let brandName = document.createElement("div");
-        brandName.classList.add("product-container");
-        mobileContainerEl.appendChild(brandName);
+  for (let i = 0; i < mobiles.length; i++) {
+    let brandName = document.createElement("div");
+    brandName.classList.add("product-container");
+    mobileContainerEl.appendChild(brandName);
 
-        let mobileImg = document.createElement("span");
-        brandName.appendChild(mobileImg);
-        let phoneImg = document.createElement("img");
-        mobileImg.appendChild(phoneImg);
-        phoneImg.src = mobiles[i].img;
-        
-        let productImg = document.createElement("span");
-        productImg.classList.add("mobileImg");
-        brandName.appendChild(productImg);
-        let favIcons = document.createElement("img");
-        productImg.appendChild(favIcons);
-        favIcons.src = mobiles[i].favIcon;
+    let mobileImg = document.createElement("span");
+    brandName.appendChild(mobileImg);
+    let phoneImg = document.createElement("img");
+    mobileImg.appendChild(phoneImg);
+    phoneImg.src = mobiles[i].img;
 
-        let productName = document.createElement("span");
-        productName.classList.add("productName");
-        brandName.appendChild(productName);
-        productName.innerHTML = mobiles[i].phoneName;
+    let productImg = document.createElement("span");
+    productImg.classList.add("mobileImg");
+    brandName.appendChild(productImg);
+    let favIcons = document.createElement("img");
+    productImg.appendChild(favIcons);
+    favIcons.src = mobiles[i].favIcon;
 
-        let productRating = document.createElement("span");
-        productRating.classList.add("productRating");
-        brandName.appendChild(productRating);
-        productRating.innerHTML = mobiles[i].rating;
+    let productName = document.createElement("span");
+    productName.classList.add("productName");
+    brandName.appendChild(productName);
+    productName.innerHTML = mobiles[i].phoneName;
 
-        let productReview = document.createElement("span");
-        productReview.classList.add("productReview");
-        brandName.appendChild(productReview);
-        productReview.innerHTML = mobiles[i].review;
+    let productRating = document.createElement("span");
+    productRating.classList.add("productRating");
+    brandName.appendChild(productRating);
+    productRating.innerHTML = mobiles[i].rating;
 
-        let productPrice = document.createElement("span");
-        productPrice.classList.add("productPrice");
-        brandName.appendChild(productPrice);
-        productPrice.innerHTML = mobiles[i].price;
+    let productReview = document.createElement("span");
+    productReview.classList.add("productReview");
+    brandName.appendChild(productReview);
+    productReview.innerHTML = mobiles[i].review;
 
-        let productAprice = document.createElement("span");
-        productAprice.classList.add("productAPrice");
-        brandName.appendChild(productAprice);
-        productAprice.innerHTML = mobiles[i].actualPrice;
+    let productPrice = document.createElement("span");
+    productPrice.classList.add("productPrice");
+    brandName.appendChild(productPrice);
+    productPrice.innerHTML = mobiles[i].price;
 
-        let productPercentage = document.createElement("span");
-        productPercentage.classList.add("productPercentage");
-        brandName.appendChild(productPercentage);
-        productPercentage.innerHTML = mobiles[i].percentage + " ";
+    let productAprice = document.createElement("span");
+    productAprice.classList.add("productAPrice");
+    brandName.appendChild(productAprice);
+    productAprice.innerHTML = mobiles[i].actualPrice;
 
-        let productOff = document.createElement("span");
-        productPercentage.classList.add("productOff");
-        brandName.appendChild(productOff);
-        productOff.innerHTML = mobiles[i].off;
+    let productPercentage = document.createElement("span");
+    productPercentage.classList.add("productPercentage");
+    brandName.appendChild(productPercentage);
+    productPercentage.innerHTML = mobiles[i].percentage + " ";
 
-  
+    let productOff = document.createElement("span");
+    productPercentage.classList.add("productOff");
+    brandName.appendChild(productOff);
+    productOff.innerHTML = mobiles[i].off;
 
-        
-    }
+    let featContainer = document.createElement("div");
+    brandName.appendChild(featContainer);
+
+    // let featUl = document.createElement("span");
+    // featUl.classList.add("featUl");
+    // featContainer.appendChild(featUl);
+    // productOff.innerHTML = feature[i].storage;
+
+
+  }
 }
 brandCategory();
+
+
+// namaste javascript....:-
 
 // function a() {
 //   console.log(b);
@@ -400,7 +448,7 @@ brandCategory();
 
 // let a = 109; 
 // var b = 100;
-// namaste javascript....:-
+
 // function ab(){
 //   return function oi() {
 //     console.log("Sample..."); 
@@ -442,7 +490,7 @@ brandCategory();
 //         }
 //         b();
 //     }
- 
+
 // }
 // x();
 
@@ -455,7 +503,7 @@ brandCategory();
 //             }, 2000)
 //         }
 //         closer(i);
-   
+
 //     }
 
 // }
@@ -467,7 +515,7 @@ brandCategory();
 //         count ++;
 //         console.log(count)
 //     }
-    
+
 // }
 // let ab = counter1();
 // var counter1 = counter();
@@ -478,7 +526,7 @@ brandCategory();
 //     function theFirst(){
 //         theOutPut("helo");
 //     }
-    
+
 //     function theSecond() {
 //         theOutPut("bye");
 //     }
@@ -524,6 +572,37 @@ brandCategory();
 // }
 
 
+// const radius = [2, 4, 6, 7];
+
+// const calArea = function (radius) {
+//   const output = []
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(Math.PI * radius[i] * radius[i]);
+//   }
+//   return output;
+// }
+// console.log(calArea(radius));
+
+
+
+const arr = [1, 2, 3, 4, 5];
+
+// const output = arr.map(function double (x) {
+//   return x * 2;
+//  });
+
+// const output2 = arr.map(function thriple (x) {
+//   return x * 3;
+// })
+
+// console.log(output);
+// console.log(output2);
+
+ function isOdd(x) {
+  return x % 2;
+ }
+ const output = arr.filter(isOdd);
+ console.log(output);
 
 
 >>>>>>> 77b2e42 (twoNav)
