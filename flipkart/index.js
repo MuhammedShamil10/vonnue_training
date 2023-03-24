@@ -157,12 +157,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/e/l/d/-original-imagnhusa2upmgeq.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "APPLE iPhone 14(Yellow, 128 GB)",
-    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.7`,
+    star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: "79,900",
     percentage: "9%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "128 GB ROM",
@@ -177,12 +179,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/l/8/r/-original-imaghxemnnnkd8bg.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "APPLE iPhone 14 Pro(Deep Purple, 128 GB)",
-    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.7`,
+    star: "Assets/img/star.svg",
     review: "864 Rating & 71 Reviews",
     price: "",
     actualPrice: "1,22,999",
     percentage: "5%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "128 GB ROM",
@@ -198,12 +202,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "SAMSUNG Galaxy S23 Ultra 5G(Cream, 256 GB)",
-    rating: `4.1 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.1`,
+    star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: "1,24,999",
     percentage: "16%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM|256 GB ROM",
@@ -219,12 +225,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "SAMSUNG Galaxy S23 5G(Phantom Black, 256 GB)",
-    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.7`,
+    star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: "94,999",
     percentage: "9%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "8 GB RAM | 256 GB ROM",
@@ -240,12 +248,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "APPLE iPhone 13(Blue, 128 GB)",
-    rating: `4.7 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.7`,
+    star: "Assets/img/star.svg",
     review: "1,96,141 Rating & 10,721 Reviews",
     price: "",
     actualPrice: "69,900",
     percentage: "9%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "128 GB ROM",
@@ -261,12 +271,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/1/k/g/-original-imagc7ukmgugpdfy.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "realme C35(Glowing black, 64 GB)",
-    rating: `4.4 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.4`,
+    star: "Assets/img/star.svg",
     review: "1,74,850 Rating & 9,939 Reviews",
     price: "",
     actualPrice: "13,999",
     percentage: "21%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
@@ -283,11 +295,13 @@ let mobiles = [
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "POCO C55(Cool Blue, 128 GB)",
     rating: "",
+    star: "",
     review: "",
     price: "",
     actualPrice: "13,999",
     percentage: "21%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -303,12 +317,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "POCO M4 5G(Yellow, 128 GB)",
-    rating: `4.2 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.2`,
+    star: "Assets/img/star.svg",
     review: "29,519 Rating & 2,248 Reviews",
     price: "",
     actualPrice: "18,999",
     percentage: "26%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
@@ -324,12 +340,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/kzhbfrk0/mobile/0/r/j/-original-imagbgxffuvx56mm.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "OPPO Reno Pro 5G(Starlight black, 256 GB)",
-    rating: `4.3 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.3`,
+    star: "Assets/img/star.svg",
     review: "8,269 Rating & 1089 Reviews",
     price: "",
     actualPrice: "47,990",
     percentage: "27%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM | 256 GB ROM",
@@ -346,12 +364,14 @@ let mobiles = [
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/d/u/7/-original-imagmgy5ywvzdv6g.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "ASUS ROG 5s(Phantom Black, 256 GB",
-    rating: `4.2 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#FFF" d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"></path></svg>`,
+    rating: `4.2`,
+    star: "Assets/img/star.svg",
     review: "703 Rating & 86 Reviews",
     price: "",
     actualPrice: "63,999",
     percentage: "25%",
     off: "off",
+    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM | 256 GB ROM",
@@ -368,63 +388,95 @@ let mobiles = [
 let mobileContainerEl = document.getElementById("products-el");
 
 
-
 function brandCategory() {
   for (let i = 0; i < mobiles.length; i++) {
     let brandName = document.createElement("div");
     brandName.classList.add("product-container");
     mobileContainerEl.appendChild(brandName);
 
+    let imgContainer = document.createElement("div");
+    brandName.appendChild(imgContainer);
+    imgContainer.classList.add("imgSection");
     let mobileImg = document.createElement("span");
-    brandName.appendChild(mobileImg);
+    imgContainer.appendChild(mobileImg);
     let phoneImg = document.createElement("img");
     mobileImg.appendChild(phoneImg);
     phoneImg.src = mobiles[i].img;
 
+    let mobileContainer = document.createElement("div");
+    brandName.appendChild(mobileContainer);
+    mobileContainer.classList.add("mobImgSection");
     let productImg = document.createElement("span");
     productImg.classList.add("mobileImg");
-    brandName.appendChild(productImg);
+    mobileContainer.appendChild(productImg);
     let favIcons = document.createElement("img");
     productImg.appendChild(favIcons);
     favIcons.src = mobiles[i].favIcon;
 
+    let productContainer = document.createElement("div");
+    brandName.appendChild(productContainer);
+    productContainer.classList.add("prodNameSection");
     let productName = document.createElement("span");
     productName.classList.add("productName");
-    brandName.appendChild(productName);
+    productContainer.appendChild(productName);
     productName.innerHTML = mobiles[i].phoneName;
 
+    let priceDetails = document.createElement("div");
+    brandName.appendChild(priceDetails);
+    priceDetails.classList.add("ratingSection");
     let productRating = document.createElement("span");
     productRating.classList.add("productRating");
-    brandName.appendChild(productRating);
+    priceDetails.appendChild(productRating);
     productRating.innerHTML = mobiles[i].rating;
 
+    let starone = document.createElement("img");
+    priceDetails.appendChild(starone);
+    starone.src = mobiles[i].star;
+
+
+    priceDetails.classList.add("reviewSection");
     let productReview = document.createElement("span");
-    productReview.classList.add("productReview");
-    brandName.appendChild(productReview);
+    priceDetails.appendChild(productReview);
     productReview.innerHTML = mobiles[i].review;
 
+    let priceDvshion = document.createElement("div");
+    brandName.appendChild(priceDvshion);
+    priceDvshion.classList.add("priceSection");
+
+    // let priceContainer = document.createElement("div");
+    // brandName.appendChild(priceContainer);
+    // priceContainer.classList.add("priceSection");
     let productPrice = document.createElement("span");
     productPrice.classList.add("productPrice");
-    brandName.appendChild(productPrice);
+    priceDvshion.appendChild(productPrice);
     productPrice.innerHTML = mobiles[i].price;
 
+    // let aPriceContainer = document.createElement("div");
+    // brandName.appendChild(aPriceContainer);
+    // aPriceContainer.classList.add("aPriceSection");
     let productAprice = document.createElement("span");
     productAprice.classList.add("productAPrice");
-    brandName.appendChild(productAprice);
+    priceDvshion.appendChild(productAprice);
     productAprice.innerHTML = mobiles[i].actualPrice;
 
+    // let percentageContainer = document.createElement("div");
+    // brandName.appendChild(percentageContainer);
+    // percentageContainer.classList.add("percentageSection");
     let productPercentage = document.createElement("span");
     productPercentage.classList.add("productPercentage");
-    brandName.appendChild(productPercentage);
+    priceDvshion.appendChild(productPercentage);
     productPercentage.innerHTML = mobiles[i].percentage + " ";
 
+    // let offerContainer = document.createElement("div");
+    // brandName.appendChild(offerContainer);
+    // offerContainer.classList.add("offerSection");
     let productOff = document.createElement("span");
     productPercentage.classList.add("productOff");
-    brandName.appendChild(productOff);
+    priceDvshion.appendChild(productOff);
     productOff.innerHTML = mobiles[i].off;
 
-    let featContainer = document.createElement("div");
-    brandName.appendChild(featContainer);
+
+
 
     // let featUl = document.createElement("span");
     // featUl.classList.add("featUl");
@@ -585,7 +637,7 @@ brandCategory();
 
 
 
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
 // const output = arr.map(function double (x) {
 //   return x * 2;
@@ -598,11 +650,47 @@ const arr = [1, 2, 3, 4, 5];
 // console.log(output);
 // console.log(output2);
 
- function isOdd(x) {
-  return x % 2;
- }
- const output = arr.filter(isOdd);
- console.log(output);
+//  function isOdd(x) {
+//   return x % 2;
+//  }
+//  const output = arr.filter(isOdd);
+//  console.log(output);
+
+// const anOutput = arr.reduce(function(acc ,curr) {
+
+// });
+
+// const output2 = arr.map(function thriple (x) {
+//   return x * 3;
+// })
+
+// console.log(output);
+// console.log(output2);
+
+// const output2 = arr.map(function thriple (x) {
+  //   return x * 3;
+  // })
+  
+  // console.lrrgog(output);
+  // console.log(output2);
+  
+  //  function isOdd(x) {
+  //   return x % 2;  }
+//  const output = arr.filter(isOdd);
+//   console.log(output);
+  
+// const anOutput = arr.reduce(function(acc ,curr) {
+  
+//  });z
+//   gioisOdd(x) {
+//    return x % 2;
+//   }
+//   const output = arr.filter(isOdd);
+//   console.log(output);
+
+//  const anOutput = arr.reduce(function(acc ,curr) {
+//  });
+ 
 
 
 >>>>>>> 77b2e42 (twoNav)
