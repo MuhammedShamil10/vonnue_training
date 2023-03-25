@@ -193,12 +193,7 @@ let mobiles = [
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
-    favIcon: "Assets/img/flipFav.svg",
-    phoneName: "POCO C55(Cool Blue, 128 GB)",
-    rating: "",
-    star: "",
-    review: "",
-    price: "",
+    favIcon: "Assets/img/flipFhttps://rukminim1.flixcar",
     actualPrice: "13,999",
     percentage: "21% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
@@ -281,6 +276,8 @@ let mobiles = [
   }
 ]
 
+console.log(JSON.stringify(mobiles));
+
 
 let mobileContainerEl = document.getElementById("products-el");
 
@@ -318,8 +315,12 @@ function brandCategory() {
     productContainer.appendChild(productName);
     productName.innerHTML = mobiles[i].phoneName;
 
+    let rateAndOffer = document.createElement("div");
+    brandName.appendChild(rateAndOffer);
+    rateAndOffer.classList.add("rateAndOffer");
+
     let rateStar = document.createElement("div");
-    brandName.appendChild(rateStar);
+    rateAndOffer.appendChild(rateStar);
     rateStar.classList.add("ratingStar");
     let productRating = document.createElement("span");
     productRating.classList.add("productRating");
@@ -332,8 +333,8 @@ function brandCategory() {
 
 
     let offersDrop = document.createElement("div");
-    brandName.appendChild(offersDrop);
-    offersDrop.classList.add("offers")    
+    rateAndOffer.appendChild(offersDrop);
+    offersDrop.classList.add("offers");    
     // priceDetails.classList.add("reviewSection");
     let productReview = document.createElement("span");
     offersDrop.appendChild(productReview);
@@ -361,7 +362,6 @@ function brandCategory() {
     priceDvshion.appendChild(productPercentage);
     productPercentage.innerHTML = mobiles[i].percentage;
 
-  
 
 
     // let featUl = document.createElement("span");
