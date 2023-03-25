@@ -69,8 +69,7 @@ let mobiles = [
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: "79,900",
-    percentage: "9%",
-    off: "off",
+    percentage: "9% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -91,8 +90,7 @@ let mobiles = [
     review: "864 Rating & 71 Reviews",
     price: "",
     actualPrice: "1,22,999",
-    percentage: "5%",
-    off: "off",
+    percentage: "5% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -114,8 +112,7 @@ let mobiles = [
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: "1,24,999",
-    percentage: "16%",
-    off: "off",
+    percentage: "16% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -137,8 +134,7 @@ let mobiles = [
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: "94,999",
-    percentage: "9%",
-    off: "off",
+    percentage: "9% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -160,8 +156,7 @@ let mobiles = [
     review: "1,96,141 Rating & 10,721 Reviews",
     price: "",
     actualPrice: "69,900",
-    percentage: "9%",
-    off: "off",
+    percentage: "9% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -183,8 +178,7 @@ let mobiles = [
     review: "1,74,850 Rating & 9,939 Reviews",
     price: "",
     actualPrice: "13,999",
-    percentage: "21%",
-    off: "off",
+    percentage: "21% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -206,8 +200,7 @@ let mobiles = [
     review: "",
     price: "",
     actualPrice: "13,999",
-    percentage: "21%",
-    off: "off",
+    percentage: "21% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -229,8 +222,7 @@ let mobiles = [
     review: "29,519 Rating & 2,248 Reviews",
     price: "",
     actualPrice: "18,999",
-    percentage: "26%",
-    off: "off",
+    percentage: "26% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -252,8 +244,7 @@ let mobiles = [
     review: "8,269 Rating & 1089 Reviews",
     price: "",
     actualPrice: "47,990",
-    percentage: "27%",
-    off: "off",
+    percentage: "27% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -276,8 +267,7 @@ let mobiles = [
     review: "703 Rating & 86 Reviews",
     price: "",
     actualPrice: "63,999",
-    percentage: "25%",
-    off: "off",
+    percentage: "25% off",
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -328,61 +318,50 @@ function brandCategory() {
     productContainer.appendChild(productName);
     productName.innerHTML = mobiles[i].phoneName;
 
-    let priceDetails = document.createElement("div");
-    brandName.appendChild(priceDetails);
-    priceDetails.classList.add("ratingSection");
+    let rateStar = document.createElement("div");
+    brandName.appendChild(rateStar);
+    rateStar.classList.add("ratingStar");
     let productRating = document.createElement("span");
     productRating.classList.add("productRating");
-    priceDetails.appendChild(productRating);
+    rateStar.appendChild(productRating);
     productRating.innerHTML = mobiles[i].rating;
 
     let starone = document.createElement("img");
-    priceDetails.appendChild(starone);
+    rateStar.appendChild(starone);
     starone.src = mobiles[i].star;
 
 
-    priceDetails.classList.add("reviewSection");
+    let offersDrop = document.createElement("div");
+    brandName.appendChild(offersDrop);
+    offersDrop.classList.add("offers")    
+    // priceDetails.classList.add("reviewSection");
     let productReview = document.createElement("span");
-    priceDetails.appendChild(productReview);
+    offersDrop.appendChild(productReview);
     productReview.innerHTML = mobiles[i].review;
 
     let priceDvshion = document.createElement("div");
     brandName.appendChild(priceDvshion);
     priceDvshion.classList.add("priceSection");
 
-    // let priceContainer = document.createElement("div");
-    // brandName.appendChild(priceContainer);
-    // priceContainer.classList.add("priceSection");
+
     let productPrice = document.createElement("span");
     productPrice.classList.add("productPrice");
     priceDvshion.appendChild(productPrice);
     productPrice.innerHTML = mobiles[i].price;
 
-    // let aPriceContainer = document.createElement("div");
-    // brandName.appendChild(aPriceContainer);
-    // aPriceContainer.classList.add("aPriceSection");
+   
     let productAprice = document.createElement("span");
     productAprice.classList.add("productAPrice");
     priceDvshion.appendChild(productAprice);
     productAprice.innerHTML = mobiles[i].actualPrice;
 
-    // let percentageContainer = document.createElement("div");
-    // brandName.appendChild(percentageContainer);
-    // percentageContainer.classList.add("percentageSection");
+  
     let productPercentage = document.createElement("span");
     productPercentage.classList.add("productPercentage");
     priceDvshion.appendChild(productPercentage);
-    productPercentage.innerHTML = mobiles[i].percentage + " ";
+    productPercentage.innerHTML = mobiles[i].percentage;
 
-    // let offerContainer = document.createElement("div");
-    // brandName.appendChild(offerContainer);
-    // offerContainer.classList.add("offerSection");
-    let productOff = document.createElement("span");
-    productPercentage.classList.add("productOff");
-    priceDvshion.appendChild(productOff);
-    productOff.innerHTML = mobiles[i].off;
-
-
+  
 
 
     // let featUl = document.createElement("span");
@@ -395,6 +374,11 @@ function brandCategory() {
 }
 brandCategory();
 
+function mainProduct() {
+  for (let i = 0; i<feture.length; i++) {
+
+  }
+}
 
 // namaste javascript....:-
 
