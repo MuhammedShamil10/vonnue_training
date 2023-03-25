@@ -386,6 +386,13 @@ body {
    font-family: 'roboto-medium';
    color: #388E3C; 
 }
+.productDetailSection span{
+    font-size: 13px;
+}
+.rateAndOffer {
+    display: flex;
+    gap: 10px;
+}
 /* .priceSection {
     display: grid;
     gap: 4px;
