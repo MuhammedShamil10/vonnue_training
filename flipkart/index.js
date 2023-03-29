@@ -161,14 +161,15 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
-    actualPrice: "79,900",
-    percentage: "9% off",
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    actualPrice: 79900,
+    percentage: 9,
+    assuredImg:"Assets/img/azured.png",
     feature: [
       {
         storage: "128 GB ROM",
         dimention: "15.49cm (6.1 inch) Super Retina XDR Display",
         camera: "12MP + 12MP | 12MP Front Camera",
+        battery: "",
         processor: "A15 Bionic Chip, 6 Core Processor",
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
@@ -182,8 +183,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "864 Rating & 71 Reviews",
     price: "",
-    actualPrice: "1,22,999",
-    percentage: "5% off",
+    actualPrice: 122999,
+    percentage: 5,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -204,8 +205,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
-    actualPrice: "1,24,999",
-    percentage: "16% off",
+    actualPrice: 124999,
+    percentage: 16,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -226,8 +227,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
-    actualPrice: "94,999",
-    percentage: "9% off",
+    actualPrice: 94999,
+    percentage: 9,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -248,8 +249,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "1,96,141 Rating & 10,721 Reviews",
     price: "",
-    actualPrice: "69,900",
-    percentage: "9% off",
+    actualPrice: 69900,
+    percentage: 9,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -270,8 +271,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "1,74,850 Rating & 9,939 Reviews",
     price: "",
-    actualPrice: "13,999",
-    percentage: "21% off",
+    actualPrice: 13999,
+    percentage: 21,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -286,9 +287,14 @@ let mobiles = [
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
-    favIcon: "Assets/img/flipFhttps://rukminim1.flixcar",
-    actualPrice: "13,999",
-    percentage: "21% off",
+    favIcon: "Assets/img/flipFav.svg",
+    phoneName: "POCO M4 5G(Yellow, 128 GB)",
+    rating: `4.2`,
+    star: "Assets/img/star.svg",
+    review: "29,519 Rating & 2,248 Reviews",
+    price: "",
+    actualPrice: 13999,
+    percentage: 21,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -309,8 +315,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "29,519 Rating & 2,248 Reviews",
     price: "",
-    actualPrice: "18,999",
-    percentage: "26% off",
+    actualPrice: 18999,
+    percentage: 26,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -331,8 +337,8 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "8,269 Rating & 1089 Reviews",
     price: "",
-    actualPrice: "47,990",
-    percentage: "27% off",
+    actualPrice: 47990,
+    percentage: 27,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
@@ -354,16 +360,18 @@ let mobiles = [
     star: "Assets/img/star.svg",
     review: "703 Rating & 86 Reviews",
     price: "",
-    actualPrice: "63,999",
-    percentage: "25% off",
+    actualPrice: 63999,
+    percentage: 25,
     assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM | 256 GB ROM",
         dimention: "17.22cm (6.78 inch) Full HD+ Display",
         camera: "64MP + 13MP 5MP | 24PM Front Camera",
+        battery: "",
         processor: "Qualcomm Snapdragon 888 Plus Processor",
         warranty: "1 Year Brand warranty"
+
       }
     ]
   }
@@ -443,37 +451,76 @@ function brandCategory() {
     priceDvshion.appendChild(productPrice);
     productPrice.innerHTML = mobiles[i].price;
 
+    if(mobiles[i].price != "") {
+      let totalPrice = document.createElement("div");
+      priceDvshion.appendChild(totalPrice);
+    
+
+      let tPrice = document.createElement("span");
+      totalPrice.appendChild(tPrice);
+      totalPrice.innerHTML = mobiles[i].price;
+    }else {
+      let prices = Math.floor((mobiles[i].actualPrice * 100) / (100 + mobiles[i].percentage));
+      console.log(prices)
+
+      let totalPrice = document.createElement("div");
+      priceDvshion.appendChild(totalPrice);
+
+      let tPrice = document.createElement("span");
+      totalPrice.appendChild(tPrice);
+      totalPrice.innerHTML = "₹" + prices;
+
+      let assuredImage = document.createElement("img");
+      assuredImage.classList.add("assuredImg");
+      totalPrice.appendChild(assuredImage);
+      assuredImage.src = mobiles[i].assuredImg;
+    }
+
+
    
     let productAprice = document.createElement("span");
     productAprice.classList.add("productAPrice");
     priceDvshion.appendChild(productAprice);
-    productAprice.innerHTML = mobiles[i].actualPrice;
+    productAprice.innerHTML = mobiles[i].actualPrice + " ";
 
   
     let productPercentage = document.createElement("span");
     productPercentage.classList.add("productPercentage");
     priceDvshion.appendChild(productPercentage);
-    productPercentage.innerHTML = mobiles[i].percentage;
+    productPercentage.innerHTML = mobiles[i].percentage + "%";
+
+  
+    // feature: [
+    //   {
+    //     storage: "12 GB RAM | 256 GB ROM",
+    //     dimention: "17.22cm (6.78 inch) Full HD+ Display",
+    //     camera: "64MP + 13MP 5MP | 24PM Front Camera",
+    //     processor: "Qualcomm Snapdragon 888 Plus Processor",
+    //     warranty: "1 Year Brand warranty"
+    //   }
+
+    
+    // let features = document.createElement("div");
+    // features.classList.add("features");
+    // brandName.appendChild(features);
+
+    // let featStorage = document.createElement("span");
+    // features.appendChild(featStorage);
+    // featStorage.innerHTML = mobiles[i].feature[i].storage;
 
 
-
-    // let featUl = document.createElement("span");
-    // featUl.classList.add("featUl");
-    // featContainer.appendChild(featUl);
-    // productOff.innerHTML = feature[i].storage;
 
 
   }
 }
 brandCategory();
 
-function mainProduct() {
-  for (let i = 0; i<feture.length; i++) {
-
-  }
-}
-
 // namaste javascript....:-
+
+const arr = [123,15,5,6345,234];
+
+const output = arr.filter((x) => x % 2);
+console.log(output);
 
 // function a() {
 //   console.log(b);
