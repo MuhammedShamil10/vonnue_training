@@ -359,10 +359,30 @@ body {
     display: flex;
     gap: 10px;
 }
-/* .priceSection {
-    display: grid;
-    gap: 4px;
-} */
+.product-container {
+    position: relative;
+    padding: 24px 0px 30px 24px;
+}
+.mobImgSection {
+    position: absolute;
+    top: 27px;
+    left: 197px;
+}
+.prodNameSection {
+    position: absolute;
+    top: 26px;
+    left: 230px;
+}
+.rateAndOffer {
+    position: absolute;
+    top: 47px;
+    left: 230px;
+}
+.priceSection {
+    position: absolute;
+    top: 59px;
+    right: 204px;
+}
 
 
 
