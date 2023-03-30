@@ -1,3 +1,11 @@
+
+const brandOption = document.querySelector(".brandOption")
+
+console.log(brandOption);
+
+
+
+
 let shopingCategory = [
   {
     name: "Electrinics",
@@ -80,7 +88,8 @@ let mobiles = [
         processor: "A15 Bionic Chip, 6 Core Processor",
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Apple"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/l/8/r/-original-imaghxemnnnkd8bg.jpeg?q=70`,
@@ -102,7 +111,8 @@ let mobiles = [
         processor: "A16 Bionic Chip, 6 Core Processor",
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Apple"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
@@ -124,7 +134,8 @@ let mobiles = [
         processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Samsung"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
@@ -146,7 +157,8 @@ let mobiles = [
         processor: "Qualcomm Snapdrogon 8 Gen 2 Processor",
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Samsung"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70`,
@@ -168,7 +180,8 @@ let mobiles = [
         processor: "A15 Bionic Chip, 6 Core Processor",
         warranty: "Brand Warranty for 1 Year"
       }
-    ]
+    ],
+    brand: "Apple"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/1/k/g/-original-imagc7ukmgugpdfy.jpeg?q=70`,
@@ -190,7 +203,8 @@ let mobiles = [
         processor: "Unisoc Tiger T616 Processor",
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Realme"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
@@ -212,7 +226,8 @@ let mobiles = [
         processor: "Mediatek Helio G85 Processor",
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Realme"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70`,
@@ -234,7 +249,8 @@ let mobiles = [
         processor: "Mediatek Dimensity 700 Processor",
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Realme"
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/kzhbfrk0/mobile/0/r/j/-original-imagbgxffuvx56mm.jpeg?q=70`,
@@ -256,7 +272,8 @@ let mobiles = [
         processor: "MediaTek Dimensity 1200-Max Processor",
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
-    ]
+    ],
+    brand: "Oppo"
 
   },
   {
@@ -280,17 +297,24 @@ let mobiles = [
         warranty: "1 Year Brand warranty"
 
       }
-    ]
+    ],
+    brand: "Oppo"
   }
 ]
 
-console.log(JSON.stringify(mobiles));
-
-
 let mobileContainerEl = document.getElementById("products-el");
 
+let newitem = [...mobiles]
+brandCategory(mobiles);
 
-function brandCategory() {
+
+
+function update(){
+  mobileContainerEl.innerHTML = "";
+}
+
+function brandCategory(mobiles) {
+  // console.log(mobiles);
   for (let i = 0; i < mobiles.length; i++) {
     let brandName = document.createElement("div");
     brandName.classList.add("product-container");
@@ -420,14 +444,103 @@ function brandCategory() {
 
   }
 }
-brandCategory();
+function filtering(data) {
+  let mobileFilters = [];
 
+  let appleEl = document.getElementById("apple-el");
+  let samsungEl = document.getElementById("samsung-el");
+  let pocoEl = document.getElementById("poco-el");
+  let oppoEl = document.getElementById("oppo-el");
+
+  if(appleEl.checked === true ) {
+    mobileFilters.push("Apple");
+    console.log(mobileFilters);
+  }
+  if(samsungEl.checked === true) {
+    mobileFilters.push("Samsung");
+  }
+  if(pocoEl.checked === true) {
+    mobileFilters.push("Realme")
+  }
+  if(oppoEl.checked === true) {
+    mobileFilters.push("Oppo")
+  }
+
+
+
+  if (mobileFilters.length) {
+  item = mobileFilter(data, mobileFilters)  
+  console.log(item);
+  update();
+
+  brandCategory(item)
+}
+}
+
+function setupFilter(mobileClick) {
+  let appleEl = document.getElementById("apple-el");
+  let samsungEl = document.getElementById("samsung-el");
+  let pocoEl = document.getElementById("poco-el");
+  let oppoEl = document.getElementById("oppo-el");
+
+  appleEl.addEventListener("change", () => {
+    filtering(mobileClick);
+  });
+  samsungEl.addEventListener("change", () => {
+    filtering(mobileClick);
+  });
+  pocoEl.addEventListener("change", () => {
+    filtering(mobileClick);
+  });
+  oppoEl.addEventListener("change", () => {
+    filtering(mobileClick);
+  });
+
+}
+setupFilter(newitem);
+
+// function rmElementFromArray(list, value) {
+//   idx = list.findIndex((val) => {
+//     return val === value;
+//   });
+//     if (idx === -1) return;
+//     return list.splice(idx, 1);
+
+// }
+function mobileFilter(mobiles, arrayoffindingphones) {
+  return mobiles.filter((item) =>{
+    return arrayoffindingphones.includes(item.brand);
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(mobileFilter)
 // namaste javascript....:-
 
-const arr = [123,15,5,6345,234];
+// const arr = [123,15,5,6345,234];
 
-const output = arr.filter((x) => x % 2);
-console.log(output);
+// const output = arr.filter((x) => x % 2);
+// console.log(output);
 
 // function a() {
 //   console.log(b);
@@ -629,5 +742,17 @@ console.log(output);
 //  const anOutput = arr.reduce(function(acc ,curr) {
 //  });
  
+var obj = {
+  a: 1,
+  b: 2,
+  c: "oka"
+}
+
+var objs = {
+  ...obj
+}
+
+console.log(objs);
+
 
 
