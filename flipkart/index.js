@@ -81,7 +81,7 @@ let shopingCategory = [
     }
 =======
   {
-    name: "Electrinics",
+    name: "Electronics",
     img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
   },
   {
@@ -542,7 +542,10 @@ function brandCategory(mobiles) {
 }
 function filtering(data) {
   let mobileFilters = [];
+  let productRating = []
 
+
+  
   let appleEl = document.getElementById("apple-el");
   let samsungEl = document.getElementById("samsung-el");
   let pocoEl = document.getElementById("poco-el");
@@ -562,14 +565,22 @@ function filtering(data) {
     mobileFilters.push("Oppo")
   }
 
+  let fourStar = document.getElementById("fourStar-el");
+  let threeStar = document.getElementById("threeStar-el");
 
+  if(fourStar.checked === true) {
+    productRating.push(4);
+  }
+  if(threeStar.checked === true) {
+    productRating.push(4);
+  }
 
   if (mobileFilters.length) {
   item = mobileFilter(data, mobileFilters)  
   console.log(item);
   update();
 
-  brandCategory(item)
+  brandCategory(item);
 }
 }
 
@@ -595,18 +606,17 @@ function setupFilter(mobileClick) {
 }
 setupFilter(newitem);
 
-// function rmElementFromArray(list, value) {
-//   idx = list.findIndex((val) => {
-//     return val === value;
-//   });
-//     if (idx === -1) return;
-//     return list.splice(idx, 1);
-
-// }
 function mobileFilter(mobiles, arrayoffindingphones) {
   return mobiles.filter((item) =>{
     return arrayoffindingphones.includes(item.brand);
   });
+}
+
+
+
+
+function productRates() {
+
 }
 
 

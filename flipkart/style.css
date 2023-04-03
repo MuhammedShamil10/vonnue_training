@@ -174,7 +174,7 @@ body {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid rgb(191, 190, 190);
-    padding: 16px;
+    padding: 16px 16px 22px 16px;
 
 }
 <<<<<<< HEAD
@@ -205,6 +205,7 @@ body {
 
 .brandContainer {
     padding: 16px;
+    border-bottom: 1px solid #e4dbdb;
 }
 
 .first {
@@ -212,8 +213,11 @@ body {
 }
 
 .second {
+    padding: 10px 0px;
     font-size: 14px;
     color: #878787;
+    font-weight: 500;
+    font-family: 'roboto-regular';
 }
 
 .second i {
@@ -221,6 +225,7 @@ body {
 }
 
 .third {
+    margin-left: 13px;
     font-size: 14px;
 }
 >>>>>>> 6e3b8d1 (added js)
@@ -276,9 +281,11 @@ body {
     width: 100%;
 }
 
-.rangingOption input {
-    width: 100%;
-    height: 6px;
+.rangingOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 14px;
 }
 
 .rangingOption ::-moz-range-thumb {
@@ -288,7 +295,13 @@ body {
 .borderLine {
     border-bottom: 1px solid rgb(191, 190, 190);
 }
-
+.min-max {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
 .min-max select {
     width: 100px;
 }
@@ -323,6 +336,7 @@ body {
     flex-direction: column;
 }
 .assured {
+    border-bottom: 1px solid #e4dbdb;
     padding: 16px;
 }
 .assured label{
@@ -332,6 +346,7 @@ body {
     display: flex;
 }
 .rating {
+    border-bottom: 1px solid #e4dbdb;
     padding: 16px;
 } 
 .rating h4 {
@@ -342,7 +357,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 0px 14px 0px 14px;
+    border-bottom: 1px solid #e4dbdb;
 }
 .GST h4 {
     font-size: 13px;
@@ -374,6 +390,7 @@ body {
 }
 .offers span {
     font-family: 'roboto-regular';
+    font-size: 14px;
     color: #878787;
 }
 .productAPrice {
@@ -382,14 +399,13 @@ body {
     color: #878787;
     text-decoration: line-through;
 }
+
 .productPercentage {
    font-size: 13px;
    font-family: 'roboto-medium';
    color: #388E3C; 
 }
-.productDetailSection span{
-    font-size: 13px;
-}
+
 .rateAndOffer {
     display: flex;
     gap: 10px;
@@ -417,13 +433,13 @@ body {
 }
 .priceSection {
     position: absolute;
-    top: 59px;
+    top: 30px;
     right: 204px;
 }
 .priceSection div {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
    font-size: 25px;
    font-family: 'roboto-medium';
    color: #212121; 
@@ -435,9 +451,129 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e4dbdb;
+    height: 33.55px;
 }
 #products-el {
     padding: 0px 30px 0px 20px;
+}
+.roundRight {
+    border: 1px solid #e4dbdb;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+.roundLeft {
+    border: 1px solid #e4dbdb;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+.rainging {
+    width: 235px;
+    height: 6px;
+    background: #2874f0;
+}
+.stations {
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 32px;
+  margin-top: -5px;
+}
+.stations div {
+    opacity: 0.5;
+}
+.price {
+    padding-bottom: 19px;
+}
+.price span {
+    font-size: 13px;
+    font-family: 'roboto-medium';
+}
+
+.priceRanging {
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+.maxRange {
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+.page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 330px;
+    padding: 10px;
+}
+.page span {
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+.page nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+}
+.page nav a {
+    text-decoration: none;
+    /* color: #212121; */
+    font-size: 14px;
+    font-family: 'roboto-medium';
+}
+.borderOne {
+    border: 1px solid #2874f0;
+    border-radius: 50%;
+    color: #fff;
+    background: #2874f0;
+    padding: 8px 12px;
+}
+.helpDesk {
+    display: flex;
+    column-gap: 30px;
+    padding: 16px;
+}
+.helpDesk span {
+    font-size: 16px;
+    font-family: 'roboto-medium';
+}
+.space {
+    background: #f0f0f0;
+    width: 100%;
+    height: 1px;
+}
+.spaceSecond {
+    background: #f0f0f0;
+    width: 100%;
+    height: 10px;
+}
+.choosOption span {
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    margin: 0px 8px 0px 0px;
+    padding: 6px 28px;
+}
+.footer {
+    background: #2874f0;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+}
+.about div {
+    font-size: 12px;
+    font-family: 'roboto-medium';
+    color: #878787;
+}
+.about a {
+    font-size: 12px;
+    font-family: 'roboto-medium';
+    color: #fff;
+}
+.partOne {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 
