@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 let categories = [{
     name: "Electronics",
     img: ""
@@ -31,6 +32,9 @@ let categories = [{
 =======
 =======
 
+=======
+0
+>>>>>>> 3fc86ec (feat:sortingOption)
 const brandOption = document.querySelector(".brandOption")
 
 console.log(brandOption);
@@ -167,14 +171,20 @@ let mobiles = [
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/e/l/d/-original-imagnhusa2upmgeq.jpeg?q=70`,
     favIcon: "Assets/img/flipFav.svg",
+    compOption: "Add to Compare",
     phoneName: "APPLE iPhone 14(Yellow, 128 GB)",
-    rating: `4.7`,
+    rating: 4.7,
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: 79900,
     percentage: 9,
-    assuredImg:"Assets/img/azured.png",
+    assuredImg: "Assets/img/azured.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
     feature: [
       {
         storage: "128 GB ROM",
@@ -185,19 +195,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Apple"
+    brand: "Apple",
+    rateBrand: 4
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/l/8/r/-original-imaghxemnnnkd8bg.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "APPLE iPhone 14 Pro(Deep Purple, 128 GB)",
-    rating: `4.7`,
+    rating: 4.7,
     star: "Assets/img/star.svg",
     review: "864 Rating & 71 Reviews",
     price: "",
     actualPrice: 122999,
     percentage: 5,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "128 GB ROM",
@@ -208,19 +225,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Apple"
+    brand: "Apple",
+    rateBrand: 4
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "SAMSUNG Galaxy S23 Ultra 5G(Cream, 256 GB)",
-    rating: `4.1`,
+    rating: 3.1,
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: 124999,
     percentage: 16,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM|256 GB ROM",
@@ -231,19 +255,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Samsung"
+    brand: "Samsung",
+    rateBrand: 3
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "SAMSUNG Galaxy S23 5G(Phantom Black, 256 GB)",
-    rating: `4.7`,
+    rating: 3.7,
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
     actualPrice: 94999,
     percentage: 9,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "8 GB RAM | 256 GB ROM",
@@ -254,19 +285,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Samsung"
+    brand: "Samsung",
+    rateBrand: 3
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/ktketu80/mobile/2/y/o/iphone-13-mlpk3hn-a-apple-original-imag6vpyur6hjngg.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "APPLE iPhone 13(Blue, 128 GB)",
-    rating: `4.7`,
+    rating: 4.7,
     star: "Assets/img/star.svg",
     review: "1,96,141 Rating & 10,721 Reviews",
     price: "",
     actualPrice: 69900,
     percentage: 9,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "128 GB ROM",
@@ -277,19 +315,26 @@ let mobiles = [
         warranty: "Brand Warranty for 1 Year"
       }
     ],
-    brand: "Apple"
+    brand: "Apple",
+    rateBrand: 4
   },
   {
-    img: `https://rukminim1.flixcart.com/image/312/312/l0fm07k0/mobile/1/k/g/-original-imagc7ukmgugpdfy.jpeg?q=70`,
+    img: `https://rukminim1.flixcart.com/image/312/312/l4ln8nk0/mobile/p/h/p/-original-imagfggryyzyvhgw.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "realme C35(Glowing black, 64 GB)",
-    rating: `4.4`,
+    rating: 4.4,
     star: "Assets/img/star.svg",
     review: "1,74,850 Rating & 9,939 Reviews",
     price: "",
     actualPrice: 13999,
     percentage: 21,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
@@ -300,19 +345,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Realme"
+    brand: "Realme",
+    rateBrand: 4
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "POCO M4 5G(Yellow, 128 GB)",
-    rating: `4.2`,
+    rating: 4.2,
     star: "Assets/img/star.svg",
     review: "29,519 Rating & 2,248 Reviews",
     price: "",
     actualPrice: 13999,
     percentage: 21,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -323,19 +375,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and 6 Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Realme"
+    brand: "Realme",
+    rateBrand: 3
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "POCO M4 5G(Yellow, 128 GB)",
-    rating: `4.2`,
+    rating: 4.2,
     star: "Assets/img/star.svg",
     review: "29,519 Rating & 2,248 Reviews",
     price: "",
     actualPrice: 18999,
     percentage: 26,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "6 GB RAM | 128 GB ROM | Expandable Upto 512 GB",
@@ -346,19 +405,26 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Realme"
+    brand: "Realme",
+    rateBrand: 4
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/kzhbfrk0/mobile/0/r/j/-original-imagbgxffuvx56mm.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "OPPO Reno Pro 5G(Starlight black, 256 GB)",
-    rating: `4.3`,
+    rating: 4.3,
     star: "Assets/img/star.svg",
     review: "8,269 Rating & 1089 Reviews",
     price: "",
     actualPrice: 47990,
     percentage: 27,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM | 256 GB ROM",
@@ -369,20 +435,27 @@ let mobiles = [
         warranty: "1 Year Warrant for Phone and Month Warranty for In-Box Accessories"
       }
     ],
-    brand: "Oppo"
+    brand: "Oppo",
+    rateBrand: 4
 
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/d/u/7/-original-imagmgy5ywvzdv6g.jpeg?q=70`,
+    compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "ASUS ROG 5s(Phantom Black, 256 GB",
-    rating: `4.2`,
+    rating: 4.2,
     star: "Assets/img/star.svg",
     review: "703 Rating & 86 Reviews",
     price: "",
     actualPrice: 63999,
     percentage: 25,
-    assuredImg:"https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
+    delivery: "Free Delivery",
+    exchangeOff: "Upto",
+    exchangeOffOne: "₹30,000",
+    exchangeOfftwo: "Off on Exchange",
+    bankOffer: "Bank Offer",
+    assuredImg: "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png",
     feature: [
       {
         storage: "12 GB RAM | 256 GB ROM",
@@ -394,7 +467,8 @@ let mobiles = [
 
       }
     ],
-    brand: "Oppo"
+    brand: "Oppo",
+    rateBrand: 4
   }
 ]
 
@@ -405,7 +479,7 @@ brandCategory(mobiles);
 
 
 
-function update(){
+function update() {
   mobileContainerEl.innerHTML = "";
 }
 
@@ -424,6 +498,11 @@ function brandCategory(mobiles) {
     let phoneImg = document.createElement("img");
     mobileImg.appendChild(phoneImg);
     phoneImg.src = mobiles[i].img;
+
+    let compareOption = document.createElement("span");
+    compareOption.classList.add("addCompare")
+    imgContainer.appendChild(compareOption);
+    compareOption.innerHTML = `<input type ="checkbox"> <label>${mobiles[i].compOption}`
 
     let mobileContainer = document.createElement("div");
     brandName.appendChild(mobileContainer);
@@ -462,8 +541,7 @@ function brandCategory(mobiles) {
 
     let offersDrop = document.createElement("div");
     rateAndOffer.appendChild(offersDrop);
-    offersDrop.classList.add("offers");    
-    // priceDetails.classList.add("reviewSection");
+    offersDrop.classList.add("offers");
     let productReview = document.createElement("span");
     offersDrop.appendChild(productReview);
     productReview.innerHTML = mobiles[i].review;
@@ -478,19 +556,22 @@ function brandCategory(mobiles) {
     priceDvshion.appendChild(productPrice);
     productPrice.innerHTML = mobiles[i].price;
 
-    if(mobiles[i].price != "") {
+    if (mobiles[i].price != "") {
       let totalPrice = document.createElement("div");
+      totalPrice.classList.add("totalPrice");
       priceDvshion.appendChild(totalPrice);
-    
+
 
       let tPrice = document.createElement("span");
+
       totalPrice.appendChild(tPrice);
       totalPrice.innerHTML = mobiles[i].price;
-    }else {
+    } else {
       let prices = Math.floor((mobiles[i].actualPrice * 100) / (100 + mobiles[i].percentage));
       console.log(prices)
 
       let totalPrice = document.createElement("div");
+      totalPrice.classList.add("totalPrice");
       priceDvshion.appendChild(totalPrice);
 
       let tPrice = document.createElement("span");
@@ -504,84 +585,147 @@ function brandCategory(mobiles) {
     }
 
 
-   
     let productAprice = document.createElement("span");
     productAprice.classList.add("productAPrice");
     priceDvshion.appendChild(productAprice);
     productAprice.innerHTML = mobiles[i].actualPrice + " ";
 
-  
     let productPercentage = document.createElement("span");
     productPercentage.classList.add("productPercentage");
     priceDvshion.appendChild(productPercentage);
     productPercentage.innerHTML = mobiles[i].percentage + "%";
 
-  
-    // feature: [
-    //   {
-    //     storage: "12 GB RAM | 256 GB ROM",
-    //     dimention: "17.22cm (6.78 inch) Full HD+ Display",
-    //     camera: "64MP + 13MP 5MP | 24PM Front Camera",
-    //     processor: "Qualcomm Snapdragon 888 Plus Processor",
-    //     warranty: "1 Year Brand warranty"
-    //   }
+    let exchangeOffer = document.createElement("div");
+    exchangeOffer.classList.add("exchangeOff");
+    priceDvshion.appendChild(exchangeOffer);
 
-    
-    // let features = document.createElement("div");
-    // features.classList.add("features");
-    // brandName.appendChild(features);
+    let deliveryEl = document.createElement("span");
+    deliveryEl.classList.add("freeDelivery");
+    exchangeOffer.append(deliveryEl);
+    deliveryEl.innerHTML = mobiles[i].delivery;
 
-    // let featStorage = document.createElement("span");
-    // features.appendChild(featStorage);
-    // featStorage.innerHTML = mobiles[i].feature[i].storage;
+    let fullOffer = document.createElement("div");
+    fullOffer.classList.add("totalOffer");
+    exchangeOffer.appendChild(fullOffer);
+
+    let exOffEl = document.createElement("span");
+    exOffEl.classList.add("exchangeOff");
+    fullOffer.append(exOffEl);
+    exOffEl.innerHTML = mobiles[i].exchangeOff;
+
+    let exOffOne = document.createElement("span");
+    exOffOne.classList.add("exchangeOffOne");
+    fullOffer.append(exOffOne);
+    exOffOne.innerHTML = mobiles[i].exchangeOffOne;
+
+    let exchangOfferTwo = document.createElement("span");
+    exchangOfferTwo.classList.add("exchangeOffTwo");
+    fullOffer.append(exchangOfferTwo);
+    exchangOfferTwo.innerHTML = mobiles[i].exchangeOfftwo;
+
+    let bankOffers = document.createElement("span");
+    bankOffers.classList.add("bankOffer");
+    exchangeOffer.append(bankOffers);
+    bankOffers.innerHTML = mobiles[i].bankOffer;
 
 
+    let productBox = document.querySelectorAll(".product-container");
 
+
+    function productNameHover() {
+      productBox[i].addEventListener("mouseover", () => {
+        document.querySelector(".productName").setAttribute("style", "color:#2874f0;");
+      });
+      productBox[i].addEventListener("mouseleave", () => {
+        document.querySelector(".productName").setAttribute("style", "color:#212121;");
+      });
+    }
+    productNameHover();
+
+
+    for (let s = 0; s < mobiles[i].feature.length; s++) {
+      let productFeature = document.createElement("div");
+      productFeature.classList.add("productFeatures")
+      brandName.appendChild(productFeature);
+      if (mobiles[i].feature[s].battery === "") {
+
+        productFeature.innerHTML = `<ul>
+                               <li>${mobiles[i].feature[s].storage}</li>
+                               <li>${mobiles[i].feature[s].dimention}</li>
+                               <li>${mobiles[i].feature[s].camera}</li>
+                               <li>${mobiles[i].feature[s].processor}</li>
+                               <li>${mobiles[i].feature[s].warranty}</li>
+                               </ul>`
+      } else {
+        productFeature.innerHTML = `<ul>
+      <li>${mobiles[i].feature[s].dimention}</li>
+      <li>${mobiles[i].feature[s].camera}</li>
+      <li>${mobiles[i].feature[s].battery}</li>
+      <li>${mobiles[i].feature[s].processor}</li>
+      <li>${mobiles[i].feature[s].warranty}</li>
+      </ul>`
+      }
+    }
 
   }
 }
+
+
+
+
+
+
+
+
+
 function filtering(data) {
   let mobileFilters = [];
-  let productRating = []
+  let productRating = [];
 
 
-  
+
   let appleEl = document.getElementById("apple-el");
   let samsungEl = document.getElementById("samsung-el");
   let pocoEl = document.getElementById("poco-el");
   let oppoEl = document.getElementById("oppo-el");
 
-  if(appleEl.checked === true ) {
+  if (appleEl.checked === true) {
     mobileFilters.push("Apple");
     console.log(mobileFilters);
   }
-  if(samsungEl.checked === true) {
+  if (samsungEl.checked === true) {
     mobileFilters.push("Samsung");
   }
-  if(pocoEl.checked === true) {
+  if (pocoEl.checked === true) {
     mobileFilters.push("Realme")
   }
-  if(oppoEl.checked === true) {
+  if (oppoEl.checked === true) {
     mobileFilters.push("Oppo")
   }
 
   let fourStar = document.getElementById("fourStar-el");
   let threeStar = document.getElementById("threeStar-el");
 
-  if(fourStar.checked === true) {
+  if (fourStar.checked === true) {
     productRating.push(4);
   }
-  if(threeStar.checked === true) {
-    productRating.push(4);
+  if (threeStar.checked === true) {
+    productRating.push(3);
   }
 
   if (mobileFilters.length) {
-  item = mobileFilter(data, mobileFilters)  
-  console.log(item);
-  update();
+    item = mobileFilter(data, mobileFilters)
+    console.log(item);
+    update();
 
-  brandCategory(item);
-}
+    brandCategory(item);
+  }
+  if (productRating.length) {
+    item = ratingFilter(data, productRating);
+    console.log(item);
+    update();
+    brandCategory(item);
+  }
 }
 
 function setupFilter(mobileClick) {
@@ -603,21 +747,34 @@ function setupFilter(mobileClick) {
     filtering(mobileClick);
   });
 
+  let fourStar = document.getElementById("fourStar-el");
+  let threeStar = document.getElementById("threeStar-el");
+  fourStar.addEventListener("change", () => {
+    filtering(mobileClick);
+  });
+  threeStar.addEventListener("change", () => {
+    filtering(mobileClick);
+  });
+
 }
 setupFilter(newitem);
 
 function mobileFilter(mobiles, arrayoffindingphones) {
-  return mobiles.filter((item) =>{
+
+  return mobiles.filter((item) => {
     return arrayoffindingphones.includes(item.brand);
+
+  });
+
+}
+function ratingFilter(mobiles, arrayOffRating) {
+  return mobiles.filter((item) => {
+    return arrayOffRating.includes(item.rateBrand);
   });
 }
 
 
 
-
-function productRates() {
-
-}
 
 
 
@@ -825,19 +982,19 @@ function productRates() {
 // console.log(output2);
 
 // const output2 = arr.map(function thriple (x) {
-  //   return x * 3;
-  // })
-  
-  // console.lrrgog(output);
-  // console.log(output2);
-  
-  //  function isOdd(x) {
-  //   return x % 2;  }
+//   return x * 3;
+// })
+
+// console.lrrgog(output);
+// console.log(output2);
+
+//  function isOdd(x) {
+//   return x % 2;  }
 //  const output = arr.filter(isOdd);
 //   console.log(output);
-  
+
 // const anOutput = arr.reduce(function(acc ,curr) {
-  
+
 //  });z
 //   gioisOdd(x) {
 //    return x % 2;
@@ -847,18 +1004,19 @@ function productRates() {
 
 //  const anOutput = arr.reduce(function(acc ,curr) {
 //  });
- 
-var obj = {
-  a: 1,
-  b: 2,
-  c: "oka"
-}
 
-var objs = {
-  ...obj
-}
+// var obj = {
+//   a: 1,
+//   b: 2,
+//   c: "oka"
+// }
 
-console.log(objs);
+// var objs = {
+//   ...obj
+// }
+
+// console.log(objs);
+
 
 
 

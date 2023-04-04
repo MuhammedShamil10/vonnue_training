@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: #ffe500; */
 }
 
 @font-face {
@@ -121,7 +120,6 @@ body {
     text-decoration: none;
 }
 
-/* 17 */
 .shopingList {
     display: flex;
     justify-content: center;
@@ -272,7 +270,7 @@ body {
 .filter-container {
     border-right: 8px solid #f0f0f0;
     background: #fff;
-    width: 317px;
+    width: 270px;
     height: 1500px;
 }
 
@@ -282,10 +280,10 @@ body {
 }
 
 .rangingOption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14px;
 }
 
 .rangingOption ::-moz-range-thumb {
@@ -295,6 +293,7 @@ body {
 .borderLine {
     border-bottom: 1px solid rgb(191, 190, 190);
 }
+
 .min-max {
     display: flex;
     flex-direction: row;
@@ -302,6 +301,7 @@ body {
     justify-content: space-between;
     margin-top: 10px;
 }
+
 .min-max select {
     width: 100px;
 }
@@ -328,31 +328,44 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .brandNames i {
     color: #878787;
 }
+
 .brandOption {
     display: flex;
     flex-direction: column;
 }
+
+.brandOption label {
+    padding: 10px 0px;
+}
+
 .assured {
     border-bottom: 1px solid #e4dbdb;
     padding: 16px;
 }
-.assured label{
+
+.assured label {
     display: flex;
 }
+
 .rating label {
     display: flex;
+    padding: 10px 0px;
 }
+
 .rating {
     border-bottom: 1px solid #e4dbdb;
     padding: 16px;
-} 
+}
+
 .rating h4 {
     font-size: 13px;
     font-family: 'roboto-regular';
 }
+
 .GST {
     display: flex;
     justify-content: space-between;
@@ -360,20 +373,36 @@ body {
     padding: 0px 14px 0px 14px;
     border-bottom: 1px solid #e4dbdb;
 }
+
 .GST h4 {
     font-size: 13px;
     font-family: 'roboto-regular';
 }
+
 .GST i {
     color: #878787;
 }
+
+.imgSection {
+    display: flex;
+    flex-direction: column;
+}
+
 .imgSection img {
     width: 151px;
 }
+
 .productName {
     font-size: 18px;
     font-family: 'roboto-medium';
 }
+/* .product-container:hover .productName {
+    color: #2874f0;
+}
+.product-container {
+    cursor: pointer;
+} */
+
 .ratingStar {
     display: flex;
     justify-content: space-around;
@@ -383,16 +412,19 @@ body {
     width: 35px;
     padding: 2px 4px 2px 6px;
 }
+
 .ratingStar span {
     color: #fff;
     font-size: 12px;
     font-family: 'roboto-medium';
 }
+
 .offers span {
     font-family: 'roboto-regular';
     font-size: 14px;
     color: #878787;
 }
+
 .productAPrice {
     font-size: 14px;
     font-family: 'roboto-regular';
@@ -401,91 +433,107 @@ body {
 }
 
 .productPercentage {
-   font-size: 13px;
-   font-family: 'roboto-medium';
-   color: #388E3C; 
+    font-size: 13px;
+    font-family: 'roboto-medium';
+    color: #388E3C;
 }
 
 .rateAndOffer {
     display: flex;
     gap: 10px;
 }
+
 .product-container {
     position: relative;
     padding: 24px 0px 30px 24px;
     border-bottom: 1px solid #e4dbdb;
     width: 100%;
 }
+
 .mobImgSection {
     position: absolute;
     top: 27px;
     left: 197px;
 }
+
 .prodNameSection {
     position: absolute;
     top: 26px;
     left: 230px;
 }
+
 .rateAndOffer {
     position: absolute;
-    top: 47px;
+    top: 50px;
     left: 230px;
 }
+
 .priceSection {
     position: absolute;
     top: 30px;
     right: 204px;
 }
+
 .priceSection div {
     display: flex;
-    align-items: center;
-    gap: 20px;
-   font-size: 25px;
-   font-family: 'roboto-medium';
-   color: #212121; 
+    font-size: 25px;
+    font-family: 'roboto-medium';
+    color: #212121;
 }
+
 .assuredImg {
+    transform: translate(14px, 3px);
     width: 77px;
+    height: 21px;
 }
+
 .sortProduct {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e4dbdb;
     height: 33.55px;
 }
+
 #products-el {
     padding: 0px 30px 0px 20px;
 }
+
 .roundRight {
     border: 1px solid #e4dbdb;
     border-radius: 50%;
     width: 12px;
     height: 12px;
 }
+
 .roundLeft {
     border: 1px solid #e4dbdb;
     border-radius: 50%;
     width: 12px;
     height: 12px;
 }
+
 .rainging {
     width: 235px;
     height: 6px;
     background: #2874f0;
 }
+
 .stations {
-  display: flex;  
-  justify-content: space-around;
-  align-items: center;
-  column-gap: 32px;
-  margin-top: -5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 32px;
+    margin-top: -5px;
 }
+
 .stations div {
     opacity: 0.5;
 }
+
 .price {
     padding-bottom: 19px;
 }
+
 .price span {
     font-size: 13px;
     font-family: 'roboto-medium';
@@ -495,10 +543,12 @@ body {
     font-size: 14px;
     font-family: 'roboto-regular';
 }
+
 .maxRange {
     font-size: 14px;
     font-family: 'roboto-regular';
 }
+
 .page {
     display: flex;
     justify-content: flex-start;
@@ -506,22 +556,25 @@ body {
     column-gap: 330px;
     padding: 10px;
 }
+
 .page span {
     font-size: 14px;
     font-family: 'roboto-regular';
 }
+
 .page nav {
     display: flex;
     align-items: center;
     column-gap: 20px;
 
 }
+
 .page nav a {
     text-decoration: none;
-    /* color: #212121; */
     font-size: 14px;
     font-family: 'roboto-medium';
 }
+
 .borderOne {
     border: 1px solid #2874f0;
     border-radius: 50%;
@@ -529,64 +582,198 @@ body {
     background: #2874f0;
     padding: 8px 12px;
 }
+
 .helpDesk {
     display: flex;
     column-gap: 30px;
     padding: 16px;
 }
+
 .helpDesk span {
     font-size: 16px;
     font-family: 'roboto-medium';
 }
+
 .space {
     background: #f0f0f0;
     width: 100%;
     height: 1px;
 }
+
 .spaceSecond {
     background: #f0f0f0;
     width: 100%;
     height: 10px;
 }
+
 .choosOption span {
     border: 1px solid #d7d7d7;
     font-size: 14px;
     margin: 0px 8px 0px 0px;
     padding: 6px 28px;
 }
+
 .footer {
-    background: #2874f0;
+    background: #172337;
 }
+
 .about {
     display: flex;
     flex-direction: column;
 }
+
+.aboutOne {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.aboutOnes {
+    border-left: 1px solid #454d5e;
+    padding: 0px 25px;
+    width: 100%;
+    height: 132px;
+}
+
 .about div {
     font-size: 12px;
     font-family: 'roboto-medium';
     color: #878787;
+    margin: 0px 0px 12px;
+    height: 16px;
 }
-.about a {
+
+.aboutOne div {
     font-size: 12px;
     font-family: 'roboto-medium';
-    color: #fff;
+    color: #878787;
+    margin: 0px 0px 12px;
+    height: 16px;
 }
+
+.about a {
+    font-size: 12px;
+    font-family: 'roboto-regular';
+    color: #fff;
+    text-decoration: none;
+    height: 24px;
+}
+
+.aboutOne a {
+    font-size: 12px;
+    font-family: 'roboto-regular';
+    color: #fff;
+    text-decoration: none;
+    height: 18px;
+}
+
 .partOne {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    margin: 0px 65px 0px 65px;
+    padding: 40px 0px 0px;
+}
+
+.addCompare {
+    margin-top: 8px;
+    margin-left: -17px;
+}
+
+.partTwo {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0px 0px;
+    padding: 25px 0px;
+    border-top: 1px solid #454d5e;
+    
+
+}
+
+.optionImg span {
+    color: #fff;
+    font-family: 14px;
+    font-family: 'roboto-regular';
+}
+
+.com {
+    color: #fff;
+    font-family: 14px;
+    font-family: 'roboto-regular';
+}
+
+.productFeatures ul {
+    list-style: none;
+    position: absolute;
+    top: 65px;
+    left: 185px;
+}
+
+.productFeatures ul li {
+    padding: 2px 0px;
+    color: #212121;
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+
+.productFeatures ul li::before {
+    content: "•";
+    color: #b8b4b4;
+    padding: 5px;
+}
+.freeDelivery {
+    font-size: 12px;
+    font-family: 'roboto-regular';
+    padding: 5px 0px;
+}
+.exchangeOff {
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+.exchangeOffOne {
+    font-size: 14px;
+    font-family: 'roboto-medium';
+}
+.exchangeOffTwo {
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+.bankOffer {
+    font-size: 14px;
+    color: #388E3C;
+    font-family: 'roboto-medium';
+    font-weight: 700;
+    margin-top: 4px;
+}
+.exchangeOff {
+    display: flex;
+    flex-direction: column;
+}
+.totalOffer {
+    display: flex;
+    column-gap: 5px;
+}
+.totalOffer span {
+    color: #000000;
+}
+.navContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 
 
- 
 label {
     font-family: 'roboto-regular';
 }
+
 h4,
 span,
 label {
     color: #212121;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /*......*/
@@ -594,3 +781,7 @@ label {
 =======
 /*......*/
 >>>>>>> 825a311 (jsAndCss)
+=======
+
+/*......*/
+>>>>>>> 3fc86ec (feat:sortingOption)
