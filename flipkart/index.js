@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 let categories = [{
     name: "Electronics",
     img: ""
@@ -35,6 +36,9 @@ let categories = [{
 =======
 0
 >>>>>>> 3fc86ec (feat:sortingOption)
+=======
+
+>>>>>>> d8bff9d (finshed)
 const brandOption = document.querySelector(".brandOption")
 
 console.log(brandOption);
@@ -226,19 +230,19 @@ let mobiles = [
       }
     ],
     brand: "Apple",
-    rateBrand: 4
+    rateBrand: 3
   },
   {
-    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/k/1/o/-original-imagmg6gz3bsgan7.jpeg?q=70`,
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/o/p/z/-original-imagcg22pf79cgau.jpeg?q=70`,
     compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
-    phoneName: "SAMSUNG Galaxy S23 Ultra 5G(Cream, 256 GB)",
+    phoneName: "SAMSUNG Galaxy F23 5G(Nightsky Green, 128 GB)",
     rating: 3.1,
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
-    actualPrice: 124999,
-    percentage: 16,
+    actualPrice: 23999,
+    percentage: 29,
     delivery: "Free Delivery",
     exchangeOff: "Upto",
     exchangeOffOne: "₹30,000",
@@ -259,16 +263,16 @@ let mobiles = [
     rateBrand: 3
   },
   {
-    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/c/1/h/-original-imagmg6gcjyuvzvn.jpeg?q=70`,
+    img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/0/8/4/-original-imagfhu75eupxyft.jpeg?q=70`,
     compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
-    phoneName: "SAMSUNG Galaxy S23 5G(Phantom Black, 256 GB)",
+    phoneName: "SAMSUNG Galaxy F13(Waterfall Blue, 64 GB)",
     rating: 3.7,
     star: "Assets/img/star.svg",
     review: "22,308 Rating & 880 Reviews",
     price: "",
-    actualPrice: 94999,
-    percentage: 9,
+    actualPrice: 14999,
+    percentage: 26,
     delivery: "Free Delivery",
     exchangeOff: "Upto",
     exchangeOffOne: "₹30,000",
@@ -468,7 +472,7 @@ let mobiles = [
       }
     ],
     brand: "Oppo",
-    rateBrand: 4
+    rateBrand: 3
   }
 ]
 
@@ -478,13 +482,11 @@ let newitem = [...mobiles]
 brandCategory(mobiles);
 
 
-
 function update() {
   mobileContainerEl.innerHTML = "";
 }
 
 function brandCategory(mobiles) {
-  // console.log(mobiles);
   for (let i = 0; i < mobiles.length; i++) {
     let brandName = document.createElement("div");
     brandName.classList.add("product-container");
@@ -629,20 +631,6 @@ function brandCategory(mobiles) {
     bankOffers.innerHTML = mobiles[i].bankOffer;
 
 
-    let productBox = document.querySelectorAll(".product-container");
-
-
-    function productNameHover() {
-      productBox[i].addEventListener("mouseover", () => {
-        document.querySelector(".productName").setAttribute("style", "color:#2874f0;");
-      });
-      productBox[i].addEventListener("mouseleave", () => {
-        document.querySelector(".productName").setAttribute("style", "color:#212121;");
-      });
-    }
-    productNameHover();
-
-
     for (let s = 0; s < mobiles[i].feature.length; s++) {
       let productFeature = document.createElement("div");
       productFeature.classList.add("productFeatures")
@@ -671,27 +659,43 @@ function brandCategory(mobiles) {
 }
 
 
+// product name hover effect   =>
+
+let productBox = document.querySelectorAll(".product-container");
+let mobileName = document.querySelectorAll(".productName");
+
+function productNameHover() {
+  for (let f = 0; f < productBox.length; f++) {
+    productBox[f].addEventListener("mouseover", () => {
+      mobileName[f].setAttribute("style", "color:#2874f0;");
+    });
+    productBox[f].addEventListener("mouseleave", () => {
+      mobileName[f].setAttribute("style", "color:#212121;");
+    });
+  }
+}
+productNameHover();
 
 
+let brandToggle = document.querySelector(".brandNames");
+let brandOptionToggle = document.querySelector(".brandOption")
 
-
-
-
-
+// filtering product =>
 function filtering(data) {
   let mobileFilters = [];
   let productRating = [];
-
-
+  // console.log(productRating, "productRating in Filter Data");
+  // console.log(mobileFilters, "mobileFilters");
 
   let appleEl = document.getElementById("apple-el");
   let samsungEl = document.getElementById("samsung-el");
   let pocoEl = document.getElementById("poco-el");
   let oppoEl = document.getElementById("oppo-el");
+  // console.log(mobileFilters, "mobileFilters");
 
   if (appleEl.checked === true) {
     mobileFilters.push("Apple");
-    console.log(mobileFilters);
+    // console.log(mobileFilters,"if in mobileFilter");
   }
   if (samsungEl.checked === true) {
     mobileFilters.push("Samsung");
@@ -702,7 +706,7 @@ function filtering(data) {
   if (oppoEl.checked === true) {
     mobileFilters.push("Oppo")
   }
-
+  // console.log(mobileFilters, "mobileFilters");
   let fourStar = document.getElementById("fourStar-el");
   let threeStar = document.getElementById("threeStar-el");
 
@@ -712,19 +716,25 @@ function filtering(data) {
   if (threeStar.checked === true) {
     productRating.push(3);
   }
-
+// console.log(data, "dataBefore");
   if (mobileFilters.length) {
-    item = mobileFilter(data, mobileFilters)
-    console.log(item);
+    data = mobileFilter(data, mobileFilters)
+    // console.log("mobile", data);
     update();
 
-    brandCategory(item);
-  }
-  if (productRating.length) {
-    item = ratingFilter(data, productRating);
-    console.log(item);
+    brandCategory(data);
+  }else {
     update();
-    brandCategory(item);
+    brandCategory(mobiles);
+    // console.log("checking..")
+  }
+
+  // console.log(productRating,"productRatings");
+  if (productRating.length) {
+    data = ratingFilter(data, productRating);
+    // console.log("rates" + data);
+    update();
+    brandCategory(data);
   }
 }
 
@@ -736,6 +746,8 @@ function setupFilter(mobileClick) {
 
   appleEl.addEventListener("change", () => {
     filtering(mobileClick);
+    // console.log("appleClicked");
+
   });
   samsungEl.addEventListener("change", () => {
     filtering(mobileClick);
@@ -755,31 +767,23 @@ function setupFilter(mobileClick) {
   threeStar.addEventListener("change", () => {
     filtering(mobileClick);
   });
-
 }
 setupFilter(newitem);
 
-function mobileFilter(mobiles, arrayoffindingphones) {
+function mobileFilter(mobiles, arrayOffindingPhones) {
 
   return mobiles.filter((item) => {
-    return arrayoffindingphones.includes(item.brand);
+    return arrayOffindingPhones.includes(item.brand);
 
   });
 
 }
 function ratingFilter(mobiles, arrayOffRating) {
+  // console.log(arrayOffRating);
   return mobiles.filter((item) => {
     return arrayOffRating.includes(item.rateBrand);
   });
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1017,7 +1021,28 @@ function ratingFilter(mobiles, arrayOffRating) {
 
 // console.log(objs);
 
+// function ratingFilter(mobileClick, ratings) {
+//   return mobileClick.filter((item)=> {
+//     let match = false;
+//     for(let j = 0; j < ratings.length; j++) {
+//       if(item.rateBrand >= ratings[j]) {
+//         match = true;
+//         break;
+//       }
+//     }
+//     return match;
+//   });
+// }
 
 
+<<<<<<< HEAD
 
 >>>>>>> 77b2e42 (twoNav)
+=======
+// brandToggle.forEach((item, idx) => {
+//   item.addEventListener("click", () => {
+//     brandOptionToggle[idx].classList.toggle("active");
+//     console.log("sd");
+//   });
+// })
+>>>>>>> d8bff9d (finshed)
