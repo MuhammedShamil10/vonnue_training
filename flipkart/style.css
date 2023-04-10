@@ -224,7 +224,7 @@ body {
     font-size: 14px;
     font-family: 'roboto-regular';
     margin: 0px 10px;
-    padding: 8px 0px 4px;
+    padding: 11px 0px 5px;
 }
 
 .mainContainer {
@@ -237,7 +237,7 @@ body {
     border-right: 8px solid #f0f0f0;
     background: #fff;
     width: 270px;
-    height: 1500px;
+    height: 1440px;
 }
 
 .productDetailSection {
@@ -365,9 +365,10 @@ body {
 /* .product-container:hover .productName {
     color: #2874f0;
 }
+*/
 .product-container {
     cursor: pointer;
-} */
+} 
 
 .ratingStar {
     display: flex;
@@ -727,7 +728,56 @@ body {
     position: sticky;
     top: 0;
 }
-
+.searchBook {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    transform: translate(0px, 8px);
+}
+.searchBook img {
+    margin-top: 15px;
+}
+.headFirst {
+    font-size: 14px;
+    font-family: 'roboto-regular';
+}
+.headSecnd {
+    font-size: 18px;
+    font-family: 'roboto-regular';
+    color: #2874f0;
+}
+.headSecnd i {
+    font-size: 15px;
+}
+/* .brandOption {
+    display: none;
+}
+.brandOption:active {
+    display: block;
+} */
+.ratingHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ratingHead i {
+    color: #878787;
+}
+.choosOption span {
+    cursor: pointer;
+}
+.addCompare label {
+    color: #494545;
+    cursor: pointer;
+}
+.addCompare label:hover {
+    color: #000000;
+}
+.relevance {
+    color: #2874f0;
+    border-bottom: 2px solid #2874f0;
+}
 
 
 label {
