@@ -126,7 +126,7 @@ let mobiles = [
       }
     ],
     brand: "Apple",
-    rateBrand: 3
+    rateBrand: 4
   },
   {
     img: `https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/o/p/z/-original-imagcg22pf79cgau.jpeg?q=70`,
@@ -253,7 +253,7 @@ let mobiles = [
     compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "POCO M4 5G(Yellow, 128 GB)",
-    rating: 4.2,
+    rating: 3.9,
     star: "Assets/img/star.svg",
     review: "29,519 Rating & 2,248 Reviews",
     price: "",
@@ -344,7 +344,7 @@ let mobiles = [
     compOption: "Add to Compare",
     favIcon: "Assets/img/flipFav.svg",
     phoneName: "ASUS ROG 5s(Phantom Black, 256 GB",
-    rating: 4.2,
+    rating: 3.7,
     star: "Assets/img/star.svg",
     review: "703 Rating & 86 Reviews",
     price: "",
@@ -371,6 +371,7 @@ let mobiles = [
     rateBrand: 3
   }
 ]
+
 
 let mobileContainerEl = document.getElementById("products-el");
 
@@ -454,6 +455,9 @@ function brandCategory(mobiles) {
     priceDvshion.appendChild(productPrice);
     productPrice.innerHTML = mobiles[i].price;
 
+
+
+    // actual price calculation
     if (mobiles[i].price != "") {
       let totalPrice = document.createElement("div");
       totalPrice.classList.add("totalPrice");
@@ -587,7 +591,7 @@ function filtering(data) {
   let samsungEl = document.getElementById("samsung-el");
   let pocoEl = document.getElementById("poco-el");
   let oppoEl = document.getElementById("oppo-el");
-  // console.log(mobileFilters, "mobileFilters");
+  // console.log(mobileFilters, "checking-mobileFilters");
 
   if (appleEl.checked === true) {
     mobileFilters.push("Apple");
@@ -628,7 +632,7 @@ function filtering(data) {
   // console.log(productRating,"productRatings");
   if (productRating.length) {
     data = ratingFilter(data, productRating);
-    // console.log("rates" + data);
+    // console.log("rates", data);
     update();
     brandCategory(data);
   }
