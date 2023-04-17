@@ -68,109 +68,178 @@ categories = [
 // main(10);        
 
 
+// let alphabet = "abcdefghijklmnopqrstuvwxyz";
 
+// function caeserEncrypt(stringLtr, shift) {
+//     let newStr = "";
+//     for(let i = 0; i < stringLtr.length; i++) {
+//         let pos = alphabet.indexOf(stringLtr.charAt(i));
+//         // console.log(pos);
+//         let EnPos = (pos+shift) % 26;
+//         let newChar = alphabet.charAt(EnPos);
+//         newStr = newStr + newChar;
+//     }
+//     console.log(newStr);
 
-let alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-function caeserEncrypt(stringLtr, shift) {
-    let newStr = "";
-    for(let i = 0; i < stringLtr.length; i++) {
-        let pos = alphabet.indexOf(stringLtr.charAt(i));
-        // console.log(pos);
-        let EnPos = (pos+shift) % 26;
-        let newChar = alphabet.charAt(EnPos);
-        newStr = newStr + newChar;
-    }
-    console.log(newStr);
-
-}
-caeserEncrypt("shamil", 1);
+// }
+// caeserEncrypt("shamil", 1);
 
 
 
-// D_{n}(x)=(x-n)\mod {26}.
+// // D_{n}(x)=(x-n)\mod {26}.
 
-let objs = [
-    {
-        name: 'one',
-        msg: 'I am one'
-    },
-    {
-        name: 'two',
-        msg: 'I am two'
-    },
-    {
-        name: 'three',
-        msg: 'I am three'
-    }
-];
+// let objs = [
+//     {
+//         name: 'one',
+//         msg: 'I am one'
+//     },
+//     {
+//         name: 'two',
+//         msg: 'I am two'
+//     },
+//     {
+//         name: 'three',
+//         msg: 'I am three'
+//     }
+// ];
 
-let spreadOp = {
-    ...objs
-}
-console.log(spreadOp);
+// let spreadOp = {
+//     ...objs
+// }
+// console.log(spreadOp);
 
-function main() {
-    objs.forEach((item)=> {
-        const btn = document.createElement('button');
-        btn.innerHTML = item.name;
-        btn.onclick = getCallback(item.msg);
-        document.body.appendChild(btn);
-    }); 
-}
-  function getCallback (arg) {
-      return function () {
-          alert(arg);
-      }
-  }
-main();
+// function main() {
+//     objs.forEach((item)=> {
+//         const btn = document.createElement('button');
+//         btn.innerHTML = item.name;
+//         btn.onclick = getCallback(item.msg);
+//         document.body.appendChild(btn);
+//     }); 
+// }
+//   function getCallback (arg) {
+//       return function () {
+//           alert(arg);
+//       }
+//   }
+// main();
 
-let obj1 = {
-    a: 1,
-    b: 2
-}
+// let obj1 = {
+//     a: 1,
+//     b: 2
+// }
 
  
-var obj2 = {...obj1};
-obj2.c = 1;
+// var obj2 = {...obj1};
+// obj2.c = 1;
 
-console.log(obj1, obj2);
+// console.log(obj1, obj2);
 
-let obj = {
-    a: 1,
-    b: 2,
-}
+// let obj = {
+//     a: 1,
+//     b: 2,
+// }
 
-let newObj = {...obj }
+// let newObj = {...obj }
 
-let sa = [1,2,3,4,5,86];
-let as = Math.max(...sa);
-console.log(as);
+// let sa = [1,2,3,4,5,86];
+// let as = Math.max(...sa);
+// console.log(as);
 
-// de stracturing
+// // de stracturing
 
-let obj11 = {
-    name:'code malayalam',
-    place: 'kerala',
-    rank: 3789,
-    adi: "hi"
-};
-function callingObj11() {
-    const {
-        name,
-       adi = false
-    } = obj11;
+// let obj11 = {
+//     name:'code malayalam',
+//     place: 'kerala',
+//     rank: 3789,
+//     adi: "hi"
+// };
+// function callingObj11() {
+//     const {
+//         name,
+//        adi = false
+//     } = obj11;
 
-    console.log(name, adi);
-}
-callingObj11();
+//     console.log(name, others, adi);
+// }
+// callingObj11();
 
-arr = [1,2,3,4,5,6,5];
+// arr = [1,2,3,4,5,6,5];
 
-function hiFunvtion() {
-    const [a, , b, ...other] = arr;
-    console.log(a, b, other);
-}
-hiFunvtion();
+// function hiFunvtion() {
+//     const [a, , b, ...other] = arr;
+//     console.log(a, b, other);
+// }
+// hiFunvtion();
 
 
+// let objts = {
+//     name: 'code',
+//     place: 'malayalam'
+// }
+
+// let objtss = {
+//     name: 'coder',
+//     place: 'hollywood'
+// }
+
+// function abc() {
+//     let {
+//         peru,
+//         place
+//     } = objts;
+
+//     let {
+//         peru,
+//         place
+//     } = objtss;
+
+//     console.log(peru, place);
+// }
+// abc();
+
+// array function ->
+
+let arry = [
+    {
+        name: 'shamil',
+        mark: 87,
+        place: "wayanad"
+    },
+    {
+        name: 'shami',
+        mark: 8799,
+        place: "wayan"
+    },
+    {
+        name: 'sham',
+        mark: 879,
+        place: "waya"
+    },
+    {
+        name: 'sha',
+        mark: 87,
+        place: "waya"
+    },
+];
+
+// sum = 0;
+// forEach->
+// arry.forEach((item, index) => {
+//     console.log(item.name);
+//     sum = sum + item.mark
+//     console.log(index);
+// });
+// console.log(sum);
+
+// find ->
+
+// let finding = arry.filter((item) => {
+//    return item.mark < 1000;
+// });
+// console.log(finding);
+
+// map
+
+let maping = arry.map((item) => {
+
+});
