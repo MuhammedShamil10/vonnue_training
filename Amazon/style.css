@@ -1,0 +1,117 @@
+
+@font-face {
+    font-family: 'font-one';
+    src: url(/Amazon/Assets/Font/AmazonUIFont-amazonember_bd-46b91bda68161c14e554a779643ef4957431987b._V2_.woff2);
+}
+@font-face {
+    font-family: 'font-two';
+    src: url(/Amazon/Assets/Font/AmazonUIFont-amazonember_bd-46b91bda68161c14e554a779643ef4957431987b._V2_\ \(1\).woff2);
+}
+@font-face {
+    font-family: 'font-three';
+    src: url(/Amazon/Assets/Font/AmazonUIFont-amazonember_rg-cc7ebaa05a2cd3b02c0929ac0475a44ab30b7efa._V2_.woff2);
+}
+@font-face {
+    font-family: 'font-four';
+    src: url(/Amazon/Assets/Font/AmazonUIFont-amazonember_rg-cc7ebaa05a2cd3b02c0929ac0475a44ab30b7efa._V2_\ \(1\).woff2);
+}
+@font-face {
+    font-family: 'font-five';
+    src: url(/Amazon/Assets/Font/KFPk-9IF4FqAqY-.woff2);
+}
+@font-face {
+    font-family: 'font-six';
+    src: url(/Amazon/Assets/Font/pDxWAF1pBB0dzGB.woff2);
+}
+@font-face {
+    font-family: 'font-seven';
+    src: url(/Amazon/Assets/Font/WOnTLzkiaEccV7F.woff2);
+}
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    background: #242525;
+}
+.nav-top span {
+    color: #fff;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+.nav-top i {
+    color: #fff;  
+}
+.location-icon {
+    display: flex;
+    flex-direction: column;
+} 
+.navigation i {
+    margin: 16px 4px 1px 1px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background: #fff;
+    width: 60%;
+    height: 42px;
+}
+.category {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-right: 1px solid #a9a7a7;
+    background: #efefef;
+    height: 40px;
+    padding: 2px 2px;
+}
+.category span {
+    color: #0f1f1f;
+    font-size: 14px;
+    font-family: 'font-six';
+}
+.category i {
+    color: #0f1f1f;
+    font-size: 10px;
+}
+
+.search-area input {
+    border: none;
+    font-size: 16px;
+    font-family: 'font-six';
+    width: 970px;
+}
+.submit-btn {
+    display: flex;
+    align-items: center;
+    background: #febd69;
+    height: 40px;
+    padding: 0px 4px;
+}
+.submit-btn i {
+    color: rgb(53, 9, 9);
+    font-size: 23px;
+}
+.search-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.testImg  {
+    background-image: url(https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png);
+    background: rgb(0, 0, 0);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+    width: 1000px;
+    height: 100%;
+}
