@@ -679,10 +679,14 @@ function mobileFilter(mobiles, arrayOffindingPhones) {
 
 }
 function ratingFilter(mobiles, arrayOffRating) {
-  // console.log(arrayOffRating);
+  console.log(arrayOffRating);
+
   return mobiles.filter((item) => {
+    console.log(item.rateBrand)
     return arrayOffRating.includes(item.rateBrand);
+
   });
+  
 }
 
 
