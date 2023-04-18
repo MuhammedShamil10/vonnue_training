@@ -199,28 +199,28 @@ categories = [
 
 // array function ->
 
-let arry = [
-    {
-        name: 'shamil',
-        mark: 87,
-        place: "wayanad"
-    },
-    {
-        name: 'shami',
-        mark: 8799,
-        place: "wayan"
-    },
-    {
-        name: 'sham',
-        mark: 879,
-        place: "waya"
-    },
-    {
-        name: 'sha',
-        mark: 87,
-        place: "waya"
-    },
-];
+// let arry = [
+//     {
+//         name: 'shamil',
+//         mark: 87,
+//         place: "wayanad"
+//     },
+//     {
+//         name: 'shami',
+//         mark: 8799,
+//         place: "wayan"
+//     },
+//     {
+//         name: 'sham',
+//         mark: 879,
+//         place: "waya"
+//     },
+//     {
+//         name: 'sha',
+//         mark: 87,
+//         place: "waya"
+//     },
+// ];
 
 // sum = 0;
 // forEach->
@@ -240,6 +240,133 @@ let arry = [
 
 // map
 
-let maping = arry.map((item) => {
+// let maping = arry.map((item) => {
+//     return {
+//         ...item,
+//         country: 'india'
+//     }
+// });
+// console.log(maping);
 
-});
+// reduce
+
+// let maping = arry.reduce((total,item) => {
+//     total.push(item.name);
+//     return total;
+// },[]);
+
+// console.log(maping);
+
+// nested destructuring
+// otherSide: {
+//     otherAnime
+// }
+// let obj = [
+//     {
+//         realName: "Muhammed Shamil",
+//         anime: "Demon Slayer",
+//         charactor:'Eren Yeagure',
+//         type: {
+//             eren: 'Hero villian'
+//         }
+//     }
+// ];
+
+// let [{
+//     realName,
+//     charactor,
+//     type :{
+//         eren
+//     }
+// }] = obj;
+
+// console.log(eren);
+
+
+// let obj2 =[ 
+//     {
+//         animeName: 'kamado Tanjiro',
+//         onePiece: 'Monkey De Luffy',
+//         otherSide: {
+//             otherAnime:'Attack on titan'
+//         }
+//     }];
+
+// let [{
+//     animeName,
+//     onePiece,
+//     otherSide: {
+//         otherAnime
+//     }
+// }]= obj2;
+
+// const sortingObj = obj2.find(item => {
+//     return item.onePiece == 'Monkey De Luffy';
+// });
+// console.log(sortingObj);
+
+// let arr = [
+//     {
+//     animeName,
+//     onePiece,
+//     otherSides: {
+//         otherAnimes: 'eren'
+//     }
+       
+// }
+// ];
+
+// let [{
+//     otherSides: {
+//         otherAnimes
+//     }
+// }] = arr;
+
+// console.log(otherAnimes);
+
+// ooPs 
+
+function topAge(...arg) {
+    let arr = arg.map((item => item.dob)) ;
+        console.log(Math.max(...arr));
+}
+
+class Student {
+    name;
+    dob;
+    place;
+    constructor(name, dob, place) {
+        this.name = name;
+        this.dob = dob;
+        this.place = place;
+    }
+    getAge() {
+        return new Date().getFullYear() - this.dob;
+    };
+    getName() {
+        return this.name;
+    };
+    getPlace() {
+        return this.place;
+    }
+}
+
+let student1 = new Student('Naruto', 999,'Leaf Village');
+let student2 = new Student('luffy', 995,'onePiece');
+
+console.log(student1.getName(),+" "+ student1.getAge(),student1.getPlace());
+console.log(student2.getName(),+" "+ student2.getAge(),student2.getPlace());
+topAge(student1,student2)
+
+// let student1 = {
+//     name: 'Naruto',
+//     dob: 1999,
+//     getAge: function() {
+//         return new Date().getFullYear() - this.dob;
+//     },
+//     getName: function() {
+//         return this.name;
+//     }
+// };
+// console.log(student1.getName(), student1.getAge());
+
