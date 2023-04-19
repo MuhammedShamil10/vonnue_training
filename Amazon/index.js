@@ -1,17 +1,53 @@
-categories = [
+
+categoryOne = [
     {
-        electric: "Electronics",
-        mobile: "Laptop",
-        TV: "TV & Home Entertainment",
-        Auto: "Audio",
-        camera: "Camera",
-        Computer: "Computer Peripherals",
+        television: "Amazon miniTV",
+        amzonSell: "Sell",
+        amzonBestSeller: "Best Seller",
+        amzonMobile: "Mobile",
+        deals: "Today's Deals",
+        service: "Customer Service",
+
+
+
+
+    }
+]
+
+categoriesTwo = [
+    {
+        mobile: "Mobiles & Accessories",
+        // electric: `https://m.media-amazon.com/images/G/31/img18/Electronics/Megamenu/Megamenu_Electronics_top._CB485947327_.png`,
+        laptop: "Laptop & Accessories",
+        tv: "TV & Home Entertainment",
+        audio: "Audio",
+        camera: "Cameras",
+        computer: "Computer Peripherals",
         technology: "Smart Technology",
         instruments: "Musical Instruments",
-        officeAndSta : "Office & Stationery"
-}
+        officeAndSta: "Office & Stationery"
+    }
 ]
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+let categoryEl = document.getElementById("category-el");
+
+let navBottom = categoriesTwo.map(function (item) {
+    let html = `
+                <span><img class="electro-img" src="/Amazon/Assets/Img/Electronics_.png" alt="" width="100px"></span>
+                <span>${item.mobile}</span>
+                <span>${item.laptop}</span>
+                <span>${item.tv}</span>
+                <span>${item.audio}</span>
+                <span>${item.camera}</span>
+                <span>${item.computer}</span>
+                <span>${item.technology}</span>
+                <span>${item.instruments}</span>
+                <span>${item.officeAndSta}</span>
+           `
+           return html
+});
+categoryEl.innerHTML = navBottom;
+
+
 
 // const myObj = {
 //     a: 1,
@@ -128,7 +164,7 @@ categories = [
 //     b: 2
 // }
 
- 
+
 // var obj2 = {...obj1};
 // obj2.c = 1;
 
@@ -312,7 +348,7 @@ categories = [
 //     otherSides: {
 //         otherAnimes: 'eren'
 //     }
-       
+
 // }
 // ];
 
@@ -327,8 +363,8 @@ categories = [
 // ooPs 
 
 function topAge(...arg) {
-    let arr = arg.map((item => item.dob)) ;
-        console.log(Math.max(...arr));
+    let arr = arg.map((item => item.dob));
+    console.log(Math.max(...arr));
 }
 
 class Student {
@@ -351,12 +387,12 @@ class Student {
     }
 }
 
-let student1 = new Student('Naruto', 999,'Leaf Village');
-let student2 = new Student('luffy', 995,'onePiece');
+let student1 = new Student('Naruto', 999, 'Leaf Village');
+let student2 = new Student('luffy', 995, 'onePiece');
 
-console.log(student1.getName(),+" "+ student1.getAge(),student1.getPlace());
-console.log(student2.getName(),+" "+ student2.getAge(),student2.getPlace());
-topAge(student1,student2)
+console.log(student1.getName(), +" " + student1.getAge(), student1.getPlace());
+console.log(student2.getName(), +" " + student2.getAge(), student2.getPlace());
+topAge(student1, student2)
 
 // let student1 = {
 //     name: 'Naruto',
