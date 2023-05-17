@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 body {
+=======
+body{
+>>>>>>> main
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,11 +12,15 @@ body {
     font-family: 'roboto-medium';
     src: url(/Assets/font/roboto-medium-webfont.woff2);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 @font-face {
     font-family: 'roboto-regular';
     src: url(/Assets/font/roboto-regular-webfont.woff2);
 }
+<<<<<<< HEAD
 
 .navBar {
     display: flex;
@@ -785,3 +793,20 @@ label {
 }
 
 /*......*/
+=======
+.navBar {
+    background: #2874f0;
+}
+.nav-section {
+    display: flex;
+}
+.navHeading {
+    display: flex;
+    flex-direction: column;
+}
+.navSearch-bar form {
+    display: flex;
+    align-items: center;
+}
+/* */
+>>>>>>> main

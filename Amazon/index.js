@@ -475,24 +475,23 @@ function priceCalculating(originalPrice, priceOffer) {
 +priceCalculating(+allProduct.originalPrice, +allProduct.priceOffer);
 
 function callingDealsOption(item) {
-    if (item != "") {
-      return `<span class="dealsName">${item}</span>`;
-    }else{
-      return ""
-    }
-}
-function callingBestOption(item) {
   if (item != "") {
-    return  `
-    <div class = "optionContainer">
-    <span class ="bestOption">
-    ${item}</span>
-    </div>`
-  }else{
+    return `<span class="dealsName">${item}</span>`;
+  } else {
     return "";
   }
 }
-
+function callingBestOption(item) {
+  if (item != "") {
+    return `
+    <div class = "optionContainer">
+    <span class ="bestOption">
+    ${item}</span>
+    </div>`;
+  } else {
+    return "";
+  }
+}
 
 setupFilter(newItem);
 function productBrandFilter(mobiles, arrayOfFindingPhone) {

@@ -726,7 +726,7 @@ main {
   position: relative;
   cursor: pointer;
 }
-.linkText{
+.linkText {
   cursor: pointer;
 }
 .backgroundText {
@@ -902,7 +902,7 @@ main {
   color: #e67a00;
   cursor: pointer;
 }
-.category-container span:hover{
+.category-container span:hover {
   color: #e67a00;
 }
 .discountOption {
@@ -912,7 +912,7 @@ main {
   display: flex;
   color: #0f1111;
   line-height: 1.4;
-  font-family: 'font-three';
+  font-family: "font-three";
   font-size: 14px;
   cursor: pointer;
 }
