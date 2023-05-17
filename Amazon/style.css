@@ -515,6 +515,10 @@ main {
   font-family: "font-three";
   color: #0f1111;
 }
+.model-name span:hover {
+  color: #e6a603;
+  cursor: pointer;
+}
 .ratingSection {
   display: flex;
   column-gap: 3px;
@@ -528,7 +532,7 @@ main {
 }
 #products-cr {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   margin-top: 15px;
 }
@@ -720,6 +724,10 @@ main {
 }
 .accountCreate {
   position: relative;
+  cursor: pointer;
+}
+.linkText{
+  cursor: pointer;
 }
 .backgroundText {
   position: absolute;
@@ -882,4 +890,32 @@ main {
 }
 .category-container {
   margin-left: 44px;
+}
+.navFooterLinkRow li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tableRow ul:hover {
+  text-decoration: underline;
+}
+.itemsHead li:hover {
+  color: #e67a00;
+  cursor: pointer;
+}
+.category-container span:hover{
+  color: #e67a00;
+}
+.discountOption {
+  margin-top: 17px;
+}
+.discountSection span {
+  display: flex;
+  color: #0f1111;
+  line-height: 1.4;
+  font-family: 'font-three';
+  font-size: 14px;
+  cursor: pointer;
+}
+.reviewRate span:hover {
+  color: #e67a00;
 }

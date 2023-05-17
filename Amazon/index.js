@@ -423,9 +423,9 @@ function setupFilter(mobileClick) {
         if (spanClear) {
           spanClear = false;
 
-          newSpan.classList.add("clk-option");
-          reviewEl.appendChild(newSpan);
-          newSpan.innerHTML = "Clear";
+          // newSpan.classList.add("clk-option");
+          // reviewEl.appendChild(newSpan);
+          // newSpan.innerHTML = "Clear";
         }
       });
       newSpan.addEventListener("click", () => {
@@ -489,7 +489,7 @@ function callingBestOption(item) {
     ${item}</span>
     </div>`
   }else{
-    return ""
+    return "";
   }
 }
 
