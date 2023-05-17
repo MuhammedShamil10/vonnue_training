@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 let categories = [{
     name: "Electronics",
     img: ""
@@ -30,25 +26,24 @@ let categories = [{
     {
         name: "Sports,Book & More",
         img: ""
-=======
-=======
-
-=======
-0
->>>>>>> 3fc86ec (feat:sortingOption)
-=======
-
->>>>>>> d8bff9d (finshed)
-const brandOption = document.querySelector(".brandOption")
-
-console.log(brandOption);
+    }
+]
+  
 
 
 
 
->>>>>>> 2d1784f (feat:sortingOption)
+
+
+
+
+
+
+
+
+
 let shopingCategory = [
-<<<<<<< HEAD
+
     {
         name: "Electrinics",
         img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
@@ -76,18 +71,16 @@ let shopingCategory = [
     {
         name: "Sports,Bools & More",
         img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
->>>>>>> 77b2e42 (twoNav)
+
     },
     {
         name: "Flights",
         img: ""
     },
     {
-<<<<<<< HEAD
         name: "offer Zone",
         img: ""
-    }
-=======
+    },
   {
     name: "Electronics",
     img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
@@ -124,31 +117,14 @@ let shopingCategory = [
     name: "Offer Zone",
     img: ""
   }
->>>>>>> 6e3b8d1 (added js)
 
     
 ]
-=======
-let num = prompt("enter a number");
 
-sum = 0;
 
-function sumAll() {
-    for (let i = 0; i < num; i++) {
-        if (i % 3 === 0 || i % 5 === 0) {
-            sum += i;
-        }
-=======
-        name: "Offer Zone",
-        img: ""
->>>>>>> 77b2e42 (twoNav)
-    }
+  
 
-<<<<<<< HEAD
-console.log(sumAll(sum))
->>>>>>> afeced3 (feat:nav)
-=======
-]
+
 
 let shoppingContainer = document.createElement("div");
 shoppingContainer.classList.add("shoppig-container");
@@ -1043,14 +1019,14 @@ function ratingFilter(mobiles, arrayOffRating) {
 // }
 
 
-<<<<<<< HEAD
 
->>>>>>> 77b2e42 (twoNav)
-=======
+
+
+
 // brandToggle.forEach((item, idx) => {
 //   item.addEventListener("click", () => {
 //     brandOptionToggle[idx].classList.toggle("active");
 //     console.log("sd");
 //   });
 // })
->>>>>>> d8bff9d (finshed)
+
