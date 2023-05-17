@@ -493,6 +493,7 @@ function callingBestOption(item) {
   }
 }
 
+
 setupFilter(newItem);
 function productBrandFilter(mobiles, arrayOfFindingPhone) {
   console.log(arrayOfFindingPhone, "ayyoffindphne");
