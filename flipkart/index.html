@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div>
+        <div class="nav-container">
+            <div class="navBar">
+                <div class="nav-section">
+                    <div class="navFlipkart">
+                        <div class="navHeading">
+                            <a href="#">
+                                <img src="/Assets/img/flipkart-plus.png" alt="" width="75px">
+                            </a>
+                            <a href="#">
+                                Explore
+                                <span>Plus</span>
+                                <img src="/Assets/img/plus_yellow.png" alt="" width="10px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navSearch-bar">
+                        <form action="">
+                            <div class="navInput">
+                                <input type="text" placeholder="Search for products,brands and more">
+                            </div>
+                            <button>
+                                <img src="/Assets/img/searchBar-blue.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="navLogin">
+                        <a href="#">
+                            Login
+                        </a>
+                    </div>
+                    <div class="navSeller">
+                        <span>Become a Seller</span>
+                    </div>
+                    <div class="navMore">
+                        <div class="moreOption">More</div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="navCart">
+                        <a href="#">
+                            <img src="/Assets/img/cart.svg" alt="" width="16px">
+                            <span class="shopingCart">Cart</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shopList-el" class="shopingList">
+
+        </div>
+        <div class="mainContainer">
+            <div class="filter-container">
+                <div class="filter-box">
+                    <div class="filterHeading">
+                        <span class="filText">Filters</span>
+                        <!-- <span class="blueText">CLEAR ALL</span> -->
+                    </div>
+                    <div class="filterCategories">
+                        <section>
+                            <span class="first">CATEGORIES</span>
+                            <span class="second"><i class="fa-solid fa-angle-left"></i>Mobile & Accessories</span>
+                            <span class="third">Mobiles</span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="priceRange">
+                    <div class="price">
+                        <span>PRICE</span>
+                    </div>
+                    <div class="rangingOption">
+
+                        <div class="roundLeft"></div>
+                        <div class="rainging"></div>
+                        <div class="roundRight"></div>
+
+                    </div>
+                    <div class="stations">
+                        <div>.</div>
+                        <div>.</div>
+                        <div>.</div>
+                        <div>.</div>
+                        <div>.</div>
+                        <div>.</div>
+                    </div>
+                    <div class="min-max">
+                        <select class="priceRanging" name="" id="min">
+                            <option value="min">Min</option>
+                            <option value="min">₹10000</option>
+                            <option value="min">₹20000</option>
+                            <option value="min">₹30000</option>
+                        </select>
+                        <span>to</span>
+
+                        <select class="maxRange" name="" id="max">
+                            <option value="max">₹40000</option>
+                            <option value="max">₹50000</option>
+                            <option value="max">₹60000+</option>
+                            <option value="max">₹70000+</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="borderLine"></div>
+                <div class="brandContainer">
+                    <div class="brandNames">
+
+                        <h4>BRAND</h4>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <div class="brandOption">
+                        <label id="" for="">
+                            <input id="apple-el" type="checkbox">
+                            APPLE
+                        </label>
+                        <label id="" for="">
+                            <input id="samsung-el" type="checkbox">
+                            SAMSUNG</label>
+
+                        <label id="" for="">
+                            <input id="poco-el" type="checkbox">
+                            REALME</label>
+
+                        <label id="" for="">
+                            <input id="oppo-el" type="checkbox">
+                            OPPO</label>
+                    </div>
+                </div>
+
+                <div id="mobileContainer-el">
+
+                </div>
+                <div class="assured">
+                    <label for="">
+                        <input type="checkbox">
+                        <img src="/Assets/img/azured.png" alt="" width="77px">
+                    </label>
+
+                </div>
+
+                <div class="rating">
+                    <div class="ratingHead">
+                        <h4>CUSTOMER RATINGS</h4>
+                        <i class="fa-solid fa-angle-up"></i>
+
+                    </div>
+                    <label id="" for="">
+                        <input id="fourStar-el" type="checkbox">
+                        4* & above</label>
+
+                    <label id="" for="">
+                        <input id="threeStar-el" type="checkbox">
+                        3* & above</label>
+                </div>
+
+                <div class="GST">
+                    <h4>GST INVOICE AVAILABLE</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>RAM</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+  
+                </div>
+                <div class="GST">
+                    <h4>INTERNAL STORAGE</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>BATTERY CAPACITY</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>SCREEN SIZE</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>PRIMARY CAMERA</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>SECONDARY CAMERA</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>PROCESSOR BRAND</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>SPECIALITY</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>RESOLUTION TYPE</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>OPERATING SYSTEM</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>NETWORK TYPE</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>SIM TYPE</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="GST">
+                    <h4>OFFERS</h4>
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+
+                <div class="searchBook">
+                    <span class="headFirst">Need help?</span>
+                    <span class="headSecnd">Help me decide <i class="fa-solid fa-angle-right"></i> </span>
+                    <img src="/Assets/img/searchBook.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="productDetailSection">
+                <div class="textPointer">
+                    <div class="product-containers">
+                        <div class="sortMobile">
+                            <span>Home</span>
+                            <span>Mobiles & Ac...</span>
+                            <span>Mobiles</span>
+                        </div>
+                    </div>
+                    <div class="productResult">
+                        <h4>Showing 1 – 24 of 167 results for "apple 14"</h4>
+                    </div>
+                    <div class="sortProduct">
+                        <h4>Sort By</h4>
+                        <span class="relevance">Relevance</span>
+                        <span>Populariity</span>
+                        <span>Price-Low to High</span>
+                        <span>Price-High to Low</span>
+                        <span>Newest First</span>
+
+                    </div>
+                </div>
+
+                <div id="products-el">
+
+                </div>
+                <div class="space"></div>
+                <div class="pageContainer">
+                    <div class="page">
+                        <span>Page 1 of 7</span>
+                        <nav>
+                            <a class="borderOne" href="">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#"><span>NEXT</span></a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spaceSecond"></div>
+                <div class="helpDeskContainer">
+                    <div class="helpDesk">
+                        <span>Did you find what you were looking for?</span>
+                        <div class="choosOption">
+                            <span>Yes</span>
+                            <span>No</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="partOne">
+                    <div class="about">
+                        <div>ABOUT</div>
+                        <a href="#">Contact Us</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Flipkart Stories</a>
+                        <a href="#">Press</a>
+                        <a href="#">Flipkart Wholesale</a>
+                        <a href="#">Corporate Information</a>
+                    </div>
+                    <div class="about">
+                        <div>HELP</div>
+                        <a href="#">Payments</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Cancellation & Returns</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Press</a>
+                        <a href="#">Report Infringement</a>
+                    </div>
+                    <div class="about">
+                        <div>CONSUMER POLICY</div>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms Of Use</a>
+                        <a href="#">Security</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Grievance Redressal</a>
+                        <a href="#">EPR Compliance</a>
+                    </div>
+                    <div class="about">
+                        <div>SOCIAL</div>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                    <div class="aboutOne aboutOnes">
+                        <div>Mail Us:</div>
+                        <a href="#">Flipkart Internet Private Limited, </a>
+                        <a href="#"> Buildings Alyssa, Begonia & </a>
+                        <a href="#"> Clove Embassy Tech Village, </a>
+                        <a href="#"> Outer Ring Road, Devarabeesanahalli Village, </a>
+                        <a href="#"> Bengaluru, 560103, </a>
+                        <a href="#"> Karnataka, India</a>
+                    </div>
+                    <div class="aboutOne">
+                        <div>Registered Office Address</div>
+                        <a href="#">Flipkart Internet Private Limited, </a>
+                        <a href="#"> Buildings Alyssa, Begonia & </a>
+                        <a href="#"> Clove Embassy Tech Village, </a>
+                        <a href="#"> Outer Ring Road, Devarabeesanahalli Village, </a>
+                        <a href="#"> Bengaluru, 560103, </a>
+                        <a href="#"> Karnataka, India </a>
+                        <a href="#"> CIN : U51109KA2012PTC066107</a>
+                        <a href="#"> Telephone: <span>044-45614700</span> </a>
+                    </div>
+                </div>
+                <div class="partTwo">
+                    <div class="optionImg">
+                        <img src="/Assets/img/svgexport-15.svg" alt="">
+                        <span>Become a Seller</span>
+                    </div>
+                    <div class="optionImg">
+                        <img src="/Assets/img/svgexport-16 (1).svg" alt="">
+                        <span>Advertise</span>
+                    </div>
+                    <div class="optionImg">
+                        <img src="/Assets/img/svgexport-17 (1).svg" alt="">
+                        <span>Gift Cards</span>
+                    </div>
+                    <div class="optionImg">
+                        <img src="/Assets/img/svgexport-18.svg" alt="">
+                        <span>Help Center</span>
+                    </div>
+
+                    <span class="com">© 2007-2023 Flipkart.com</span>
+                    <div class="optionImg">
+                        <img src="/Assets/img/billing.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

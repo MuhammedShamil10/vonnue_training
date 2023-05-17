@@ -1,4 +1,4 @@
-// console.log("helo")
+ // console.log("helo")
 // in-line comment
 /* multi-line comment */
 
@@ -723,3 +723,83 @@ Data types:
 // import * as lol from "lol_strings";
 
 
+// var n = 2;
+// let ans;
+// function square() {
+//     ans = n * n;
+//     return ans;
+// }
+// console.log(square(ans));
+// var square4 = square(4);
+// console.log(square)
+
+
+// var x = 101;
+
+// a();
+// b();
+
+// console.log(x)
+// function a() {
+//     var x = 10;
+//     console.log(x);
+// }
+
+// function b() {
+//     var x = 200;
+//     console.log(x)
+// }
+// var x = 100;
+// let x;
+// function b() {
+//      x = 300;
+//      return x
+// }
+// console.log(b());
+
+// var a;
+// console.log(a)
+// var b;
+// function a() {
+//     console.log(b)
+//     c();
+//     function c() {
+//          b = 10;
+        
+//     }
+// }
+// console.log(b)
+// a();
+
+// console.log(b);
+// let ah = 10;
+// var bh = 30;
+
+// function a() {
+//     b();
+//     function b() {
+//         let b = 10;
+//         return b;
+//     } 
+// }
+// let a = 1;
+// console.log(b)
+// var b = 13;
+//   let 
+var a = 49;
+{
+    var a = 10;
+    let b = 40;
+    const c = 12;  
+
+    // console.log(a);
+    console.log(b);
+    console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log(c);
+
+let
+
+  
