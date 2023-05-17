@@ -531,10 +531,13 @@ main {
   color: #007185;
 }
 #products-cr {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 15px;
+  gap: 8px;
 }
 .box-container {
   width: 340px;
@@ -918,4 +921,7 @@ main {
 }
 .reviewRate span:hover {
   color: #e67a00;
+}
+.right-main {
+  margin-left: 191px;
 }
