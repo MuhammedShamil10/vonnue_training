@@ -295,6 +295,7 @@ let mainRight = (product) =>
     <div class="box-container">
     
    ${callingBestOption(items.bestProduct)}
+   
     <div class="imgSection">
         <img src="${items.productImage}" alt="">
     </div>
@@ -330,6 +331,7 @@ let mainRight = (product) =>
         <div class="deliverOptions">
             <span>${items.deliveryOption}</span>
         </div>
+    </div>
     </div>
 </div>
 </div>`;
