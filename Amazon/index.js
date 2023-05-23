@@ -296,6 +296,7 @@ let mainRight = (product) =>
     
    ${callingBestOption(items.bestProduct)}
    
+   
     <div class="imgSection">
         <img src="${items.productImage}" alt="">
     </div>
