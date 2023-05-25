@@ -511,3 +511,18 @@ function productStarFilter(mobiles, finding) {
     return finding.includes(item.star);
   });
 }
+// popUp
+let model = document.querySelector('.filter-popUp-container');
+let close = document.querySelector('.close');
+let rightEl = document.querySelector('.right-main');
+
+function popup() {
+  model.style.top = '0px';
+  model.style.transition = '.5s'
+  rightEl.style.display = 'none'
+
+}
+function popdown() {
+  model.style.top = '884px'
+  rightEl.style.display = 'block'
+}
