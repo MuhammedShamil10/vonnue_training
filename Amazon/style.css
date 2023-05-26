@@ -1240,7 +1240,7 @@ main {
   .leftSide-filter {
     background: #f0f2f2;
   }
-  .rightSide-filter {
+  .brandFilter {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1261,11 +1261,13 @@ main {
     margin-bottom: 5px;
   }
   .results {
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid #e7e7e7;
     text-align: right;
     padding: 20px 10px;
   }
-  .results span {
+  .result {
     font-size: 13px;
     font-family: 'font-three';
     background: #007185;
@@ -1277,6 +1279,23 @@ main {
     border-radius: 7px;
     padding: 9px;
     height: 100%;
-}
   }
+  .rightSide-filter input{
+    border: none;
+  }
+  .samsung i {
+    display: none;
+  }
+  .clearFilter {
+    border: 1px solid #f1f1f1;
+    background: none;
+    color: #007185;
+    font-size: 14px;
+    font-family: 'font-three';
+    padding: 9px 14px;
+  }
+  .four {
+    display: flex;
+  }
+}
 

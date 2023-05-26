@@ -349,6 +349,7 @@ function filtering(data) {
   const appleEl = document.getElementById("apple");
   const samsungEl = document.getElementById("samsung");
 
+
   if (onePlusEl.checked === true) {
     brandFilter.push("oneplus");
     console.log("oneplus checked");
@@ -376,6 +377,7 @@ function setupFilter(mobileClick) {
   const appleEl = document.getElementById("apple");
   const samsungEl = document.getElementById("samsung");
 
+
   onePlusEL.addEventListener("change", () => {
     filtering(mobileClick);
     console.log("clicked");
@@ -386,6 +388,8 @@ function setupFilter(mobileClick) {
   samsungEl.addEventListener("change", () => {
     filtering(mobileClick);
   });
+
+
 
   // starFiltering
   let spanClear = true;
@@ -409,26 +413,19 @@ function setupFilter(mobileClick) {
       if (index == 3) {
         clickVariable = [1, 2, 3, 4];
       }
-      // let arry = productStarFilter(allProduct, clickVariable)
+
       let array = allProduct.filter((item) => {
         return clickVariable.includes(item.star);
       });
 
-      // let fourFilter = allProduct.filter((items) => {
-      //     return items.star == 4
-      // })
-      // console.log(fourFilter);
       productEl.innerHTML = mainRight(array);
+
       let reviewEl = document.getElementById("reviewRate");
       let newSpan = document.createElement("span");
       reviewEl.addEventListener("click", () => {
         console.log(spanClear);
         if (spanClear) {
           spanClear = false;
-
-          // newSpan.classList.add("clk-option");
-          // reviewEl.appendChild(newSpan);
-          // newSpan.innerHTML = "Clear";
         }
       });
       newSpan.addEventListener("click", () => {
@@ -518,7 +515,7 @@ let rightEl = document.querySelector('.right-main');
 
 function popup() {
   model.style.top = '0px';
-  model.style.transition = '.5s'
+  model.style.transition = '.52s'
   rightEl.style.display = 'none'
 
 }
@@ -526,3 +523,61 @@ function popdown() {
   model.style.top = '884px'
   rightEl.style.display = 'block'
 }
+
+
+const mOneplusEl = document.querySelector(".oneplus");
+const mSamsungEl = document.querySelector('.samsung');
+const mappleEl = document.querySelector('.apple');
+
+
+// let storeProduct = [];
+
+mSamsungEl.addEventListener("click", () => {
+  console.log("clicked");
+  mSamsungEl.style.color = '#007185'
+  mSamsungEl.style.border = '1px solid #c7e4e8'
+  let samSung = allProduct.filter((item) => {
+    console.log(item);
+    return item.brand == "samsung";
+  });
+  update();
+  productEl.innerHTML = mainRight(samSung).join(" ");
+});
+
+mOneplusEl.addEventListener("click", () => {
+  console.log("clicked");
+  mOneplusEl.style.color = '#007185'
+  mOneplusEl.style.border = '1px solid #c7e4e8'
+  let onePlus = allProduct.filter((item) => {
+    console.log(item);
+    return item.brand == "oneplus";
+  });
+  update();
+  productEl.innerHTML = mainRight(onePlus).join(" ");
+});
+
+ mappleEl.addEventListener("click", () => {
+  console.log("clicked");
+  mappleEl.style.color = '#007185'
+  mappleEl.style.border = '1px solid #c7e4e8'
+  let appleF = allProduct.filter((item) => {
+    console.log(item);
+    return item.brand == "apple";
+  });
+  update();
+  productEl.innerHTML = mainRight(appleF).join(" ");
+});
+
+let result = document.querySelector('.results');
+
+result.addEventListener("click", () => {
+  update();
+  mOneplusEl.style.color = 'black'
+  mSamsungEl.style.color = 'black'
+  mappleEl.style.color = 'black'
+
+  mOneplusEl.style.border = 'none'
+  mSamsungEl.style.border = 'none'
+  mappleEl.style.border = 'none'
+  productEl.innerHTML = mainRight(allProduct).join(" ")
+})
