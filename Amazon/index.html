@@ -25,24 +25,23 @@
               <span class="count">Filter(1)</span>
               <span onclick="popdown()" class="close">Close</span>
             </div>
-              <div class="filter-section">
-                <div class="leftSide-filter">
-                  <span class="heading">Prime & Delivery</span>
-                  <span class="brand">Brand</span>
-                  <span class="heading">Price and Deals</span>
-                  <span class="heading">customer Reviews</span>
-                  <span class="heading">Sort by</span>
-                </div>
-                <div class="rightSide-filter">
-                  <div class="brandFilter">
-                    <h4>Brands</h4>
-                    <span class="samsung">Samsung </span>
-                    <span class="oneplus">OnePlus</span>
-                    <span class="apple">Apple</span>
-                  </div>
+            <div class="filter-section">
+              <div class="leftSide-filter">
+                <span class="heading">Prime & Delivery</span>
+                <span class="brand">Brand</span>
+                <span class="heading">Price and Deals</span>
+                <span class="heading">customer Reviews</span>
+                <span class="heading">Sort by</span>
+              </div>
+              <div class="rightSide-filter">
+                <div class="brandFilter">
+                  <h4>Brands</h4>
+                  <span class="samsung">Samsung </span>
+                  <span class="oneplus">OnePlus</span>
+                  <span class="apple">Apple</span>
                 </div>
               </div>
-           
+            </div>
           </div>
           <div class="results">
             <span class="clearFilter">Clear Filter</span>
@@ -85,7 +84,6 @@
           <div class="nav-searchBar">
             <div class="nav-form">
               <input type="text" placeholder="Search Amazon.in" />
-              <!-- <img src="/Amazon/Assets/Img/navSearchImg.png" alt="" width="27px"> -->
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
@@ -112,10 +110,17 @@
           <div class="logo-name">
             <span class="logos-img">
               <!-- <img src="/Amazon/Assets/Img/Amazon-logo1.webp" alt="" width="170px"> -->
+              <span class="in">.in</span>
             </span>
           </div>
           <div class="navigation">
-            <i class="fa-solid fa-location-dot"></i>
+            <img
+              src="/Amazon/Assets/Img/navLocation.png"
+              width="20px"
+              height="22px
+            "
+              alt=""
+            />
             <div class="location-icon">
               <span class="greeting">Hello</span>
               <span class="address">Select your address</span>
@@ -160,11 +165,15 @@
               <span class="product-order">& Orders</span>
             </div>
             <div class="cart-section">
-              <span class="queue">0</span>
-              <div>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="cart">Cart</span>
+              <div class="zeroAndCart">
+                <span class="queue">0</span>
+                <img
+                  src="/Amazon/Assets/Img/carWeight.png"
+                  width="40px"
+                  alt=""
+                />
               </div>
+              <span class="cart">Cart</span>
             </div>
           </div>
         </div>
@@ -260,13 +269,9 @@
               </div>
               <div class="brand-container">
                 <span>Brands</span>
-                <label for=""
-                  ><input id="onePlus" type="checkbox" />OnePlus</label
-                >
+                <label for=""><input id="onePlus" type="checkbox" />OnePlus</label>
                 <label for=""><input id="apple" type="checkbox" />Apple</label>
-                <label for=""
-                  ><input id="samsung" type="checkbox" />Samsung</label
-                >
+                <label for=""><input id="samsung" type="checkbox" />Samsung</label>
                 <!-- <label for=""><input id="redmi" type="checkbox">Redmi</label>
                 <label for=""><input type="checkbox">realme</label>
                 <label for=""><input type="checkbox">Fire-Bott</label>
@@ -478,7 +483,6 @@
                 </ul>
               </div>
             </div>
-
             <div class="tableSecondRow">
               <div class="tableRow">
                 <div class="tableHead">Shop</div>

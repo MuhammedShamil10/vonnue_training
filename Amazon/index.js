@@ -339,7 +339,7 @@ let mainRight = (product) =>
     return htmltwo;
   });
 productEl.innerHTML = mainRight(allProduct).join("");
-mainRight(allProduct);
+mainRight(allProduct).join(" ");
 
 function filtering(data) {
   let brandFilter = [];
@@ -366,10 +366,10 @@ function filtering(data) {
     data = productBrandFilter(data, brandFilter);
     console.log(data, "brandFilter");
     update();
-    productEl.innerHTML = mainRight(data);
+    productEl.innerHTML = mainRight(data).join(" ");
   } else {
     update();
-    productEl.innerHTML = mainRight(allProduct);
+    productEl.innerHTML = mainRight(allProduct).join(" ");
   }
 }
 function setupFilter(mobileClick) {
@@ -418,7 +418,7 @@ function setupFilter(mobileClick) {
         return clickVariable.includes(item.star);
       });
 
-      productEl.innerHTML = mainRight(array);
+      productEl.innerHTML = mainRight(array).join(" ");
 
       let reviewEl = document.getElementById("reviewRate");
       let newSpan = document.createElement("span");
@@ -431,7 +431,7 @@ function setupFilter(mobileClick) {
       newSpan.addEventListener("click", () => {
         console.log("clickedSpan");
         update();
-        newSpan.innerHTML = mainRight(allProduct);
+        newSpan.innerHTML = mainRight(allProduct).join(" ");
       });
     });
   });
@@ -441,7 +441,7 @@ function setupFilter(mobileClick) {
     let priceTag = allProduct.filter((item) => {
       return item.price <= 1000;
     });
-    productEl.innerHTML = mainRight(priceTag);
+    productEl.innerHTML = mainRight(priceTag).join(" ");
   });
 
   let secondPrice = document.getElementById("midPrice-el");
@@ -449,7 +449,7 @@ function setupFilter(mobileClick) {
     let sPriceTag = allProduct.filter((item) => {
       return item.price < 5000 && item.price > 1000;
     });
-    productEl.innerHTML = mainRight(sPriceTag);
+    productEl.innerHTML = mainRight(sPriceTag).join(" ");
   });
 
   let thirdPrice = document.getElementById("highPrice-el");
@@ -457,14 +457,14 @@ function setupFilter(mobileClick) {
     let tPriceTage = allProduct.filter((item) => {
       return item.price < 10000 && item.price > 5000;
     });
-    productEl.innerHTML = mainRight(tPriceTage);
+    productEl.innerHTML = mainRight(tPriceTage).join(" ");
   });
   let bigPrice = document.getElementById("bigPrice-el");
   bigPrice.addEventListener("click", () => {
     let bPriceTag = allProduct.filter((item) => {
       return item.price > 11000;
     });
-    productEl.innerHTML = mainRight(bPriceTag);
+    productEl.innerHTML = mainRight(bPriceTag).join(" ");
   });
 }
 
