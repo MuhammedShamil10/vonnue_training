@@ -576,8 +576,78 @@ result.addEventListener("click", () => {
   mSamsungEl.style.color = 'black'
   mappleEl.style.color = 'black'
 
+  fourStar.style.color = 'black'
+  threeStar.style.color = 'black'
+  twoStar.style.color = 'black'
+
   mOneplusEl.style.border = 'none'
   mSamsungEl.style.border = 'none'
   mappleEl.style.border = 'none'
   productEl.innerHTML = mainRight(allProduct).join(" ")
 })
+
+// mobile filters
+reviewFilterEl = document.querySelector('.brand');  
+brandEl = document.querySelector('.brandFilter');
+customerReviewFilterEl = document.querySelector('.customerReviewFilter');
+customerReviewEl = document.querySelector('.customerReview');
+
+
+reviewFilterEl.addEventListener('click', ()=> {
+  console.log("clicked");
+  customerReviewEl.classList.toggle('customerReview');
+  customerReviewEl.style.display = 'none'
+  brandEl.style.display = 'flex'
+  customerReviewFilterEl.style.background = '#f0f2f2';
+  reviewFilterEl.style.background = '#fff'
+});
+
+
+
+customerReviewFilterEl.addEventListener('click', ()=> {
+  console.log("clicked");
+  brandEl.style.display = 'none'
+  customerReviewEl.style.display = 'block'
+  customerReviewEl.style.transform = 'translate(1px, 9px)'
+  customerReviewFilterEl.style.background = '#fff'
+  reviewFilterEl.style.background = '#f0f2f2'
+});
+
+
+
+let fourStar = document.querySelector('.fourStar');
+let threeStar = document.querySelector('.threeStar');
+let twoStar = document.querySelector('.twoStar');
+
+fourStar.addEventListener("click", () => {
+  console.log("checked");
+  fourStar.style.color = '#007185'
+  // fourStar.style.border = '1px solid #c7e4e8'
+  let fourStarProduct = allProduct.filter((item) => {
+    return item.star == 4;
+  })
+  update();
+  productEl.innerHTML = mainRight(fourStarProduct);
+});
+
+threeStar.addEventListener("click", () => {
+  console.log("checked");
+  threeStar.style.color = '#007185'
+  // fourStar.style.border = '1px solid #c7e4e8'
+  let threeStarProducr = allProduct.filter((item) => {
+    return item.star == 3;
+  })
+  update();
+  productEl.innerHTML = mainRight(threeStarProducr);
+});
+
+twoStar.addEventListener("click", () => {
+  console.log("checked");
+  twoStar.style.color = '#007185'
+  // fourStar.style.border = '1px solid #c7e4e8'
+  let twoStarProduct = allProduct.filter((item) => {
+    return item.star == 2;
+  })
+  update();
+  productEl.innerHTML = mainRight(twoStarProduct);
+});
