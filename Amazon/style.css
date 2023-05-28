@@ -1235,6 +1235,8 @@ main {
   .leftSide-filter {
     background: #f0f2f2;
   }
+
+  /*  */
   .brandFilter {
     display: flex;
     flex-direction: column;
