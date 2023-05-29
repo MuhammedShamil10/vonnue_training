@@ -1230,13 +1230,7 @@ main {
   }
   .filter-section {
     display: flex;
-    height: 630px;
   }
-  .leftSide-filter {
-    background: #f0f2f2;
-  }
-
-  /*  */
   .brandFilter {
     display: flex;
     flex-direction: column;
@@ -1261,6 +1255,10 @@ main {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #e7e7e7;
+    position: absolute;
+    top: 88%;
+    width: 100%;
+    bottom: 1%;
     text-align: right;
     padding: 28px 10px;
   }
