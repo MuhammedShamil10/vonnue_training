@@ -1259,12 +1259,8 @@ main {
     width: 100%;
     bottom: 0%;
     text-align: right;
-<<<<<<< HEAD
     padding: 14px 10px;
- 
-=======
     padding: 12px 10px;
->>>>>>> d946186 (feat:amzon clone mobile view filter result class updat fixed)
   }
   .result {
     font-size: 13px;
