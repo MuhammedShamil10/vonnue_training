@@ -1256,11 +1256,11 @@ main {
     justify-content: space-between;
     border-top: 1px solid #e7e7e7;
     position: absolute;
-    top: 88%;
     width: 100%;
-    bottom: 1%;
+    bottom: 0%;
     text-align: right;
-    padding: 28px 10px;
+    padding: 14px 10px;
+ 
   }
   .result {
     font-size: 13px;
@@ -1269,11 +1269,13 @@ main {
     color: #fff;
     margin-right: 5px;
     margin-left: 5px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     border: 0.1rem solid #f1f1f1;
     border-radius: 7px;
     padding: 9px;
     height: 100%;
+    min-height: 39px;
+    max-height: 38px;
   }
   .rightSide-filter input {
     border: none;
