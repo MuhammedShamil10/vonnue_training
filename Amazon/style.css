@@ -1260,7 +1260,7 @@ main {
     bottom: 0%;
     text-align: right;
     padding: 14px 10px;
- 
+    padding: 12px 10px;
   }
   .result {
     font-size: 13px;
