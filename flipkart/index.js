@@ -685,30 +685,6 @@ function ratingFilter(mobiles, arrayOffRating) {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log(mobileFilter)
-// namaste javascript....:-
-
-// const arr = [123,15,5,6345,234];
-
-// const output = arr.filter((x) => x % 2);
-// console.log(output);
-
 // function a() {
 //   console.log(b);
 // }
