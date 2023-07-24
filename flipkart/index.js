@@ -738,6 +738,7 @@ function ratingFilter(mobiles, arrayOffRating) {
 //     }
 //     return sum;
 // }
+// sample
 
 //  console.log(sumAll(sum));
 
