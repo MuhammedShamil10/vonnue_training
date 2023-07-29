@@ -745,7 +745,7 @@ function ratingFilter(mobiles, arrayOffRating) {
 //  console.log(sumAll(sum));
 
 // function x() {
-//     var a = 10;
+//     var a = 22;
 //     function y() {
 //         console.log(a);
 //     }
