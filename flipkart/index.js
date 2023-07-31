@@ -740,7 +740,6 @@ function ratingFilter(mobiles, arrayOffRating) {
 // }
 // sample
 // saaaample
-// sample
 
 //  console.log(sumAll(sum));
 
