@@ -165,6 +165,9 @@ body {
 
 }
 
+.filterCategories span {
+    font-family: 'roboto-medium';
+=======
 .filterCategories span{
  font-family: 'roboto-medium';
 }
@@ -801,6 +804,7 @@ label {
     color: #212121;
 }
 
+/*......*/
 
 /*......*/
 
