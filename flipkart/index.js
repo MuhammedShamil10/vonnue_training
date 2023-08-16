@@ -2,11 +2,88 @@
 const brandOption = document.querySelector(".brandOption")
 
 console.log(brandOption);
+let categories = [{
+    name: "Electronics",
+    img: ""
+    },
+    {
+        name: "TVs & Appliances",
+        img: ""
+    },
+    {
+        name: "Men",
+        img: ""
+    },
+    {
+        name: "Women",
+        img: ""
+    },
+    {
+        name: "Baby & Kids",
+        img: ""
+    },
+    {
+        name: "Home & Furniture",
+        img: ""
+    },
+    {
+        name: "Sports,Book & More",
+        img: ""
+    }
+]
+  
+
+
+
+
+
+
+
+
+
 
 
 
 
 let shopingCategory = [
+
+    {
+        name: "Electrinics",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+    },
+    {
+        name: "TVs & Appliances",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+    },
+    {
+        name: "Men",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+    },
+    {
+        name: "Women",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+    },
+    {
+        name: "Baby & Kids",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+    },
+    {
+        name: "Home & Furniture",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+    },
+    {
+        name: "Sports,Bools & More",
+        img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
+
+    },
+    {
+        name: "Flights",
+        img: ""
+    },
+    {
+        name: "offer Zone",
+        img: ""
+    },
   {
     name: "Electronics",
     img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>`
@@ -45,6 +122,14 @@ let shopingCategory = [
   }
 
 ]
+
+    
+]
+
+
+  
+
+
 
 let shoppingContainer = document.createElement("div");
 shoppingContainer.classList.add("shoppig-container");
@@ -683,6 +768,14 @@ function ratingFilter(mobiles, arrayOffRating) {
   return mobiles.filter((item) => {
     return arrayOffRating.includes(item.rateBrand);
   });
+  console.log(arrayOffRating);
+
+  return mobiles.filter((item) => {
+    console.log(item.rateBrand)
+    return arrayOffRating.includes(item.rateBrand);
+
+  });
+  
 }
 
 
@@ -728,6 +821,7 @@ function ratingFilter(mobiles, arrayOffRating) {
 // console.log(l);
 // let num = prompt("enter a number");
 // commonent
+
 // sum = 0;
 
 // function sumAll() {
@@ -746,6 +840,12 @@ function ratingFilter(mobiles, arrayOffRating) {
 
 // function x() {
 //     var a = 22;
+// }
+
+//  console.log(sumAll(sum));
+
+// function x() {
+//     var a = 10;
 //     function y() {
 //         console.log(a);
 //     }
@@ -938,9 +1038,14 @@ function ratingFilter(mobiles, arrayOffRating) {
 // }
 
 
+
+
+
+
 // brandToggle.forEach((item, idx) => {
 //   item.addEventListener("click", () => {
 //     brandOptionToggle[idx].classList.toggle("active");
 //     console.log("sd");
 //   });
 // })
+

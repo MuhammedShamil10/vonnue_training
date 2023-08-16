@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div>
+      <!-- mobile view nav -->
+      <header>
+        <div class="filter-popUp-container">
+          <div class="filter-popUp-section">
+            <div class="popUp-head">
+              <span class="count">Filter(1)</span>
+              <span onclick="popdown()" class="close">Close</span>
+            </div>
+            <div class="filter-section">
+              <div class="leftSide-filter">
+                <!-- <span class="heading">Prime & Delivery</span> -->
+                <span class="brand">Brand</span>
+                <!-- <span class="heading">Price and Deals</span> -->
+                <span class="heading customerReviewFilter">customer Reviews</span>
+                <!-- <span class="heading">Sort by</span> -->
+              </div>
+              <div class="rightSide-filter">
+                <div class="brandFilter">
+                  <span class="samsung">Samsung </span>
+                  <span class="oneplus">OnePlus</span>
+                  <span class="apple">Apple</span>
+                </div>
+                <div class="customerReview">
+                  <div class="fourMore fourStar">
+                    <div class="starsOnly">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                    </div>
+                    <span class="stars">& Up</ class="stars">
+                  </div>
+                  <div class="fourMore threeStar">
+                    <div class="starsOnly">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                    </div>
+                    <span class="stars">& Up</span>
+                  </div>
+                  <div class="fourMore twoStar">
+                    <div class="starsOnly">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                      <img src="/Amazon/Assets/Img/oneStar.png" alt="">
+                    </div>
+                    <span class="stars">& Up</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="results-section">
+              <span class="clearFilter results">Clear Filter</span>
+              <span onclick="popdown()" class="result">Show results</span>
+            </div>
+          </div>
+        </div>
+        <div class="mobileNavContainer">
+          <div class="nav-logBar">
+            <div class="nav-left">
+              <img
+                src="/Amazon/Assets/Img/Burger-nav.png"
+                alt=""
+                width="26px"
+              />
+              <!-- <div class="amzon-logo"> -->
+              <img
+                src="/Amazon/Assets/Img/amzinBigLogo.png"
+                alt=""
+                width="84px"
+                height="32px"
+              />
+              <span class="logoText">.in</span>
+              <!-- </div> -->
+            </div>
+            <div class="nav-right">
+              <span class="nav-signIn"> Sign in ›</span>
+              <span>
+                <img
+                  src="/Amazon/Assets/Img/navProfile.png"
+                  alt=""
+                  width="28px"
+                />
+              </span>
+              <span class="nav-cart">
+                <span class="zero">0</span
+                ><img src="/Amazon/Assets/Img/navCart.png" alt="" width="39px"
+              /></span>
+            </div>
+          </div>
+          <div class="nav-searchBar">
+            <div class="nav-form">
+              <input type="text" placeholder="Search Amazon.in" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="nav-location">
+            <img src="/Amazon/Assets/Img/navLocation.png" alt="" width="20px" />
+            <span>Select a location to see product availability</span>
+          </div>
+          <div class="nav-filter">
+            <div class="left-filter">
+              <img src="/Amazon/Assets/Img/primeicon.png" alt="" />
+              <img src="/Amazon/Assets/Img/nav-filter.svg" alt="" />
+            </div>
+            <div onclick="popup()" class="right-filter">
+              <span>Filters (1)</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- mobile view end -->
+      <div class="desktop-view">
+        <div class="nav-top">
+          <div class="logo-name">
+            <span class="logos-img">
+              <!-- <img src="/Amazon/Assets/Img/Amazon-logo1.webp" alt="" width="170px"> -->
+              <span class="in">.in</span>
+            </span>
+          </div>
+          <div class="navigation">
+            <img
+              src="/Amazon/Assets/Img/navLocation.png"
+              width="20px"
+              height="22px
+            "
+              alt=""
+            />
+            <div class="location-icon">
+              <span class="greeting">Hello</span>
+              <span class="address">Select your address</span>
+            </div>
+          </div>
+          <div class="search-container">
+            <div class="category">
+              <span>All Categories</span>
+              <i class="fa-solid fa-angle-down"></i>
+              <!-- i tag -->
+            </div>
+            <div class="search-icon">
+              <div class="search-area">
+                <input type="text" placeholder="Search Amazon.in" />
+              </div>
+              <div class="submit-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+          <div class="account-section">
+            <div class="country-language">
+              <img
+                src="/Amazon/Assets/Img/flag.png"
+                alt=""
+                width="21px"
+                height="16px"
+              />
+              <!-- flag -->
+              <span>EN</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="account-list">
+              <span class="sign">Hello, sign in</span>
+              <div>
+                <span class="accounts">Account & lists</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="order-returns">
+              <span class="product-return">Returns</span>
+              <span class="product-order">& Orders</span>
+            </div>
+            <div class="cart-section">
+              <div class="zeroAndCart">
+                <span class="queue">0</span>
+                <img
+                  src="/Amazon/Assets/Img/carWeight.png"
+                  width="40px"
+                  alt=""
+                />
+              </div>
+              <span class="cart">Cart</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-centre">
+          <div class="all-item">
+            <div class="container">
+              <div class="burger-nav">
+                <i class="fa-solid fa-bars"></i>
+                <span>All</span>
+              </div>
+              <div class="product-list">
+                <span>Amazon miniTV</span>
+                <span>Sell</span>
+                <span>Best Seller</span>
+                <span>Mobile</span>
+                <span>Today's Deals</span>
+                <span>Customer Service</span>
+                <span>Electronics</span>
+                <span>Prime<i class="fa-solid fa-angle-down"></i></span>
+                <span>New Releases</span>
+                <span>Home & Kitchen</span>
+                <span>Amazon Pay</span>
+                <span>Fashion</span>
+              </div>
+            </div>
+            <div class="new-product">
+              <img src="/Amazon/Assets/Img/newLanc.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-bottom">
+          <div id="category-el"></div>
+
+          <div class="product-sorting">
+            <span>1-24 of 392 results</span>
+            <div class="sort-by">
+              <span>Sort by:</span>
+              <span>Price: High to Low</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+        <main>
+          <div class="left-main">
+            <!-- <div class="deliveryDay">
+                <span class="deliveryOption">Delivery Day</span>
+                <div class="sectionTime">
+                   <label for=""><input type="checkbox" name="" id="">Get it Today</label>
+                  <label for=""><input type="checkbox">Get it by tomorrow</label>
+                </div>        
+            </div> -->
+            <div class="category-container">
+              <div class="catHeading">
+                <span>Category</span>
+              </div>
+              <div class="itemsHead">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <span>Electronics</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <span>Mobiles & Accessories</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <span>Smartphone & Basic Mobiles</span>
+                  </li>
+                  <li>
+                    <span class="sharp-content">Smartphone</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="reviews">
+                <span>Avg. Customer Review</span>
+                <div id="reviewRate">
+                  <div id="four-el" class="fourStar-rating">
+                    <span>& Up</span>
+                  </div>
+                  <div id="three-el" class="fourStar-rating">
+                    <span>& Up</span>
+                  </div>
+                  <div id="two-el" class="fourStar-rating">
+                    <span>& Up</span>
+                  </div>
+                  <div id="one-el" class="fourStar-rating">
+                    <span>& Up</span>
+                  </div>
+                </div>
+              </div>
+              <div class="brand-container">
+                <span>Brands</span>
+                <label for=""><input id="onePlus" type="checkbox" />OnePlus</label>
+                <label for=""><input id="apple" type="checkbox" />Apple</label>
+                <label for=""><input id="samsung" type="checkbox" />Samsung</label>
+              </div>
+              <div class="price-container">
+                <span class="price">Price</span>
+                <div class="price-section">
+                  <span id="leastPrice-el">Under ₹1,000</span>
+                  <span id="midPrice-el">₹1,000 - ₹5,000</span>
+                  <span id="highPrice-el">₹5,000 - ₹10,000</span>
+                  <span id="bigPrice-el">Over ₹20,000</span>
+                </div>
+                <div class="price-filtering">
+                  <input type="text" placeholder="₹Min" />
+                  <input type="text" placeholder="₹Max" /> <span>Go</span>
+                </div>
+              </div>
+              <div class="discountOption">
+                <span class="price">Discount</span>
+                <div class="discountSection">
+                  <span>10% Off or more</span>
+                  <span>25% Off or more</span>
+                  <span>35% Off or more</span>
+                  <span>50% Off or more</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-main">
+            <span class="searchHeading">Results</span>
+            <div id="products-cr"></div>
+          </div>
+        </main>
+        <div class="bottomNav">
+          <div class="navSection">
+            <span class="angleStart"
+              ><i class="fa-solid fa-angle-left"></i> Previous</span
+            >
+            <span class="one">1</span>
+            <span class="two">2</span>
+            <span class="three">3</span>
+            <span class="more"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="2"
+                viewBox="0 0 10 2"
+                focusable="false"
+                aria-hidden="true"
+              >
+                <path
+                  d="M9 2c-.608 0-1-.425-1-1s.392-1 1-1 1 .448 1 1c0 .575-.392 1-1 1zM5 2c-.608 0-1-.425-1-1s.392-1 1-1 1 .448 1 1c0 .575-.392 1-1 1zM1 2c-.608 0-1-.425-1-1s.392-1 1-1 1 .448 1 1c0 .575-.392 1-1 1z"
+                ></path>
+                ...
+              </svg></span
+            >
+            <span class="six">6</span>
+            <span class="angleEnd"
+              >Next <i class="fa-solid fa-angle-right"></i
+            ></span>
+          </div>
+        </div>
+        <div class="accountContainer">
+          <div class="underLineTop"></div>
+          <div class="newCustomer">
+            <p>See personalized recommendation</p>
+            <div class="accountCreate">
+              <span>
+                <img
+                  src="/Amazon/Assets/Img/yellow.png"
+                  width="270px"
+                  height="48px"
+                  alt=""
+                />
+                <span class="backgroundText"> Sign in</span></span
+              >
+            </div>
+            <div class="newMembers">
+              <span class="newMember"> New customer? </span>
+              <span class="linkText">Start here.</span>
+            </div>
+          </div>
+          <div class="underLineBottom"></div>
+        </div>
+        <div class="navFooterBackToTop">
+          <span>Back to top</span>
+        </div>
+        <div class="navFooterVerticalColumn">
+          <div class="navFooterFirst">
+            <div class="navColumnSection">
+              <div class="navFooterVerticalRow">
+                <div class="navFooterLinkRow">
+                  <div class="navFooterColHead">Get to Know Us</div>
+                  <ul>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Press Releases</li>
+                    <li>Amazon Science</li>
+                  </ul>
+                </div>
+                <!-- <div class="navFooterSpace"></div> -->
+                <div class="navFooterLinkRow">
+                  <div class="navFooterColHead">Connect with Us</div>
+                  <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                  </ul>
+                </div>
+                <!-- <div class="navFooterSpace"></div> -->
+                <div class="navFooterLinkRow">
+                  <div class="navFooterColHead">Make Money with Us</div>
+                  <ul class="navAdjust">
+                    <li>Sell on Amazon</li>
+                    <li>Advertise Your Products</li>
+                    <li>Sell on Amazon</li>
+                    <li>Sell under Amazon Accelerator</li>
+                    <li>Protect and Build Your Brand</li>
+                    <li>Amazon Global Selling</li>
+                    <li>Become an Affiliate</li>
+                    <li>Amazon Pay on Merchants</li>
+                  </ul>
+                </div>
+                <!-- <div class="navFooterSpace"></div> -->
+                <div class="navFooterLinkRow">
+                  <div class="navFooterColHead">Let Us Help you</div>
+                  <ul>
+                    <li>COVID-19 and Amazon</li>
+                    <li>Your Account</li>
+                    <li>Returns Centre</li>
+                    <li>100% Purchase Protection</li>
+                    <li>Amazon App Download</li>
+                    <li>Help</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="navFooterLinkLine">
+              <img src="/Amazon/Assets/Img/amzonLgOnly.png" alt="" />
+              <div class="footerLanguage">
+                <img src="/Amazon/Assets/Img/worldLg.png" alt="" />
+                <span>English</span>
+                <img src="/Amazon/Assets/Img/btn.png" alt="" />
+              </div>
+            </div>
+            <div class="countryName">
+              <ul>
+                <li>Australia</li>
+                <li>Brazil</li>
+                <li>Canada</li>
+                <li>China</li>
+                <li>France</li>
+                <li>Germany</li>
+                <li>Italy</li>
+                <li>Japan</li>
+                <li>Mexico</li>
+                <li>Netherlands</li>
+                <li>Poland</li>
+                <li>Singapore</li>
+                <li>Spain</li>
+                <li>Turkey</li>
+                <li>United Arab Emirates</li>
+                <li>United Kingdom</li>
+                <li>United States</li>
+              </ul>
+            </div>
+          </div>
+          <div class="navFooterBottom">
+            <div class="navFooterTable">
+              <div class="tableRow">
+                <div class="tableHead">AbeBooks</div>
+                <ul>
+                  <li>Books, art</li>
+                  <li>& collectibles</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">Amazon</div>
+                <ul>
+                  <li>Scalable Cloud</li>
+                  <li>Computing Services</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">Audible</div>
+                <ul>
+                  <li>Download</li>
+                  <li>Audio Books</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">DPReview</div>
+                <ul>
+                  <li>Digital</li>
+                  <li>Photography</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">IMDb</div>
+                <ul>
+                  <li>Movies, TV</li>
+                  <li>& Celebrities</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tableSecondRow">
+              <div class="tableRow">
+                <div class="tableHead">Shop</div>
+                <ul>
+                  <li>Designer</li>
+                  <li>Fashion Brands</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">Amazon Buisness</div>
+                <ul>
+                  <li>Everything For</li>
+                  <li>Your Business</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">Prime</div>
+                <ul>
+                  <li>2-Hour Delivery</li>
+                  <li>on Everyday Item</li>
+                </ul>
+              </div>
+              <div class="tableRow">
+                <div class="tableHead">Amazon Prime Music</div>
+                <ul>
+                  <li>100 million songs,ad-free</li>
+                  <li>Over 15 million podcast episodes</li>
+                </ul>
+              </div>
+            </div>
+            <div class="navFooterCopyrights">
+              <ul>
+                <li>Conditions of Use & Sale</li>
+                <li>Privacy Notice</li>
+                <li>Interest-Based Ads</li>
+              </ul>
+              <span>© 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-start">
+          <span
+            ><img src="/Amazon/Assets/Img/upAngle.png" width="30px" alt=""
+          /></span>
+          <span>TOP OF PAGE</span>
+        </div>
+        <ul>
+          <li class="li-right">Your Amazon.in</li>
+          <li class="li-right">Amazon Pay</li>
+          <li class="li-right">Wish List</li>
+          <li class="li-right">Your Account</li>
+          <li class="li-right">Returns</li>
+          <li class="li-right">Customer Service</li>
+          <li class="nav-li">Amazon.in</li>
+          <li class="nav-li">Your Orders</li>
+          <li class="nav-li">Amazon App Download</li>
+          <li class="nav-li">Find a Wish List</li>
+          <li class="nav-li">Your Recently Viewed items</li>
+          <li class="nav-li">Sell</li>
+        </ul>
+        <div class="footer-language">
+          <img src="/Amazon/Assets/Img/worldLg.png" alt="" />
+          <span>English</span>
+        </div>
+        <div class="footer-auth">Already a customer? Sign in</div>
+        <ul class="footer-horizontal">
+          <li>Conditions of Use</li>
+          <li>Privacy Notice</li>
+          <li>Interest-Based Ads</li>
+        </ul>
+        <div class="footer-copyright">
+          © 1996-2023, Amazon.com, Inc. and its affiliates
+        </div>
+      </footer>
+    </div>
+    <!-- <button id="btn-el">click</button> -->
+    <script src="index.js"></script>
+    <!-- <script type="module" src="lib.js"></script> -->
+    <!-- <script type="module" src="lib2.js"></script> -->
+    <!-- <script type="module" src="feature2.js"></script> -->
+  </body>
+</html>
